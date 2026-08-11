@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Home",
+    "howItWorks": "Come funziona",
+    "services": "I nostri servizi",
+    "faq": "FAQ",
+    "contact": "Contatti",
+    "cta": "Invia la mia richiesta"
+  },
+  "footer": {
+    "tagline": "Il tuo scambio di patente di guida, gestito dall'inizio alla fine.",
+    "company": "Permis-Exchange",
+    "linksTitle": "Link utili",
+    "legalTitle": "Informazioni legali",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Termini di servizio",
+    "legalNotice": "Note legali",
+    "contactTitle": "Contatti",
+    "rights": "Tutti i diritti riservati."
+  },
+  "localeSwitcher": {
+    "label": "Lingua"
+  },
+  "themeToggle": {
+    "switchToLight": "Passa al tema chiaro",
+    "switchToDark": "Passa al tema scuro"
+  }
+}

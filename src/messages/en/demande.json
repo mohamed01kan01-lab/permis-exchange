@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Start my request — Permis-Exchange",
+    "subtitle": "Complete the steps below, your file is handled by our team as soon as we receive it."
+  },
+  "steps": {
+    "1": "Identity",
+    "2": "Current licence",
+    "3": "Destination",
+    "4": "Documents",
+    "5": "Review"
+  },
+  "common": {
+    "loading": "Loading...",
+    "euExchange": "EU / EEA exchange",
+    "nonEuConversion": "Non-EU conversion"
+  },
+  "identity": {
+    "firstName": "First name",
+    "lastName": "Last name",
+    "dateOfBirth": "Date of birth",
+    "email": "Email address",
+    "phone": "Phone number",
+    "addressLine1": "Address",
+    "addressLine2": "Address line 2 (optional)",
+    "postalCode": "Postal code",
+    "city": "City",
+    "countryOfResidence": "Country of residence",
+    "next": "Next"
+  },
+  "licence": {
+    "licenceIssuingCountry": "Licence issuing country",
+    "licenceNumber": "Licence number",
+    "licenceIssueDate": "Issue date",
+    "licenceExpiryDate": "Expiry date (optional)",
+    "licenceCategories": "Licence categories",
+    "back": "Back",
+    "next": "Next"
+  },
+  "destination": {
+    "destinationCountry": "Destination country",
+    "procedureType": "Procedure type",
+    "euExchange": "EU / EEA exchange",
+    "nonEuConversion": "Non-EU conversion",
+    "back": "Back",
+    "next": "Next"
+  },
+  "documents": {
+    "licenseFront": "Driving licence (front)",
+    "licenseBack": "Driving licence (back)",
+    "idDocument": "ID document",
+    "proofOfAddress": "Proof of address",
+    "swornTranslation": "Sworn translation",
+    "hint": "JPG, PNG or PDF, 10 MB max.",
+    "back": "Back",
+    "next": "Next"
+  },
+  "review": {
+    "identitySection": "Identity",
+    "licenceSection": "Current licence",
+    "destinationSection": "Destination",
+    "documentsSection": "Documents",
+    "fullName": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "residenceCountry": "Country of residence",
+    "issuingCountry": "Issuing country",
+    "licenceNumber": "Licence number",
+    "categories": "Categories",
+    "destinationCountry": "Destination country",
+    "procedure": "Procedure type",
+    "consent": "I agree that my data and documents will be processed by Permis-Exchange for the purpose of my request, in accordance with the privacy policy.",
+    "back": "Back",
+    "submit": "Submit my request",
+    "submitting": "Submitting..."
+  },
+  "confirmation": {
+    "title": "Your request has been submitted",
+    "subtitle": "Thank you! Our team is reviewing your file and will get back to you within 48 business hours.",
+    "reference": "Your request reference",
+    "backHome": "Back to home"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "hero": {
+    "eyebrow": "Service d'échange de permis international",
+    "title": "Échangez votre permis de conduire sans le casse-tête administratif",
+    "subtitle": "Permis-Exchange gère votre dossier de bout en bout, avec une connexion directe aux registres EUCARIS et RESPER, pour un traitement plus rapide et sans rejet.",
+    "ctaPrimary": "Démarrer ma demande",
+    "ctaSecondary": "Voir comment ça marche",
+    "stat1Value": "48h",
+    "stat1Label": "pour l'analyse de votre dossier",
+    "stat2Value": "0",
+    "stat2Label": "rejet grâce à la vérification EUCARIS/RESPER",
+    "stat3Value": "27+",
+    "stat3Label": "pays UE/EEE couverts"
+  },
+  "process": {
+    "eyebrow": "Le processus",
+    "title": "Comment se déroule votre échange de permis",
+    "subtitle": "Quatre étapes suivies par notre équipe, de la soumission de votre dossier à la réception de votre nouveau permis.",
+    "steps": {
+      "step1": {
+        "title": "Vous soumettez votre dossier",
+        "description": "Renseignez vos informations et téléversez vos documents en quelques minutes via notre formulaire sécurisé."
+      },
+      "step2": {
+        "title": "Vérification EUCARIS/RESPER",
+        "description": "Notre équipe contrôle votre permis actuel directement auprès des registres européens pour anticiper tout blocage."
+      },
+      "step3": {
+        "title": "Constitution du dossier officiel",
+        "description": "Nous préparons et déposons votre dossier auprès de l'administration compétente du pays de destination."
+      },
+      "step4": {
+        "title": "Réception de votre nouveau permis",
+        "description": "Vous êtes informé à chaque étape et recevez votre permis échangé, sans déplacement inutile."
+      }
+    }
+  },
+  "trust": {
+    "eyebrow": "Pourquoi nous faire confiance",
+    "title": "Une connexion directe aux registres officiels",
+    "subtitle": "Nous travaillons avec les mêmes systèmes que les administrations, ce qui nous permet de détecter les problèmes avant qu'ils ne bloquent votre dossier.",
+    "cards": {
+      "eucaris": {
+        "title": "EUCARIS",
+        "description": "Échange d'informations sur les permis de conduire entre pays européens, pour valider votre permis actuel en temps réel."
+      },
+      "resper": {
+        "title": "RESPER",
+        "description": "Registre central belge des permis de conduire, consulté pour fiabiliser chaque dossier traité en Belgique."
+      },
+      "security": {
+        "title": "Données sécurisées",
+        "description": "Vos documents d'identité sont chiffrés et stockés selon les standards RGPD, accessibles uniquement à l'équipe en charge de votre dossier."
+      },
+      "team": {
+        "title": "Une équipe dédiée",
+        "description": "Un interlocuteur suit votre dossier du début à la fin et répond à vos questions à chaque étape."
+      }
+    }
+  },
+  "scope": {
+    "eyebrow": "Nos services",
+    "title": "Deux parcours, une seule équipe",
+    "subtitle": "Que votre permis vienne d'un pays de l'UE/EEE ou d'ailleurs, nous adaptons la démarche à votre situation.",
+    "euExchange": {
+      "title": "Échange permis UE / EEE",
+      "description": "Vous résidez dans un nouveau pays européen et devez échanger votre permis national contre celui de votre pays de résidence.",
+      "bullet1": "Vérification de la validité de votre permis actuel",
+      "bullet2": "Constitution du dossier selon les règles du pays de destination",
+      "bullet3": "Suivi jusqu'à la réception du nouveau permis",
+      "cta": "Demander un échange UE/EEE"
+    },
+    "nonEuConversion": {
+      "title": "Conversion permis hors UE",
+      "description": "Votre permis a été délivré hors de l'Union européenne et doit être reconnu ou converti pour être valide localement.",
+      "bullet1": "Analyse des accords de réciprocité applicables à votre pays",
+      "bullet2": "Traduction assermentée si nécessaire",
+      "bullet3": "Accompagnement sur les démarches complémentaires (examen, dossier consulaire)",
+      "cta": "Demander une conversion"
+    }
+  },
+  "faq": {
+    "eyebrow": "Questions fréquentes",
+    "title": "Tout ce que vous devez savoir",
+    "items": {
+      "q1": {
+        "question": "Combien de temps prend un échange de permis ?",
+        "answer": "Grâce à notre connexion directe à EUCARIS et RESPER, l'analyse initiale de votre dossier prend généralement 48h ouvrées. Le délai total dépend ensuite du pays de destination, en général entre 2 et 6 semaines."
+      },
+      "q2": {
+        "question": "Quels documents dois-je fournir ?",
+        "answer": "Votre permis de conduire actuel (recto/verso), une pièce d'identité valide, un justificatif de domicile récent, et selon votre situation, une traduction assermentée de votre permis."
+      },
+      "q3": {
+        "question": "Puis-je suivre l'avancement de ma demande ?",
+        "answer": "Oui, un interlocuteur dédié vous tient informé à chaque étape par email, et vous pouvez le contacter à tout moment."
+      },
+      "q4": {
+        "question": "Que se passe-t-il si mon dossier est incomplet ?",
+        "answer": "Notre équipe vous recontacte rapidement pour vous indiquer précisément les documents ou informations manquants, avant tout dépôt officiel."
+      },
+      "q5": {
+        "question": "Mes données sont-elles en sécurité ?",
+        "answer": "Tous les documents transmis sont chiffrés et stockés conformément au RGPD. Seule l'équipe en charge de votre dossier y a accès."
+      }
+    }
+  },
+  "cta": {
+    "title": "Prêt à simplifier votre échange de permis ?",
+    "subtitle": "Soumettez votre dossier en quelques minutes, notre équipe s'occupe du reste.",
+    "button": "Faire ma demande maintenant"
+  }
+}

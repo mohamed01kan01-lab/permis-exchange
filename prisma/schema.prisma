@@ -1,0 +1,88 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum ProcedureType {
+  EU_EEA_EXCHANGE
+  NON_EU_CONVERSION
+}
+
+enum RequestStatus {
+  SUBMITTED
+  IN_REVIEW
+  AWAITING_DOCUMENTS
+  IN_PROGRESS
+  COMPLETED
+  REJECTED
+  CANCELLED
+}
+
+enum DocumentType {
+  LICENSE_FRONT
+  LICENSE_BACK
+  ID_DOCUMENT
+  PROOF_OF_ADDRESS
+  SWORN_TRANSLATION
+  OTHER
+}
+
+model LicenseExchangeRequest {
+  id     String        @id @default(cuid())
+  locale String
+  status RequestStatus @default(SUBMITTED)
+
+  // Identité & contact
+  firstName          String
+  lastName            String
+  dateOfBirth         DateTime
+  email               String
+  phone               String
+  addressLine1        String
+  addressLine2        String?
+  postalCode          String
+  city                String
+  countryOfResidence  String // ISO 3166-1 alpha-2
+
+  // Permis actuel
+  licenceIssuingCountry String // ISO 3166-1 alpha-2
+  licenceNumber         String
+  licenceIssueDate      DateTime
+  licenceExpiryDate     DateTime?
+  licenceCategories     String[]
+
+  // Destination & procédure
+  destinationCountry String // ISO 3166-1 alpha-2
+  procedureType      ProcedureType
+
+  consentAt     DateTime
+  internalNotes String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  documents Document[]
+
+  @@index([status])
+  @@index([email])
+}
+
+model Document {
+  id        String                  @id @default(cuid())
+  request   LicenseExchangeRequest  @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  requestId String
+  type      DocumentType
+
+  // Cloudinary
+  publicId String
+  url      String
+  format   String?
+  fileName String
+
+  createdAt DateTime @default(now())
+
+  @@index([requestId])
+}

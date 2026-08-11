@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Faire ma demande — Permis-Exchange",
+    "subtitle": "Complétez les étapes ci-dessous, votre dossier est traité par notre équipe dès réception."
+  },
+  "steps": {
+    "1": "Identité",
+    "2": "Permis actuel",
+    "3": "Destination",
+    "4": "Documents",
+    "5": "Récapitulatif"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "euExchange": "Échange UE / EEE",
+    "nonEuConversion": "Conversion hors UE"
+  },
+  "identity": {
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "dateOfBirth": "Date de naissance",
+    "email": "Adresse email",
+    "phone": "Téléphone",
+    "addressLine1": "Adresse",
+    "addressLine2": "Complément d'adresse (optionnel)",
+    "postalCode": "Code postal",
+    "city": "Ville",
+    "countryOfResidence": "Pays de résidence",
+    "next": "Suivant"
+  },
+  "licence": {
+    "licenceIssuingCountry": "Pays émetteur du permis",
+    "licenceNumber": "Numéro de permis",
+    "licenceIssueDate": "Date de délivrance",
+    "licenceExpiryDate": "Date d'expiration (optionnel)",
+    "licenceCategories": "Catégories du permis",
+    "back": "Précédent",
+    "next": "Suivant"
+  },
+  "destination": {
+    "destinationCountry": "Pays de destination",
+    "procedureType": "Type de démarche",
+    "euExchange": "Échange UE / EEE",
+    "nonEuConversion": "Conversion hors UE",
+    "back": "Précédent",
+    "next": "Suivant"
+  },
+  "documents": {
+    "licenseFront": "Permis de conduire (recto)",
+    "licenseBack": "Permis de conduire (verso)",
+    "idDocument": "Pièce d'identité",
+    "proofOfAddress": "Justificatif de domicile",
+    "swornTranslation": "Traduction assermentée",
+    "hint": "JPG, PNG ou PDF, 10 Mo max.",
+    "back": "Précédent",
+    "next": "Suivant"
+  },
+  "review": {
+    "identitySection": "Identité",
+    "licenceSection": "Permis actuel",
+    "destinationSection": "Destination",
+    "documentsSection": "Documents",
+    "fullName": "Nom complet",
+    "email": "Email",
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "residenceCountry": "Pays de résidence",
+    "issuingCountry": "Pays émetteur",
+    "licenceNumber": "Numéro de permis",
+    "categories": "Catégories",
+    "destinationCountry": "Pays de destination",
+    "procedure": "Type de démarche",
+    "consent": "J'accepte que mes données et documents soient traités par Permis-Exchange dans le cadre de ma demande, conformément à la politique de confidentialité.",
+    "back": "Précédent",
+    "submit": "Envoyer ma demande",
+    "submitting": "Envoi en cours..."
+  },
+  "confirmation": {
+    "title": "Votre demande a bien été envoyée",
+    "subtitle": "Merci ! Notre équipe analyse votre dossier et vous recontacte sous 48h ouvrées.",
+    "reference": "Référence de votre demande",
+    "backHome": "Retour à l'accueil"
+  }
+}

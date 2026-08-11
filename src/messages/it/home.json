@@ -1,0 +1,113 @@
+{
+  "hero": {
+    "eyebrow": "Servizio di scambio patente internazionale",
+    "title": "Scambia la tua patente di guida senza il caos burocratico",
+    "subtitle": "Permis-Exchange gestisce la tua pratica dall'inizio alla fine, con una connessione diretta ai registri EUCARIS e RESPER, per tempi più rapidi e zero rifiuti.",
+    "ctaPrimary": "Inizia la mia richiesta",
+    "ctaSecondary": "Scopri come funziona",
+    "stat1Value": "48h",
+    "stat1Label": "per l'analisi della tua pratica",
+    "stat2Value": "0",
+    "stat2Label": "rifiuti grazie ai controlli EUCARIS/RESPER",
+    "stat3Value": "27+",
+    "stat3Label": "paesi UE/SEE coperti"
+  },
+  "process": {
+    "eyebrow": "Il processo",
+    "title": "Come si svolge lo scambio della tua patente",
+    "subtitle": "Quattro fasi seguite dal nostro team, dall'invio della pratica al ritiro della nuova patente.",
+    "steps": {
+      "step1": {
+        "title": "Invii la tua pratica",
+        "description": "Inserisci i tuoi dati e carica i documenti in pochi minuti tramite il nostro modulo sicuro."
+      },
+      "step2": {
+        "title": "Verifica EUCARIS/RESPER",
+        "description": "Il nostro team controlla la tua patente attuale direttamente presso i registri europei per anticipare eventuali blocchi."
+      },
+      "step3": {
+        "title": "Preparazione della pratica ufficiale",
+        "description": "Prepariamo e depositiamo la tua pratica presso l'amministrazione competente del paese di destinazione."
+      },
+      "step4": {
+        "title": "Ricevi la tua nuova patente",
+        "description": "Sei informato a ogni fase e ricevi la patente scambiata, senza spostamenti inutili."
+      }
+    }
+  },
+  "trust": {
+    "eyebrow": "Perché fidarti di noi",
+    "title": "Una connessione diretta ai registri ufficiali",
+    "subtitle": "Lavoriamo con gli stessi sistemi delle amministrazioni, il che ci permette di individuare i problemi prima che blocchino la tua pratica.",
+    "cards": {
+      "eucaris": {
+        "title": "EUCARIS",
+        "description": "Scambio di informazioni sulle patenti di guida tra paesi europei, per validare la tua patente attuale in tempo reale."
+      },
+      "resper": {
+        "title": "RESPER",
+        "description": "Registro centrale belga delle patenti di guida, consultato per rendere più affidabile ogni pratica trattata in Belgio."
+      },
+      "security": {
+        "title": "Dati protetti",
+        "description": "I tuoi documenti d'identità sono criptati e conservati secondo gli standard GDPR, accessibili solo al team che segue la tua pratica."
+      },
+      "team": {
+        "title": "Un team dedicato",
+        "description": "Un referente segue la tua pratica dall'inizio alla fine e risponde alle tue domande in ogni fase."
+      }
+    }
+  },
+  "scope": {
+    "eyebrow": "I nostri servizi",
+    "title": "Due percorsi, un solo team",
+    "subtitle": "Che la tua patente provenga da un paese UE/SEE o da altrove, adattiamo la procedura alla tua situazione.",
+    "euExchange": {
+      "title": "Scambio patente UE / SEE",
+      "description": "Risiedi in un nuovo paese europeo e devi scambiare la tua patente nazionale con quella del tuo paese di residenza.",
+      "bullet1": "Verifica della validità della tua patente attuale",
+      "bullet2": "Preparazione della pratica secondo le regole del paese di destinazione",
+      "bullet3": "Assistenza fino al ricevimento della nuova patente",
+      "cta": "Richiedi uno scambio UE/SEE"
+    },
+    "nonEuConversion": {
+      "title": "Conversione patente extra-UE",
+      "description": "La tua patente è stata rilasciata fuori dall'Unione Europea e deve essere riconosciuta o convertita per essere valida localmente.",
+      "bullet1": "Analisi degli accordi di reciprocità applicabili al tuo paese",
+      "bullet2": "Traduzione giurata se necessaria",
+      "bullet3": "Assistenza per le pratiche complementari (esame, pratica consolare)",
+      "cta": "Richiedi una conversione"
+    }
+  },
+  "faq": {
+    "eyebrow": "Domande frequenti",
+    "title": "Tutto quello che devi sapere",
+    "items": {
+      "q1": {
+        "question": "Quanto tempo richiede uno scambio di patente?",
+        "answer": "Grazie alla nostra connessione diretta a EUCARIS e RESPER, l'analisi iniziale della pratica richiede in genere 48 ore lavorative. Il tempo totale dipende poi dal paese di destinazione, generalmente tra 2 e 6 settimane."
+      },
+      "q2": {
+        "question": "Quali documenti devo fornire?",
+        "answer": "La tua patente di guida attuale (fronte/retro), un documento d'identità valido, una prova di residenza recente e, a seconda della situazione, una traduzione giurata della patente."
+      },
+      "q3": {
+        "question": "Posso seguire l'avanzamento della mia richiesta?",
+        "answer": "Sì, un referente dedicato ti tiene informato a ogni fase via email, e puoi contattarlo in qualsiasi momento."
+      },
+      "q4": {
+        "question": "Cosa succede se la mia pratica è incompleta?",
+        "answer": "Il nostro team ti ricontatta rapidamente per indicarti esattamente i documenti o le informazioni mancanti, prima di qualsiasi deposito ufficiale."
+      },
+      "q5": {
+        "question": "I miei dati sono al sicuro?",
+        "answer": "Tutti i documenti inviati sono criptati e conservati in conformità al GDPR. Solo il team che segue la tua pratica vi ha accesso."
+      }
+    }
+  },
+  "cta": {
+    "title": "Pronto a semplificare il tuo scambio di patente?",
+    "subtitle": "Invia la tua pratica in pochi minuti, al resto pensa il nostro team.",
+    "button": "Invia la richiesta ora"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Invia la mia richiesta — Permis-Exchange",
+    "subtitle": "Completa le fasi qui sotto, la tua pratica viene gestita dal nostro team non appena la riceviamo."
+  },
+  "steps": {
+    "1": "Identità",
+    "2": "Patente attuale",
+    "3": "Destinazione",
+    "4": "Documenti",
+    "5": "Riepilogo"
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "euExchange": "Scambio UE / SEE",
+    "nonEuConversion": "Conversione extra-UE"
+  },
+  "identity": {
+    "firstName": "Nome",
+    "lastName": "Cognome",
+    "dateOfBirth": "Data di nascita",
+    "email": "Indirizzo email",
+    "phone": "Telefono",
+    "addressLine1": "Indirizzo",
+    "addressLine2": "Indirizzo (riga 2, opzionale)",
+    "postalCode": "Codice postale",
+    "city": "Città",
+    "countryOfResidence": "Paese di residenza",
+    "next": "Avanti"
+  },
+  "licence": {
+    "licenceIssuingCountry": "Paese di rilascio della patente",
+    "licenceNumber": "Numero di patente",
+    "licenceIssueDate": "Data di rilascio",
+    "licenceExpiryDate": "Data di scadenza (opzionale)",
+    "licenceCategories": "Categorie della patente",
+    "back": "Indietro",
+    "next": "Avanti"
+  },
+  "destination": {
+    "destinationCountry": "Paese di destinazione",
+    "procedureType": "Tipo di pratica",
+    "euExchange": "Scambio UE / SEE",
+    "nonEuConversion": "Conversione extra-UE",
+    "back": "Indietro",
+    "next": "Avanti"
+  },
+  "documents": {
+    "licenseFront": "Patente di guida (fronte)",
+    "licenseBack": "Patente di guida (retro)",
+    "idDocument": "Documento d'identità",
+    "proofOfAddress": "Prova di residenza",
+    "swornTranslation": "Traduzione giurata",
+    "hint": "JPG, PNG o PDF, max 10 MB.",
+    "back": "Indietro",
+    "next": "Avanti"
+  },
+  "review": {
+    "identitySection": "Identità",
+    "licenceSection": "Patente attuale",
+    "destinationSection": "Destinazione",
+    "documentsSection": "Documenti",
+    "fullName": "Nome completo",
+    "email": "Email",
+    "phone": "Telefono",
+    "address": "Indirizzo",
+    "residenceCountry": "Paese di residenza",
+    "issuingCountry": "Paese di rilascio",
+    "licenceNumber": "Numero di patente",
+    "categories": "Categorie",
+    "destinationCountry": "Paese di destinazione",
+    "procedure": "Tipo di pratica",
+    "consent": "Accetto che i miei dati e documenti siano trattati da Permis-Exchange nell'ambito della mia richiesta, in conformità con l'informativa sulla privacy.",
+    "back": "Indietro",
+    "submit": "Invia la mia richiesta",
+    "submitting": "Invio in corso..."
+  },
+  "confirmation": {
+    "title": "La tua richiesta è stata inviata",
+    "subtitle": "Grazie! Il nostro team sta esaminando la tua pratica e ti ricontatterà entro 48 ore lavorative.",
+    "reference": "Riferimento della tua richiesta",
+    "backHome": "Torna alla home"
+  }
+}

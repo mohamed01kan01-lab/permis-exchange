@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "howItWorks": "Comment ça marche",
+    "services": "Nos services",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "cta": "Faire ma demande"
+  },
+  "footer": {
+    "tagline": "Votre échange de permis de conduire, géré de A à Z.",
+    "company": "Permis-Exchange",
+    "linksTitle": "Liens utiles",
+    "legalTitle": "Informations légales",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions générales",
+    "legalNotice": "Mentions légales",
+    "contactTitle": "Contact",
+    "rights": "Tous droits réservés."
+  },
+  "localeSwitcher": {
+    "label": "Langue"
+  },
+  "themeToggle": {
+    "switchToLight": "Passer au thème clair",
+    "switchToDark": "Passer au thème sombre"
+  }
+}

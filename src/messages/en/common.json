@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Home",
+    "howItWorks": "How it works",
+    "services": "Our services",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "cta": "Start my request"
+  },
+  "footer": {
+    "tagline": "Your driving licence exchange, handled end to end.",
+    "company": "Permis-Exchange",
+    "linksTitle": "Useful links",
+    "legalTitle": "Legal information",
+    "privacy": "Privacy policy",
+    "terms": "Terms of service",
+    "legalNotice": "Legal notice",
+    "contactTitle": "Contact",
+    "rights": "All rights reserved."
+  },
+  "localeSwitcher": {
+    "label": "Language"
+  },
+  "themeToggle": {
+    "switchToLight": "Switch to light theme",
+    "switchToDark": "Switch to dark theme"
+  }
+}
