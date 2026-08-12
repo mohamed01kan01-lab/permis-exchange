@@ -33,7 +33,6 @@ export const TransitionLink = forwardRef<HTMLAnchorElement, LinkProps>(
           }
 
           event.preventDefault();
-          // @ts-expect-error - startViewTransition isn't in the TS DOM lib yet on all targets
           document.startViewTransition(() => {
             router.push(href as Parameters<typeof router.push>[0]);
           });
