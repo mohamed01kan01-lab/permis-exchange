@@ -10,6 +10,8 @@ import {
 } from "@/lib/validation/destination.schema";
 import { documentsSchema, type DocumentsData } from "@/lib/validation/documents.schema";
 import { requestSchema } from "@/lib/validation/request.schema";
+import { getCountryName } from "@/lib/constants/countries";
+import { sendNewSubmissionEmail } from "@/lib/email";
 
 export type StepState<T> = {
   success: boolean;
@@ -141,6 +143,24 @@ export async function submitRequest(
       },
     },
   });
+
+  // La notification par email ne doit jamais faire échouer la soumission du
+  // client : son échec est journalisé mais n'empêche pas la réponse succès.
+  try {
+    await sendNewSubmissionEmail({
+      requestId: created.id,
+      firstName: data.firstName,
+      lastName: data.lastName,
+      email: data.email,
+      destinationCountryName: getCountryName(data.destinationCountry),
+      procedureLabel:
+        data.procedureType === "EU_EEA_EXCHANGE"
+          ? "Échange UE / EEE"
+          : "Conversion hors UE",
+    });
+  } catch (err) {
+    console.error("[submitRequest] Notification email échouée :", err);
+  }
 
   return { success: true, requestId: created.id };
 }
