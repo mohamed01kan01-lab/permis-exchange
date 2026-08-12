@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { useGSAP } from "@gsap/react";
-import { Link } from "@/i18n/navigation";
+import { TransitionLink } from "@/components/site/TransitionLink";
 import { useMagnetic } from "@/hooks/useMagnetic";
 
 gsap.registerPlugin(SplitText);
@@ -207,13 +207,13 @@ export function Hero() {
             data-hero-fade
             className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
-            <Link
+            <TransitionLink
               ref={primaryCtaRef}
               href="/demande"
               className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3.5 text-base font-semibold text-primary-foreground shadow-md shadow-primary/20 transition-shadow hover:shadow-lg hover:shadow-primary/30"
             >
               {t("ctaPrimary")}
-            </Link>
+            </TransitionLink>
             <a
               href="#comment-ca-marche"
               className="inline-flex items-center justify-center rounded-full border border-border px-8 py-3.5 text-base font-semibold text-foreground transition-all duration-200 hover:-translate-y-0.5 hover:bg-muted"

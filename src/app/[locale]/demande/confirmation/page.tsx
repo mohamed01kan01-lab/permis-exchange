@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { IconCircleCheck } from "@tabler/icons-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
-import { Link } from "@/i18n/navigation";
+import { TransitionLink } from "@/components/site/TransitionLink";
 
 export default async function ConfirmationPage({
   searchParams,
@@ -27,12 +27,12 @@ export default async function ConfirmationPage({
             </p>
           )}
 
-          <Link
+          <TransitionLink
             href="/"
             className="mt-10 inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-secondary"
           >
             {t("backHome")}
-          </Link>
+          </TransitionLink>
         </div>
       </main>
       <Footer />

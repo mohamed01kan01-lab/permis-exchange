@@ -11,6 +11,7 @@ import { COUNTRIES, isEuEeaCountry } from "@/lib/constants/countries";
 import { FieldError } from "./FieldError";
 import { SubmitButton } from "./SubmitButton";
 import { cn } from "@/lib/utils";
+import { useShakeOnError } from "@/hooks/useShakeOnError";
 
 const initialState: StepState<DestinationData> = { success: false };
 
@@ -41,6 +42,7 @@ export function Step3Destination({
   }, [state]);
 
   const errors = state.errors ?? {};
+  const formRef = useShakeOnError<HTMLFormElement>(state.errors);
 
   const options = [
     { value: "EU_EEA_EXCHANGE" as const, label: t("euExchange") },
@@ -48,7 +50,7 @@ export function Step3Destination({
   ];
 
   return (
-    <form action={formAction} className="flex flex-col gap-5" noValidate>
+    <form ref={formRef} action={formAction} className="flex flex-col gap-5" noValidate>
       <div>
         <label htmlFor="destinationCountry" className="text-sm font-medium text-foreground">
           {t("destinationCountry")}

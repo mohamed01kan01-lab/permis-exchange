@@ -10,6 +10,7 @@ import type { DocumentsData, UploadedDocument } from "@/lib/validation/documents
 import { DocumentUploadField } from "./DocumentUploadField";
 import { FieldError } from "./FieldError";
 import { SubmitButton } from "./SubmitButton";
+import { useShakeOnError } from "@/hooks/useShakeOnError";
 
 const initialState: StepState<DocumentsData> = { success: false };
 
@@ -42,11 +43,12 @@ export function Step4Documents({
   }
 
   const errors = state.errors ?? {};
+  const formRef = useShakeOnError<HTMLFormElement>(state.errors);
   const find = (type: UploadedDocument["type"]) =>
     documents.find((d) => d.type === type);
 
   return (
-    <form action={formAction} className="flex flex-col gap-4" noValidate>
+    <form ref={formRef} action={formAction} className="flex flex-col gap-4" noValidate>
       <input type="hidden" name="documents" value={JSON.stringify(documents)} />
 
       <DocumentUploadField

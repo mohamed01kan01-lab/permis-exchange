@@ -10,7 +10,7 @@ import {
   IconArrowLeft,
   IconRefresh,
 } from "@tabler/icons-react";
-import { Link } from "@/i18n/navigation";
+import { TransitionLink } from "@/components/site/TransitionLink";
 import { COUNTRIES, isEuEeaCountry } from "@/lib/constants/countries";
 
 type Step = 0 | 1 | 2;
@@ -167,12 +167,12 @@ export function EligibilityQuiz() {
                   : t("result.nonEuConversion.description")}
               </p>
               <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
-                <Link
+                <TransitionLink
                   href={demandeHref}
                   className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-secondary"
                 >
                   {t("result.cta")}
-                </Link>
+                </TransitionLink>
                 <button
                   type="button"
                   onClick={restart}

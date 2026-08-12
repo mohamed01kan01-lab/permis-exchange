@@ -1,4 +1,20 @@
 {
+  "checklist": {
+    "eyebrow": "Prepara la tua pratica",
+    "title": "I documenti da prevedere",
+    "subtitle": "L'elenco varia in base alla tua situazione. Cambia per vedere cosa ti serve.",
+    "toggleEu": "Scambio UE/SEE",
+    "toggleNonEu": "Conversione extra-UE",
+    "items": {
+      "licence": "Patente di guida attuale (fronte/retro)",
+      "id": "Documento d'identità valido",
+      "address": "Prova di residenza di meno di 3 mesi",
+      "photo": "Foto tessera recente",
+      "translation": "Traduzione giurata della patente",
+      "conformity": "Certificato di conformità o equivalenza"
+    },
+    "disclaimer": "Elenco indicativo: il nostro team conferma i documenti esatti richiesti in base al paese interessato."
+  },
   "testimonials": {
     "eyebrow": "Si sono fidati di noi",
     "title": "Pratiche portate a termine, senza stress",

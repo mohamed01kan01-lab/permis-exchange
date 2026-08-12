@@ -1,12 +1,15 @@
 "use client";
 
-import { useActionState, useEffect } from "react";
+import { useActionState, useEffect, useRef, useState, type FocusEvent } from "react";
 import { useTranslations } from "next-intl";
+import gsap from "gsap";
+import { IconCircleCheck } from "@tabler/icons-react";
 import { validateIdentityStep, type StepState } from "@/app/[locale]/demande/actions";
 import type { IdentityData } from "@/lib/validation/identity.schema";
 import { COUNTRIES } from "@/lib/constants/countries";
 import { FieldError } from "./FieldError";
 import { SubmitButton } from "./SubmitButton";
+import { useShakeOnError } from "@/hooks/useShakeOnError";
 
 const initialState: StepState<IdentityData> = { success: false };
 
@@ -27,9 +30,24 @@ export function Step1Identity({
   }, [state]);
 
   const errors = state.errors ?? {};
+  const formRef = useShakeOnError<HTMLFormElement>(state.errors);
+  const [emailValid, setEmailValid] = useState(false);
+  const checkmarkRef = useRef<HTMLSpanElement>(null);
+
+  function handleEmailBlur(event: FocusEvent<HTMLInputElement>) {
+    const valid = event.target.value.length > 0 && event.target.checkValidity();
+    setEmailValid(valid);
+    if (valid && checkmarkRef.current && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      gsap.fromTo(
+        checkmarkRef.current,
+        { scale: 0, autoAlpha: 0 },
+        { scale: 1, autoAlpha: 1, duration: 0.3, ease: "back.out(3)" },
+      );
+    }
+  }
 
   return (
-    <form action={formAction} className="flex flex-col gap-5" noValidate>
+    <form ref={formRef} action={formAction} className="flex flex-col gap-5" noValidate>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="firstName" className="text-sm font-medium text-foreground">
@@ -107,14 +125,26 @@ export function Step1Identity({
           <label htmlFor="email" className="text-sm font-medium text-foreground">
             {t("email")}
           </label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            defaultValue={defaultValues?.email}
-            aria-invalid={!!errors.email}
-            className="mt-1.5 h-10 w-full rounded-lg border border-input bg-transparent px-3 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
-          />
+          <div className="relative mt-1.5">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              defaultValue={defaultValues?.email}
+              aria-invalid={!!errors.email}
+              onBlur={handleEmailBlur}
+              onChange={() => emailValid && setEmailValid(false)}
+              className="h-10 w-full rounded-lg border border-input bg-transparent px-3 pr-9 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
+            />
+            {emailValid && (
+              <span
+                ref={checkmarkRef}
+                className="absolute top-1/2 right-3 -translate-y-1/2 text-accent"
+              >
+                <IconCircleCheck className="size-4" stroke={1.75} aria-hidden />
+              </span>
+            )}
+          </div>
           <FieldError messages={errors.email} />
         </div>
 

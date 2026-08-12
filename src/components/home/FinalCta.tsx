@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { Link } from "@/i18n/navigation";
+import { TransitionLink } from "@/components/site/TransitionLink";
 import { useMagnetic } from "@/hooks/useMagnetic";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -99,14 +99,14 @@ export function FinalCta() {
         <p data-cta-fade className="mt-4 text-primary-foreground/80">
           {t("subtitle")}
         </p>
-        <Link
+        <TransitionLink
           ref={ctaRef}
           href="/demande"
           data-cta-fade
           className="mt-8 inline-flex items-center justify-center rounded-full bg-background px-8 py-3.5 text-base font-semibold text-foreground shadow-lg shadow-black/10 transition-shadow hover:shadow-xl hover:shadow-black/20"
         >
           {t("button")}
-        </Link>
+        </TransitionLink>
       </div>
     </section>
   );

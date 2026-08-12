@@ -1,4 +1,20 @@
 {
+  "checklist": {
+    "eyebrow": "Préparez votre dossier",
+    "title": "Les documents à prévoir",
+    "subtitle": "La liste varie selon votre situation. Basculez pour voir ce qu'il vous faut.",
+    "toggleEu": "Échange UE/EEE",
+    "toggleNonEu": "Conversion hors UE",
+    "items": {
+      "licence": "Permis de conduire actuel (recto/verso)",
+      "id": "Pièce d'identité valide",
+      "address": "Justificatif de domicile de moins de 3 mois",
+      "photo": "Photo d'identité récente",
+      "translation": "Traduction assermentée du permis",
+      "conformity": "Attestation de conformité ou d'équivalence"
+    },
+    "disclaimer": "Liste indicative : notre équipe confirme les pièces exactes nécessaires selon le pays concerné."
+  },
   "testimonials": {
     "eyebrow": "Ils nous ont fait confiance",
     "title": "Des démarches menées à bien, sans stress",

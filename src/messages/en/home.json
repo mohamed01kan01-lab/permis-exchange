@@ -1,4 +1,20 @@
 {
+  "checklist": {
+    "eyebrow": "Prepare your file",
+    "title": "Documents to have ready",
+    "subtitle": "The list depends on your situation. Toggle to see what applies to you.",
+    "toggleEu": "EU/EEA exchange",
+    "toggleNonEu": "Non-EU conversion",
+    "items": {
+      "licence": "Current driving licence (front/back)",
+      "id": "Valid ID document",
+      "address": "Proof of address less than 3 months old",
+      "photo": "Recent ID photo",
+      "translation": "Sworn translation of the licence",
+      "conformity": "Certificate of conformity or equivalence"
+    },
+    "disclaimer": "Indicative list: our team confirms the exact documents required based on the country involved."
+  },
   "testimonials": {
     "eyebrow": "Trusted by our clients",
     "title": "Procedures handled smoothly, without the stress",

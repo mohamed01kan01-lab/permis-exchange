@@ -9,6 +9,7 @@ import { LICENCE_CATEGORIES } from "@/lib/constants/licence-categories";
 import { FieldError } from "./FieldError";
 import { SubmitButton } from "./SubmitButton";
 import { cn } from "@/lib/utils";
+import { useShakeOnError } from "@/hooks/useShakeOnError";
 
 const initialState: StepState<LicenceData> = { success: false };
 
@@ -34,9 +35,10 @@ export function Step2Licence({
   }, [state]);
 
   const errors = state.errors ?? {};
+  const formRef = useShakeOnError<HTMLFormElement>(state.errors);
 
   return (
-    <form action={formAction} className="flex flex-col gap-5" noValidate>
+    <form ref={formRef} action={formAction} className="flex flex-col gap-5" noValidate>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div>
           <label

@@ -3,6 +3,7 @@ import { Footer } from "@/components/site/Footer";
 import { Hero } from "@/components/home/Hero";
 import { ProcessTimeline } from "@/components/home/ProcessTimeline";
 import { EligibilityQuiz } from "@/components/home/EligibilityQuiz";
+import { DocumentChecklist } from "@/components/home/DocumentChecklist";
 import { TrustSignals } from "@/components/home/TrustSignals";
 import { ServiceScope } from "@/components/home/ServiceScope";
 import { ComparisonTable } from "@/components/home/ComparisonTable";
@@ -18,6 +19,7 @@ export default function HomePage() {
         <Hero />
         <ProcessTimeline />
         <EligibilityQuiz />
+        <DocumentChecklist />
         <TrustSignals />
         <ServiceScope />
         <ComparisonTable />

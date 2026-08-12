@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { IconSteeringWheel } from "@tabler/icons-react";
 import { Link } from "@/i18n/navigation";
+import { TransitionLink } from "./TransitionLink";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 import { ScrollProgressBar } from "./ScrollProgressBar";
 import { ThemeToggle } from "./ThemeToggle";
@@ -39,12 +40,12 @@ export function Header() {
         <div className="flex items-center gap-3">
           <ThemeToggle />
           <LocaleSwitcher />
-          <Link
+          <TransitionLink
             href="/demande"
             className="hidden rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-all duration-200 hover:-translate-y-0.5 hover:bg-secondary hover:shadow-lg hover:shadow-primary/20 sm:inline-flex"
           >
             {t("cta")}
-          </Link>
+          </TransitionLink>
         </div>
       </div>
 

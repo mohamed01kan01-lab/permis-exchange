@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { IconArrowsExchange, IconWorld, IconCheck, type IconProps } from "@tabler/icons-react";
-import { Link } from "@/i18n/navigation";
+import { TransitionLink } from "@/components/site/TransitionLink";
 import { useMagnetic } from "@/hooks/useMagnetic";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -48,13 +48,13 @@ function ScopeCard({
           </li>
         ))}
       </ul>
-      <Link
+      <TransitionLink
         ref={ctaRef}
         href="/demande"
         className="relative mt-8 inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-secondary"
       >
         {cta}
-      </Link>
+      </TransitionLink>
     </div>
   );
 }

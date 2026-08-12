@@ -11,6 +11,7 @@ import type { UploadedDocument } from "@/lib/validation/documents.schema";
 import { getCountryName } from "@/lib/constants/countries";
 import { FieldError } from "./FieldError";
 import { SubmitButton } from "./SubmitButton";
+import { useShakeOnError } from "@/hooks/useShakeOnError";
 
 const initialState: SubmitState = { success: false };
 
@@ -47,8 +48,10 @@ export function Step5Review({
     SWORN_TRANSLATION: tDocs("swornTranslation"),
   };
 
+  const formRef = useShakeOnError<HTMLFormElement>(state.errors);
+
   return (
-    <form action={formAction} className="flex flex-col gap-6" noValidate>
+    <form ref={formRef} action={formAction} className="flex flex-col gap-6" noValidate>
       <input type="hidden" name="locale" value={locale} />
       <input type="hidden" name="firstName" value={data.firstName} />
       <input type="hidden" name="lastName" value={data.lastName} />
