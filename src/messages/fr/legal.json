@@ -1,0 +1,98 @@
+{
+  "lastUpdated": "Dernière mise à jour : 11 août 2026",
+  "notice": {
+    "metaTitle": "Mentions légales — Permis-Exchange",
+    "title": "Mentions légales",
+    "sections": {
+      "editor": {
+        "title": "Éditeur du site",
+        "body": "Le site Permis-Exchange est édité par Permis-Exchange SRL, société de droit belge, dont le siège social est situé Rue de la Loi 1, 1000 Bruxelles, Belgique. Numéro d'entreprise (BCE) : à compléter. Contact : contact@permis-exchange.example."
+      },
+      "publication": {
+        "title": "Directeur de la publication",
+        "body": "Le directeur de la publication est le représentant légal de Permis-Exchange SRL."
+      },
+      "hosting": {
+        "title": "Hébergement",
+        "body": "Le site est hébergé par un prestataire d'hébergement cloud situé dans l'Union européenne. Les coordonnées complètes de l'hébergeur sont disponibles sur simple demande auprès de notre équipe."
+      },
+      "ip": {
+        "title": "Propriété intellectuelle",
+        "body": "L'ensemble des contenus présents sur ce site (textes, logo, mise en page, éléments graphiques) est la propriété de Permis-Exchange SRL, sauf mention contraire, et ne peut être reproduit sans autorisation préalable."
+      }
+    }
+  },
+  "terms": {
+    "metaTitle": "Conditions générales — Permis-Exchange",
+    "title": "Conditions générales d'utilisation",
+    "sections": {
+      "purpose": {
+        "title": "Objet",
+        "body": "Les présentes conditions régissent l'utilisation du site Permis-Exchange et la souscription à nos services d'accompagnement pour l'échange ou la conversion de permis de conduire."
+      },
+      "acceptance": {
+        "title": "Acceptation",
+        "body": "En soumettant une demande via notre formulaire, le client reconnaît avoir pris connaissance des présentes conditions et les accepter sans réserve."
+      },
+      "service": {
+        "title": "Description du service",
+        "body": "Permis-Exchange accompagne ses clients dans la constitution et le suivi de leur dossier d'échange ou de conversion de permis de conduire, en lien avec les registres EUCARIS et RESPER et les administrations compétentes. Notre équipe vérifie le dossier, identifie les documents manquants et assure le suivi jusqu'à la délivrance du nouveau permis."
+      },
+      "obligations": {
+        "title": "Obligations du client",
+        "body": "Le client s'engage à fournir des informations exactes et des documents authentiques et lisibles. Toute inexactitude ou tout document falsifié entraîne l'arrêt immédiat du traitement du dossier."
+      },
+      "liability": {
+        "title": "Responsabilité",
+        "body": "Permis-Exchange met en œuvre tous les moyens raisonnables pour mener à bien chaque dossier, sans garantie de résultat, les décisions finales relevant des administrations compétentes de chaque pays."
+      },
+      "pricing": {
+        "title": "Tarifs",
+        "body": "Un devis personnalisé est communiqué au client après étude préliminaire de son dossier, avant tout engagement de sa part."
+      },
+      "law": {
+        "title": "Droit applicable",
+        "body": "Les présentes conditions sont soumises au droit belge. Tout litige relève des tribunaux compétents de Bruxelles."
+      }
+    }
+  },
+  "privacy": {
+    "metaTitle": "Politique de confidentialité — Permis-Exchange",
+    "title": "Politique de confidentialité",
+    "intro": "Cette politique explique comment Permis-Exchange collecte, utilise et protège vos données personnelles dans le cadre de nos services, conformément au Règlement général sur la protection des données (RGPD).",
+    "sections": {
+      "controller": {
+        "title": "Responsable du traitement",
+        "body": "Permis-Exchange SRL est responsable du traitement des données collectées via ce site et notre formulaire de demande."
+      },
+      "data": {
+        "title": "Données collectées",
+        "body": "Nous collectons votre identité, vos coordonnées, les informations relatives à votre permis actuel, et les documents que vous téléversez (permis, pièce d'identité, justificatif de domicile)."
+      },
+      "purpose": {
+        "title": "Finalités",
+        "body": "Ces données sont utilisées exclusivement pour instruire et suivre votre demande d'échange ou de conversion de permis, et vous recontacter à ce sujet."
+      },
+      "legalBasis": {
+        "title": "Base légale",
+        "body": "Le traitement repose sur l'exécution de la prestation demandée par le client, ainsi que sur le respect de nos obligations légales."
+      },
+      "recipients": {
+        "title": "Destinataires",
+        "body": "Vos données sont accessibles uniquement à l'équipe en charge de votre dossier et, le cas échéant, transmises aux administrations compétentes dans le cadre strict de votre démarche."
+      },
+      "retention": {
+        "title": "Durée de conservation",
+        "body": "Vos données sont conservées pendant la durée nécessaire au traitement de votre dossier, puis archivées conformément aux obligations légales applicables."
+      },
+      "rights": {
+        "title": "Vos droits",
+        "body": "Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et d'opposition au traitement de vos données, ainsi que d'un droit à la portabilité. Vous pouvez exercer ces droits en nous contactant à privacy@permis-exchange.example."
+      },
+      "security": {
+        "title": "Sécurité",
+        "body": "Vos documents sont chiffrés et hébergés au sein de l'Union européenne. L'accès y est strictement limité aux personnes habilitées à traiter votre dossier."
+      }
+    }
+  }
+}

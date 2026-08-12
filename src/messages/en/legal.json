@@ -1,0 +1,98 @@
+{
+  "lastUpdated": "Last updated: 11 August 2026",
+  "notice": {
+    "metaTitle": "Legal notice — Permis-Exchange",
+    "title": "Legal notice",
+    "sections": {
+      "editor": {
+        "title": "Site publisher",
+        "body": "The Permis-Exchange website is published by Permis-Exchange SRL, a company incorporated under Belgian law, with registered office at Rue de la Loi 1, 1000 Brussels, Belgium. Company registration number: to be completed. Contact: contact@permis-exchange.example."
+      },
+      "publication": {
+        "title": "Publication director",
+        "body": "The publication director is the legal representative of Permis-Exchange SRL."
+      },
+      "hosting": {
+        "title": "Hosting",
+        "body": "The site is hosted by a cloud hosting provider located within the European Union. Full hosting provider details are available on request from our team."
+      },
+      "ip": {
+        "title": "Intellectual property",
+        "body": "All content on this site (text, logo, layout, graphic elements) is the property of Permis-Exchange SRL, unless otherwise stated, and may not be reproduced without prior authorisation."
+      }
+    }
+  },
+  "terms": {
+    "metaTitle": "Terms of service — Permis-Exchange",
+    "title": "Terms of service",
+    "sections": {
+      "purpose": {
+        "title": "Purpose",
+        "body": "These terms govern the use of the Permis-Exchange website and subscription to our licence exchange and conversion support services."
+      },
+      "acceptance": {
+        "title": "Acceptance",
+        "body": "By submitting a request through our form, the client acknowledges having read these terms and accepts them without reservation."
+      },
+      "service": {
+        "title": "Service description",
+        "body": "Permis-Exchange assists clients in preparing and following up their driving licence exchange or conversion file, liaising with the EUCARIS and RESPER registries and the relevant administrations. Our team reviews the file, identifies missing documents, and follows up until the new licence is issued."
+      },
+      "obligations": {
+        "title": "Client obligations",
+        "body": "The client agrees to provide accurate information and authentic, legible documents. Any inaccuracy or falsified document results in immediate suspension of the file's processing."
+      },
+      "liability": {
+        "title": "Liability",
+        "body": "Permis-Exchange uses all reasonable means to complete each file, without guarantee of outcome, as final decisions rest with the relevant administrations of each country."
+      },
+      "pricing": {
+        "title": "Pricing",
+        "body": "A personalised quote is provided to the client after a preliminary review of their file, before any commitment on their part."
+      },
+      "law": {
+        "title": "Governing law",
+        "body": "These terms are governed by Belgian law. Any dispute falls under the jurisdiction of the courts of Brussels."
+      }
+    }
+  },
+  "privacy": {
+    "metaTitle": "Privacy policy — Permis-Exchange",
+    "title": "Privacy policy",
+    "intro": "This policy explains how Permis-Exchange collects, uses, and protects your personal data as part of our services, in accordance with the General Data Protection Regulation (GDPR).",
+    "sections": {
+      "controller": {
+        "title": "Data controller",
+        "body": "Permis-Exchange SRL is the controller for data collected through this site and our request form."
+      },
+      "data": {
+        "title": "Data collected",
+        "body": "We collect your identity, contact details, information about your current licence, and the documents you upload (licence, ID, proof of address)."
+      },
+      "purpose": {
+        "title": "Purpose",
+        "body": "This data is used exclusively to process and follow up your licence exchange or conversion request, and to contact you about it."
+      },
+      "legalBasis": {
+        "title": "Legal basis",
+        "body": "Processing is based on the performance of the service requested by the client, as well as compliance with our legal obligations."
+      },
+      "recipients": {
+        "title": "Recipients",
+        "body": "Your data is accessible only to the team handling your file and, where relevant, shared with the relevant administrations strictly within the scope of your request."
+      },
+      "retention": {
+        "title": "Retention period",
+        "body": "Your data is kept for as long as needed to process your file, then archived in accordance with applicable legal obligations."
+      },
+      "rights": {
+        "title": "Your rights",
+        "body": "Under GDPR, you have the right to access, rectify, erase, restrict, and object to the processing of your data, as well as a right to data portability. You may exercise these rights by contacting us at privacy@permis-exchange.example."
+      },
+      "security": {
+        "title": "Security",
+        "body": "Your documents are encrypted and hosted within the European Union. Access is strictly limited to people authorised to handle your file."
+      }
+    }
+  }
+}

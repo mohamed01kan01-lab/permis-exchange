@@ -1,4 +1,90 @@
 {
+  "testimonials": {
+    "eyebrow": "Trusted by our clients",
+    "title": "Procedures handled smoothly, without the stress",
+    "badges": {
+      "gdpr": "GDPR compliant",
+      "hosting": "Data hosted in the EU",
+      "support": "Support within 24h"
+    },
+    "quotes": {
+      "sophie": {
+        "name": "Sophie M.",
+        "location": "Brussels, Belgium",
+        "text": "I exchanged my French licence for a Belgian one without a single trip to the administration. Everything happened online."
+      },
+      "julien": {
+        "name": "Julien K.",
+        "location": "Lyon, France",
+        "text": "My licence was from Canada and I expected a headache. The team handled the sworn translation and the whole follow-up."
+      },
+      "amara": {
+        "name": "Amara D.",
+        "location": "Cotonou → Paris",
+        "text": "I was kept informed at every step, right up to receiving my new licence. Exactly what I needed when I arrived in France."
+      }
+    }
+  },
+  "comparison": {
+    "eyebrow": "Comparison",
+    "title": "EU/EEA or non-EU: the differences at a glance",
+    "subtitle": "A general overview of both paths. Every file is still reviewed individually by our team.",
+    "criteria": "Criteria",
+    "euExchangeHeader": "EU/EEA exchange",
+    "nonEuHeader": "Non-EU conversion",
+    "rows": {
+      "eligibility": {
+        "label": "Eligibility",
+        "eu": "Valid licence issued in an EU/EEA country",
+        "nonEu": "Valid, non-expired licence issued outside the EU"
+      },
+      "documents": {
+        "label": "Required documents",
+        "eu": "Current licence, ID, proof of address",
+        "nonEu": "The same, plus a sworn translation and sometimes a conformity certificate"
+      },
+      "delay": {
+        "label": "Estimated timeline",
+        "eu": "2 to 4 weeks after EUCARIS verification",
+        "nonEu": "4 to 8 weeks depending on bilateral agreements"
+      },
+      "validity": {
+        "label": "Licence age",
+        "eu": "No minimum duration generally required",
+        "nonEu": "Some countries require a minimum validity period"
+      },
+      "exam": {
+        "label": "Driving exam required"
+      }
+    },
+    "disclaimer": "Provided for guidance only: timelines and requirements vary by destination country and are confirmed by our team after reviewing your file."
+  },
+  "quiz": {
+    "eyebrow": "Not sure which process applies to you?",
+    "title": "Find your path in 20 seconds",
+    "subtitle": "Answer 2 questions and we'll tell you immediately which process fits your situation.",
+    "step1": {
+      "question": "Which country issued your current licence?",
+      "placeholder": "Choose a country"
+    },
+    "step2": {
+      "question": "Which country do you currently live in?",
+      "placeholder": "Choose a country"
+    },
+    "back": "Back",
+    "restart": "Start over",
+    "result": {
+      "euExchange": {
+        "title": "EU / EEA exchange",
+        "description": "Your licence was issued in an EU/EEA country: you need a standard exchange for your country of residence's licence."
+      },
+      "nonEuConversion": {
+        "title": "Non-EU conversion",
+        "description": "Your licence was issued outside the EU: a recognition or conversion process is required."
+      },
+      "cta": "Continue my request"
+    }
+  },
   "hero": {
     "eyebrow": "International licence exchange service",
     "title": "Exchange your driving licence without the administrative headache",

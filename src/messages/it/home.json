@@ -1,4 +1,90 @@
 {
+  "testimonials": {
+    "eyebrow": "Si sono fidati di noi",
+    "title": "Pratiche portate a termine, senza stress",
+    "badges": {
+      "gdpr": "Conforme al GDPR",
+      "hosting": "Dati ospitati nell'UE",
+      "support": "Supporto entro 24h"
+    },
+    "quotes": {
+      "sophie": {
+        "name": "Sophie M.",
+        "location": "Bruxelles, Belgio",
+        "text": "Ho scambiato la mia patente francese con una belga senza un solo spostamento in ufficio. Tutto online."
+      },
+      "julien": {
+        "name": "Julien K.",
+        "location": "Lione, Francia",
+        "text": "La mia patente veniva dal Canada e temevo complicazioni. Il team ha gestito la traduzione giurata e tutto il follow-up."
+      },
+      "amara": {
+        "name": "Amara D.",
+        "location": "Cotonou → Parigi",
+        "text": "Sono stata informata a ogni fase, fino alla ricezione della nuova patente. Esattamente ciò di cui avevo bisogno arrivando in Francia."
+      }
+    }
+  },
+  "comparison": {
+    "eyebrow": "Confronto",
+    "title": "UE/SEE o extra-UE: le differenze in breve",
+    "subtitle": "Una panoramica generale dei due percorsi. Ogni pratica viene comunque esaminata individualmente dal nostro team.",
+    "criteria": "Criterio",
+    "euExchangeHeader": "Scambio UE/SEE",
+    "nonEuHeader": "Conversione extra-UE",
+    "rows": {
+      "eligibility": {
+        "label": "Idoneità",
+        "eu": "Patente valida rilasciata in un paese UE/SEE",
+        "nonEu": "Patente valida e non scaduta rilasciata fuori dall'UE"
+      },
+      "documents": {
+        "label": "Documenti richiesti",
+        "eu": "Patente attuale, documento d'identità, prova di residenza",
+        "nonEu": "Gli stessi, più una traduzione giurata e talvolta un certificato di conformità"
+      },
+      "delay": {
+        "label": "Tempistica stimata",
+        "eu": "2-4 settimane dopo la verifica EUCARIS",
+        "nonEu": "4-8 settimane secondo gli accordi bilaterali"
+      },
+      "validity": {
+        "label": "Anzianità della patente",
+        "eu": "Nessuna durata minima generalmente richiesta",
+        "nonEu": "Alcuni paesi richiedono una durata di validità minima"
+      },
+      "exam": {
+        "label": "Esame di guida richiesto"
+      }
+    },
+    "disclaimer": "Informazioni fornite a titolo indicativo: tempistiche e requisiti variano in base al paese di destinazione e vengono confermati dal nostro team dopo l'analisi della tua pratica."
+  },
+  "quiz": {
+    "eyebrow": "Non sei sicuro di quale pratica ti riguarda?",
+    "title": "Trova il tuo percorso in 20 secondi",
+    "subtitle": "Rispondi a 2 domande, ti indichiamo subito la pratica adatta alla tua situazione.",
+    "step1": {
+      "question": "In quale paese è stata rilasciata la tua patente attuale?",
+      "placeholder": "Scegli un paese"
+    },
+    "step2": {
+      "question": "In quale paese risiedi attualmente?",
+      "placeholder": "Scegli un paese"
+    },
+    "back": "Indietro",
+    "restart": "Ricomincia",
+    "result": {
+      "euExchange": {
+        "title": "Scambio UE / SEE",
+        "description": "La tua patente è stata rilasciata in un paese UE/SEE: ti serve uno scambio standard con la patente del tuo paese di residenza."
+      },
+      "nonEuConversion": {
+        "title": "Conversione extra-UE",
+        "description": "La tua patente è stata rilasciata fuori dall'UE: è necessaria una procedura di riconoscimento o conversione."
+      },
+      "cta": "Continua la mia richiesta"
+    }
+  },
   "hero": {
     "eyebrow": "Servizio di scambio patente internazionale",
     "title": "Scambia la tua patente di guida senza il caos burocratico",

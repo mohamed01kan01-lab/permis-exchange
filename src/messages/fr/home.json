@@ -1,4 +1,90 @@
 {
+  "testimonials": {
+    "eyebrow": "Ils nous ont fait confiance",
+    "title": "Des démarches menées à bien, sans stress",
+    "badges": {
+      "gdpr": "Conforme RGPD",
+      "hosting": "Données hébergées en UE",
+      "support": "Support sous 24h"
+    },
+    "quotes": {
+      "sophie": {
+        "name": "Sophie M.",
+        "location": "Bruxelles, Belgique",
+        "text": "J'ai pu échanger mon permis français contre un permis belge sans un seul aller-retour à l'administration. Tout s'est fait en ligne."
+      },
+      "julien": {
+        "name": "Julien K.",
+        "location": "Lyon, France",
+        "text": "Mon permis venait du Canada, je pensais que ce serait compliqué. L'équipe a géré la traduction assermentée et le suivi du dossier."
+      },
+      "amara": {
+        "name": "Amara D.",
+        "location": "Cotonou → Paris",
+        "text": "On m'a prévenue à chaque étape, jusqu'à la réception de mon nouveau permis. Exactement ce qu'il me fallait en arrivant en France."
+      }
+    }
+  },
+  "comparison": {
+    "eyebrow": "Comparatif",
+    "title": "UE/EEE ou hors-UE : les différences en un coup d'œil",
+    "subtitle": "Un aperçu général des deux parcours. Chaque dossier reste étudié individuellement par notre équipe.",
+    "criteria": "Critère",
+    "euExchangeHeader": "Échange UE/EEE",
+    "nonEuHeader": "Conversion hors UE",
+    "rows": {
+      "eligibility": {
+        "label": "Éligibilité",
+        "eu": "Permis valide émis dans un pays de l'UE/EEE",
+        "nonEu": "Permis valide émis hors UE, non expiré"
+      },
+      "documents": {
+        "label": "Documents requis",
+        "eu": "Permis actuel, pièce d'identité, justificatif de domicile",
+        "nonEu": "Les mêmes, plus une traduction assermentée et parfois une attestation de conformité"
+      },
+      "delay": {
+        "label": "Délai estimé",
+        "eu": "2 à 4 semaines après vérification EUCARIS",
+        "nonEu": "4 à 8 semaines selon les accords bilatéraux"
+      },
+      "validity": {
+        "label": "Ancienneté du permis",
+        "eu": "Aucune durée minimale généralement exigée",
+        "nonEu": "Certains pays exigent une durée de validité minimale"
+      },
+      "exam": {
+        "label": "Examen de conduite requis"
+      }
+    },
+    "disclaimer": "Informations données à titre indicatif : les délais et exigences varient selon le pays de destination et sont confirmés par notre équipe après étude de votre dossier."
+  },
+  "quiz": {
+    "eyebrow": "Pas sûr de la démarche qui vous concerne ?",
+    "title": "Trouvez votre parcours en 20 secondes",
+    "subtitle": "Répondez à 2 questions, nous vous indiquons immédiatement la démarche adaptée à votre situation.",
+    "step1": {
+      "question": "Dans quel pays votre permis actuel a-t-il été délivré ?",
+      "placeholder": "Choisissez un pays"
+    },
+    "step2": {
+      "question": "Dans quel pays résidez-vous actuellement ?",
+      "placeholder": "Choisissez un pays"
+    },
+    "back": "Précédent",
+    "restart": "Recommencer",
+    "result": {
+      "euExchange": {
+        "title": "Échange UE / EEE",
+        "description": "Votre permis a été délivré dans un pays de l'UE/EEE : il vous faut un échange standard vers le permis de votre pays de résidence."
+      },
+      "nonEuConversion": {
+        "title": "Conversion hors UE",
+        "description": "Votre permis a été délivré hors de l'UE : une procédure de reconnaissance ou de conversion est nécessaire."
+      },
+      "cta": "Continuer ma demande"
+    }
+  },
   "hero": {
     "eyebrow": "Service d'échange de permis international",
     "title": "Échangez votre permis de conduire sans le casse-tête administratif",

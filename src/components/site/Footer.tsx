@@ -55,19 +55,19 @@ export function Footer() {
           </p>
           <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
             <li>
-              <a href="#" className="hover:text-foreground">
+              <Link href="/confidentialite" className="hover:text-foreground">
                 {t("privacy")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-foreground">
+              <Link href="/cgu" className="hover:text-foreground">
                 {t("terms")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-foreground">
+              <Link href="/mentions-legales" className="hover:text-foreground">
                 {t("legalNotice")}
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

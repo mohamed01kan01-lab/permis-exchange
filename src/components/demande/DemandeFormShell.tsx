@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useReducer, useRef } from "react";
+import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { StepIndicator } from "./StepIndicator";
 import { Step1Identity } from "./Step1Identity";
@@ -45,9 +46,26 @@ function reducer(state: State, action: Action): State {
   }
 }
 
+const VALID_PROCEDURE_TYPES = ["EU_EEA_EXCHANGE", "NON_EU_CONVERSION"] as const;
+
 export function DemandeFormShell() {
   const t = useTranslations("demande.steps");
-  const [state, dispatch] = useReducer(reducer, { step: 1, data: {} });
+  const searchParams = useSearchParams();
+  const [state, dispatch] = useReducer(reducer, undefined, (): State => {
+    const licenceIssuingCountry = searchParams.get("licenceCountry") || undefined;
+    const countryOfResidence = searchParams.get("residenceCountry") || undefined;
+    const procedureTypeParam = searchParams.get("procedureType");
+    const procedureType = VALID_PROCEDURE_TYPES.find((p) => p === procedureTypeParam);
+
+    return {
+      step: 1,
+      data: {
+        ...(licenceIssuingCountry && { licenceIssuingCountry }),
+        ...(countryOfResidence && { countryOfResidence }),
+        ...(procedureType && { procedureType }),
+      },
+    };
+  });
   const headingRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {

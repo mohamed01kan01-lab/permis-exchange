@@ -10,6 +10,7 @@ import {
   IconDatabase,
   IconShieldLock,
   IconUsersGroup,
+  IconShieldCheck,
   type IconProps,
 } from "@tabler/icons-react";
 
@@ -27,6 +28,7 @@ const CARD_ICONS: Record<(typeof CARD_KEYS)[number], React.ComponentType<IconPro
 export function TrustSignals() {
   const t = useTranslations("home.trust");
   const sectionRef = useRef<HTMLElement>(null);
+  const diagramRef = useRef<HTMLDivElement>(null);
 
   useGSAP(
     () => {
@@ -40,13 +42,38 @@ export function TrustSignals() {
         (context) => {
           const { reduceMotion } = context.conditions as { reduceMotion: boolean };
           const cards = gsap.utils.toArray<HTMLElement>("[data-trust-card]");
+          const bus = diagramRef.current?.querySelector("[data-hub-bus]") ?? null;
+          const stubs = gsap.utils.toArray<HTMLElement>("[data-hub-stub]");
+          const hub = diagramRef.current?.querySelector("[data-hub-badge]") ?? null;
 
           if (reduceMotion) {
             gsap.set(cards, { autoAlpha: 1, y: 0, scale: 1 });
+            gsap.set([bus, ...stubs].filter(Boolean), { scaleX: 1, scaleY: 1 });
+            gsap.set(hub, { autoAlpha: 1, scale: 1 });
             return;
           }
 
           gsap.set(cards, { autoAlpha: 0, y: 20, scale: 0.96 });
+          if (bus) gsap.set(bus, { scaleX: 0 });
+          if (stubs.length) gsap.set(stubs, { scaleY: 0 });
+          if (hub) gsap.set(hub, { autoAlpha: 0, scale: 0.5 });
+
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: sectionRef.current,
+              start: "top 75%",
+            },
+          });
+
+          if (bus) tl.to(bus, { scaleX: 1, duration: 0.5, ease: "power2.out" });
+          if (hub)
+            tl.to(hub, { autoAlpha: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, "-=0.2");
+          if (stubs.length)
+            tl.to(
+              stubs,
+              { scaleY: 1, duration: 0.35, ease: "power2.out", stagger: 0.08 },
+              "-=0.15",
+            );
 
           ScrollTrigger.batch(cards, {
             start: "top 85%",
@@ -81,31 +108,63 @@ export function TrustSignals() {
           <p className="mt-4 text-muted-foreground">{t("subtitle")}</p>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {CARD_KEYS.map((key) => {
-            const Icon = CARD_ICONS[key];
-            return (
-              <div
-                key={key}
-                data-trust-card
-                className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5"
-              >
+        <div className="mt-16">
+          {/* Interconnection diagram — desktop only, mirrors the 4-col grid below */}
+          <div
+            ref={diagramRef}
+            aria-hidden
+            className="pointer-events-none relative mb-8 hidden h-14 lg:block"
+          >
+            <div
+              data-hub-bus
+              className="absolute top-1/2 left-[12.5%] right-[12.5%] h-px origin-center -translate-y-1/2 bg-border"
+            />
+            <div
+              data-hub-badge
+              className="absolute left-1/2 top-1/2 z-10 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center"
+            >
+              <span className="flex size-10 items-center justify-center rounded-full border-2 border-primary bg-card text-primary shadow-sm">
+                <IconShieldCheck className="size-5" stroke={1.75} aria-hidden />
+              </span>
+            </div>
+            <div className="absolute inset-x-0 top-1/2 bottom-0 grid grid-cols-4 gap-6">
+              {CARD_KEYS.map((key) => (
+                <div key={key} className="relative flex justify-center">
+                  <span
+                    data-hub-stub
+                    className="h-full w-px origin-top bg-border"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {CARD_KEYS.map((key) => {
+              const Icon = CARD_ICONS[key];
+              return (
                 <div
-                  aria-hidden
-                  className="pointer-events-none absolute -top-10 -right-10 h-28 w-28 rounded-full bg-accent opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-15"
-                />
-                <span className="relative flex size-11 items-center justify-center rounded-xl bg-accent/10 text-accent transition-transform duration-300 group-hover:scale-110">
-                  <Icon className="size-5" stroke={1.75} aria-hidden />
-                </span>
-                <h3 className="relative mt-4 text-base font-semibold text-foreground">
-                  {t(`cards.${key}.title`)}
-                </h3>
-                <p className="relative mt-2 text-sm text-muted-foreground">
-                  {t(`cards.${key}.description`)}
-                </p>
-              </div>
-            );
-          })}
+                  key={key}
+                  data-trust-card
+                  className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5"
+                >
+                  <div
+                    aria-hidden
+                    className="pointer-events-none absolute -top-10 -right-10 h-28 w-28 rounded-full bg-accent opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-15"
+                  />
+                  <span className="relative flex size-11 items-center justify-center rounded-xl bg-accent/10 text-accent transition-transform duration-300 group-hover:scale-110">
+                    <Icon className="size-5" stroke={1.75} aria-hidden />
+                  </span>
+                  <h3 className="relative mt-4 text-base font-semibold text-foreground">
+                    {t(`cards.${key}.title`)}
+                  </h3>
+                  <p className="relative mt-2 text-sm text-muted-foreground">
+                    {t(`cards.${key}.description`)}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
