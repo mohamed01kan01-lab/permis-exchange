@@ -39,10 +39,35 @@ export default async function OpengraphImage({
           alignItems: "flex-start",
           padding: "80px",
           backgroundColor: "#0B1220",
-          backgroundImage:
-            "radial-gradient(circle at 85% 20%, #3B82F6 0%, transparent 45%), radial-gradient(circle at 10% 90%, #16A34A 0%, transparent 40%)",
+          position: "relative",
         }}
       >
+        <div
+          style={{
+            display: "flex",
+            position: "absolute",
+            top: -120,
+            right: -120,
+            width: 480,
+            height: 480,
+            borderRadius: "50%",
+            backgroundColor: "#3B82F6",
+            opacity: 0.25,
+          }}
+        />
+        <div
+          style={{
+            display: "flex",
+            position: "absolute",
+            bottom: -140,
+            left: -140,
+            width: 420,
+            height: 420,
+            borderRadius: "50%",
+            backgroundColor: "#16A34A",
+            opacity: 0.2,
+          }}
+        />
         <div
           style={{
             display: "flex",
@@ -57,6 +82,7 @@ export default async function OpengraphImage({
         >
           <div
             style={{
+              display: "flex",
               width: 32,
               height: 32,
               borderRadius: "50%",
