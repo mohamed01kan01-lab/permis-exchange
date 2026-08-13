@@ -1,8 +1,19 @@
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { IconCircleCheck } from "@tabler/icons-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { TransitionLink } from "@/components/site/TransitionLink";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "demande.confirmation" });
+  return { title: t("title"), robots: { index: false, follow: false } };
+}
 
 export default async function ConfirmationPage({
   searchParams,
