@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Pre-qualification questionnaire — Permis-Exchange"
+  },
+  "common": {
+    "yes": "Yes",
+    "no": "No",
+    "next": "Next",
+    "back": "Back",
+    "loading": "Loading..."
+  },
+  "steps": {
+    "1": "Your licence",
+    "2": "Residency in Italy",
+    "3": "History",
+    "4": "Contact details",
+    "5": "Review"
+  },
+  "licence": {
+    "country": "Which country issued your current licence?",
+    "stillValid": "Is your licence still valid?",
+    "categories": "Which categories do you hold?"
+  },
+  "residency": {
+    "hasResidency": "Do you have Italian residency?",
+    "since": "Since when have you been in Italy?"
+  },
+  "history": {
+    "timingQuestion": "Did you get your current licence before or after becoming a resident in Italy?",
+    "timingBefore": "Before my residency in Italy",
+    "timingAfter": "After my residency in Italy",
+    "obtainedByExchange": "Was your current licence obtained through a licence exchange (rather than the standard exam)?",
+    "previousAttempt": "Have you already tried to convert your foreign licence to an Italian one?",
+    "previousResult": "What was the outcome of that attempt?"
+  },
+  "contact": {
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email address",
+    "phone": "Phone number",
+    "phoneHint": "Ideally a number reachable on WhatsApp."
+  },
+  "review": {
+    "licenceSection": "Your licence",
+    "residencySection": "Residency & history",
+    "contactSection": "Contact details",
+    "country": "Issuing country",
+    "stillValid": "Still valid",
+    "categories": "Categories",
+    "hasResidency": "Italian residency",
+    "since": "Since",
+    "timing": "Licence obtained",
+    "obtainedByExchange": "Obtained by exchange",
+    "previousAttempt": "Previous attempt",
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "submit": "Submit questionnaire",
+    "submitting": "Submitting..."
+  },
+  "confirmation": {
+    "title": "Thank you, your questionnaire was received",
+    "subtitle": "Our team is reviewing your answers and will contact you by email or WhatsApp within 48 business hours to confirm your eligibility and the next steps.",
+    "backHome": "Back to home"
+  }
+}

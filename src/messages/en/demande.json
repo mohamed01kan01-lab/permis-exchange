@@ -38,7 +38,6 @@
     "next": "Next"
   },
   "destination": {
-    "destinationCountry": "Destination country",
     "procedureType": "Procedure type",
     "euExchange": "EU / EEA exchange",
     "nonEuConversion": "Non-EU conversion",
@@ -48,9 +47,6 @@
   "documents": {
     "licenseFront": "Driving licence (front)",
     "licenseBack": "Driving licence (back)",
-    "idDocument": "ID document",
-    "proofOfAddress": "Proof of address",
-    "swornTranslation": "Sworn translation",
     "hint": "JPG, PNG or PDF, 10 MB max.",
     "back": "Back",
     "next": "Next"

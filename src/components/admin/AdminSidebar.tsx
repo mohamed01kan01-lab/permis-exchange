@@ -4,6 +4,7 @@ import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import {
   IconChevronUp,
+  IconClipboardList,
   IconInbox,
   IconLogout,
   IconSteeringWheel,
@@ -77,7 +78,16 @@ export function AdminSidebar({ user }: { user: AdminUser }) {
             <SidebarMenu>
               <SidebarMenuItem>
                 <SidebarMenuButton
-                  isActive={pathname === "/admin"}
+                  isActive={pathname.startsWith("/admin/questionnaire")}
+                  render={<Link href="/admin/questionnaire" />}
+                >
+                  <IconClipboardList className="size-4" stroke={1.75} aria-hidden />
+                  <span>Questionnaires</span>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <SidebarMenuButton
+                  isActive={pathname === "/admin" || pathname.startsWith("/admin/submissions")}
                   render={<Link href="/admin" />}
                 >
                   <IconInbox className="size-4" stroke={1.75} aria-hidden />

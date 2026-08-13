@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Invia la mia richiesta — Permis-Exchange",
+    "title": "Invia la mia richiesta — Conversione patente straniera",
     "subtitle": "Completa le fasi qui sotto, la tua pratica viene gestita dal nostro team non appena la riceviamo."
   },
   "steps": {
@@ -38,7 +38,6 @@
     "next": "Avanti"
   },
   "destination": {
-    "destinationCountry": "Paese di destinazione",
     "procedureType": "Tipo di pratica",
     "euExchange": "Scambio UE / SEE",
     "nonEuConversion": "Conversione extra-UE",
@@ -48,9 +47,6 @@
   "documents": {
     "licenseFront": "Patente di guida (fronte)",
     "licenseBack": "Patente di guida (retro)",
-    "idDocument": "Documento d'identità",
-    "proofOfAddress": "Prova di residenza",
-    "swornTranslation": "Traduzione giurata",
     "hint": "JPG, PNG o PDF, max 10 MB.",
     "back": "Indietro",
     "next": "Avanti"
@@ -70,7 +66,7 @@
     "categories": "Categorie",
     "destinationCountry": "Paese di destinazione",
     "procedure": "Tipo di pratica",
-    "consent": "Accetto che i miei dati e documenti siano trattati da Permis-Exchange nell'ambito della mia richiesta, in conformità con l'informativa sulla privacy.",
+    "consent": "Accetto che i miei dati e documenti siano trattati da Conversione patente straniera nell'ambito della mia richiesta, in conformità con l'informativa sulla privacy.",
     "back": "Indietro",
     "submit": "Invia la mia richiesta",
     "submitting": "Invio in corso..."

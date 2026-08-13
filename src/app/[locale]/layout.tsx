@@ -27,11 +27,32 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export const metadata: Metadata = {
-  title: "Permis-Exchange",
-  description:
-    "Échange international de permis de conduire, géré pour vous : connexion directe EUCARIS/RESPER, délais raccourcis, zéro rejet de dossier.",
+const METADATA_BY_LOCALE: Record<string, Metadata> = {
+  fr: {
+    title: "Permis-Exchange",
+    description:
+      "Conversion de votre permis de conduire étranger en permis italien, gérée pour vous : connexion directe EUCARIS et Motorizzazione Civile, délais raccourcis, zéro rejet de dossier.",
+  },
+  en: {
+    title: "Permis-Exchange",
+    description:
+      "Converting your foreign driving licence into an Italian one, handled for you: direct connection to EUCARIS and the Motorizzazione Civile, faster processing, zero rejections.",
+  },
+  it: {
+    title: "Conversione patente straniera",
+    description:
+      "Conversione della tua patente di guida straniera in patente italiana, gestita per te: connessione diretta a EUCARIS e alla Motorizzazione Civile, tempi più rapidi, zero rifiuti.",
+  },
 };
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return METADATA_BY_LOCALE[locale] ?? METADATA_BY_LOCALE[routing.defaultLocale];
+}
 
 export default async function LocaleLayout({
   children,

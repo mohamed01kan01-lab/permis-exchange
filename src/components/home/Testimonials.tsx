@@ -1,11 +1,19 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { IconShieldCheck, IconCloudLock, IconHeadset, IconQuote } from "@tabler/icons-react";
+import { IconShieldCheck, IconCloudLock, IconHeadset, IconQuote, IconCircleCheckFilled, IconId } from "@tabler/icons-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,14 +24,22 @@ const BADGE_ICONS = {
   support: IconHeadset,
 } as const;
 
-const QUOTE_KEYS = ["sophie", "julien", "amara"] as const;
-
-function initialsFor(name: string) {
-  return name
-    .split(" ")
-    .map((part) => part[0])
-    .join("");
-}
+const TESTIMONIALS = [
+  { id: "t1", name: "Karim", image: "/images/testimonial-01.jpeg", category: "B" },
+  { id: "t2", name: "Elena", image: "/images/testimonial-02.jpeg", category: "B" },
+  { id: "t3", name: "David", image: "/images/testimonial-03.jpeg", category: "B" },
+  { id: "t4", name: "Ahmed", image: "/images/testimonial-04.jpeg", category: "A" },
+  { id: "t5", name: "Nadia", image: "/images/testimonial-05.jpeg", category: "A" },
+  { id: "t6", name: "Marco", image: "/images/testimonial-06.jpeg", category: "B" },
+  { id: "t7", name: "Sofia", image: "/images/testimonial-07.jpeg", category: "B" },
+  { id: "t8", name: "Fatima", image: "/images/testimonial-08.jpeg", category: "A" },
+  { id: "t9", name: "Ibrahim", image: "/images/testimonial-09.jpeg", category: "C" },
+  { id: "t10", name: "Laura", image: "/images/testimonial-10.jpeg", category: "B" },
+  { id: "t11", name: "Yusuf", image: "/images/testimonial-11.jpeg", category: "BE" },
+  { id: "t12", name: "Maria", image: "/images/testimonial-12.jpeg", category: "B" },
+  { id: "t13", name: "Layla", image: "/images/testimonial-13.jpeg", category: "B" },
+  { id: "t14", name: "Rafael", image: "/images/testimonial-14.jpeg", category: "D" },
+] as const;
 
 export function Testimonials() {
   const t = useTranslations("home.testimonials");
@@ -40,16 +56,16 @@ export function Testimonials() {
         },
         (context) => {
           const { reduceMotion } = context.conditions as { reduceMotion: boolean };
-          const cards = gsap.utils.toArray<HTMLElement>("[data-quote-card]");
           const badges = gsap.utils.toArray<HTMLElement>("[data-trust-badge]");
+          const carousel = document.querySelector("[data-testimonial-carousel]");
 
           if (reduceMotion) {
-            gsap.set([...cards, ...badges], { autoAlpha: 1, y: 0 });
+            gsap.set(badges, { autoAlpha: 1, y: 0 });
+            if (carousel) gsap.set(carousel, { autoAlpha: 1, y: 0 });
             return;
           }
 
           gsap.set(badges, { autoAlpha: 0, y: 10 });
-          gsap.set(cards, { autoAlpha: 0, y: 20 });
 
           ScrollTrigger.batch(badges, {
             start: "top 90%",
@@ -63,17 +79,15 @@ export function Testimonials() {
               }),
           });
 
-          ScrollTrigger.batch(cards, {
-            start: "top 85%",
-            onEnter: (batch) =>
-              gsap.to(batch, {
-                autoAlpha: 1,
-                y: 0,
-                duration: 0.5,
-                ease: "power2.out",
-                stagger: 0.1,
-              }),
-          });
+          if (carousel) {
+            gsap.set(carousel, { autoAlpha: 0, y: 20 });
+            ScrollTrigger.create({
+              trigger: carousel,
+              start: "top 85%",
+              onEnter: () =>
+                gsap.to(carousel, { autoAlpha: 1, y: 0, duration: 0.55, ease: "power2.out" }),
+            });
+          }
         },
       );
 
@@ -110,33 +124,46 @@ export function Testimonials() {
           })}
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
-          {QUOTE_KEYS.map((key) => {
-            const name = t(`quotes.${key}.name`);
-            return (
-              <figure
-                key={key}
-                data-quote-card
-                className="flex flex-col rounded-2xl border border-border bg-card p-6"
-              >
-                <IconQuote className="size-6 text-primary/30" stroke={1.5} aria-hidden />
-                <blockquote className="mt-3 flex-1 text-sm text-foreground/90">
-                  “{t(`quotes.${key}.text`)}”
-                </blockquote>
-                <figcaption className="mt-5 flex items-center gap-3">
-                  <span className="flex size-9 items-center justify-center rounded-full bg-primary/10 text-xs font-semibold text-primary">
-                    {initialsFor(name)}
-                  </span>
-                  <span>
-                    <span className="block text-sm font-semibold text-foreground">{name}</span>
-                    <span className="block text-xs text-muted-foreground">
-                      {t(`quotes.${key}.location`)}
-                    </span>
-                  </span>
-                </figcaption>
-              </figure>
-            );
-          })}
+        <div data-testimonial-carousel className="mt-14">
+          <Carousel opts={{ align: "start", loop: true }} className="px-1 sm:px-12">
+            <CarouselContent>
+              {TESTIMONIALS.map(({ id, name, image, category }) => (
+                <CarouselItem key={id} className="sm:basis-1/2 lg:basis-1/3">
+                  <figure className="flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card">
+                    <div className="relative aspect-[4/5] w-full overflow-hidden bg-muted">
+                      <Image
+                        src={image}
+                        alt=""
+                        fill
+                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                        className="object-cover"
+                        style={{ objectPosition: "50% 20%" }}
+                      />
+                      <span className="absolute top-3 right-3 inline-flex items-center gap-1 rounded-full border border-border bg-background/90 px-2.5 py-1 text-xs font-semibold text-foreground shadow-sm backdrop-blur">
+                        <IconId className="size-3.5 text-primary" stroke={1.75} aria-hidden />
+                        {t("licencePrefix")} {category}
+                      </span>
+                    </div>
+                    <div className="flex flex-1 flex-col p-6">
+                      <IconQuote className="size-6 text-primary/30" stroke={1.5} aria-hidden />
+                      <blockquote className="mt-3 flex-1 text-sm text-foreground/90">
+                        “{t(`quotes.${id}`)}”
+                      </blockquote>
+                      <figcaption className="mt-5 flex items-center gap-2">
+                        <span className="text-sm font-semibold text-foreground">{name}</span>
+                        <span className="inline-flex items-center gap-1 text-xs text-muted-foreground">
+                          <IconCircleCheckFilled className="size-3.5 text-accent" aria-hidden />
+                          {t("verifiedClient")}
+                        </span>
+                      </figcaption>
+                    </div>
+                  </figure>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden sm:flex" />
+            <CarouselNext className="hidden sm:flex" />
+          </Carousel>
         </div>
       </div>
     </section>

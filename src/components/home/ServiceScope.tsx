@@ -13,12 +13,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 function ScopeCard({
   icon: Icon,
+  rotation,
   title,
   description,
   bullets,
   cta,
 }: {
   icon: React.ComponentType<IconProps>;
+  rotation: number;
   title: string;
   description: string;
   bullets: string[];
@@ -35,6 +37,12 @@ function ScopeCard({
         aria-hidden
         className="pointer-events-none absolute -top-12 -right-12 h-40 w-40 rounded-full bg-primary opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-10"
       />
+      <Icon
+        aria-hidden
+        className="pointer-events-none absolute -right-6 -bottom-6 size-32 text-foreground/6"
+        stroke={1.25}
+        style={{ transform: `rotate(${rotation}deg)` }}
+      />
       <span className="relative flex size-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
         <Icon className="size-6" stroke={1.75} aria-hidden />
       </span>
@@ -50,7 +58,7 @@ function ScopeCard({
       </ul>
       <TransitionLink
         ref={ctaRef}
-        href="/demande"
+        href="/questionnaire"
         className="relative mt-8 inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-secondary"
       >
         {cta}
@@ -121,6 +129,7 @@ export function ServiceScope() {
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <ScopeCard
             icon={IconArrowsExchange}
+            rotation={-10}
             title={t("euExchange.title")}
             description={t("euExchange.description")}
             bullets={[
@@ -132,6 +141,7 @@ export function ServiceScope() {
           />
           <ScopeCard
             icon={IconWorld}
+            rotation={8}
             title={t("nonEuConversion.title")}
             description={t("nonEuConversion.description")}
             bullets={[

@@ -42,7 +42,7 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <Link href="/demande" className="hover:text-foreground">
+              <Link href="/questionnaire" className="hover:text-foreground">
                 {nav("cta")}
               </Link>
             </li>

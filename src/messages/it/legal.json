@@ -1,16 +1,16 @@
 {
   "lastUpdated": "Ultimo aggiornamento: 11 agosto 2026",
   "notice": {
-    "metaTitle": "Note legali — Permis-Exchange",
+    "metaTitle": "Note legali — Conversione patente straniera",
     "title": "Note legali",
     "sections": {
       "editor": {
         "title": "Editore del sito",
-        "body": "Il sito Permis-Exchange è pubblicato da Permis-Exchange SRL, società di diritto belga, con sede legale in Rue de la Loi 1, 1000 Bruxelles, Belgio. Numero di iscrizione: da completare. Contatto: contact@permis-exchange.example."
+        "body": "Il sito Conversione patente straniera è pubblicato da Conversione Patente Straniera SRL. Numero di iscrizione: da completare. Contatto: contact@permis-exchange.example."
       },
       "publication": {
         "title": "Direttore della pubblicazione",
-        "body": "Il direttore della pubblicazione è il rappresentante legale di Permis-Exchange SRL."
+        "body": "Il direttore della pubblicazione è il rappresentante legale di Conversione Patente Straniera SRL."
       },
       "hosting": {
         "title": "Hosting",
@@ -18,17 +18,17 @@
       },
       "ip": {
         "title": "Proprietà intellettuale",
-        "body": "Tutti i contenuti presenti su questo sito (testi, logo, impaginazione, elementi grafici) sono di proprietà di Permis-Exchange SRL, salvo diversa indicazione, e non possono essere riprodotti senza autorizzazione preventiva."
+        "body": "Tutti i contenuti presenti su questo sito (testi, logo, impaginazione, elementi grafici) sono di proprietà di Conversione Patente Straniera SRL, salvo diversa indicazione, e non possono essere riprodotti senza autorizzazione preventiva."
       }
     }
   },
   "terms": {
-    "metaTitle": "Termini di servizio — Permis-Exchange",
+    "metaTitle": "Termini di servizio — Conversione patente straniera",
     "title": "Termini di servizio",
     "sections": {
       "purpose": {
         "title": "Oggetto",
-        "body": "I presenti termini disciplinano l'utilizzo del sito Permis-Exchange e la sottoscrizione dei nostri servizi di assistenza per lo scambio o la conversione della patente di guida."
+        "body": "I presenti termini disciplinano l'utilizzo del sito Conversione patente straniera e la sottoscrizione dei nostri servizi di assistenza per la conversione della patente di guida straniera in patente italiana."
       },
       "acceptance": {
         "title": "Accettazione",
@@ -36,7 +36,7 @@
       },
       "service": {
         "title": "Descrizione del servizio",
-        "body": "Permis-Exchange assiste i clienti nella preparazione e nel monitoraggio della pratica di scambio o conversione della patente, in collegamento con i registri EUCARIS e RESPER e le amministrazioni competenti. Il nostro team verifica la pratica, individua i documenti mancanti e segue il dossier fino al rilascio della nuova patente."
+        "body": "Conversione patente straniera assiste i clienti nella preparazione e nel monitoraggio della pratica di conversione della patente straniera in patente italiana, in collegamento con il registro EUCARIS, la Motorizzazione Civile e le amministrazioni competenti. Il nostro team verifica la pratica, individua i documenti mancanti e segue il dossier fino al rilascio della nuova patente."
       },
       "obligations": {
         "title": "Obblighi del cliente",
@@ -44,7 +44,7 @@
       },
       "liability": {
         "title": "Responsabilità",
-        "body": "Permis-Exchange mette in atto tutti i mezzi ragionevoli per portare a termine ogni pratica, senza garanzia di risultato, poiché le decisioni finali spettano alle amministrazioni competenti di ciascun paese."
+        "body": "Conversione patente straniera mette in atto tutti i mezzi ragionevoli per portare a termine ogni pratica, senza garanzia di risultato, poiché le decisioni finali spettano alle amministrazioni competenti di ciascun paese."
       },
       "pricing": {
         "title": "Tariffe",
@@ -57,13 +57,13 @@
     }
   },
   "privacy": {
-    "metaTitle": "Informativa sulla privacy — Permis-Exchange",
+    "metaTitle": "Informativa sulla privacy — Conversione patente straniera",
     "title": "Informativa sulla privacy",
-    "intro": "Questa informativa spiega come Permis-Exchange raccoglie, utilizza e protegge i tuoi dati personali nell'ambito dei nostri servizi, in conformità al Regolamento generale sulla protezione dei dati (GDPR).",
+    "intro": "Questa informativa spiega come Conversione patente straniera raccoglie, utilizza e protegge i tuoi dati personali nell'ambito dei nostri servizi, in conformità al Regolamento generale sulla protezione dei dati (GDPR).",
     "sections": {
       "controller": {
         "title": "Titolare del trattamento",
-        "body": "Permis-Exchange SRL è titolare del trattamento dei dati raccolti tramite questo sito e il nostro modulo di richiesta."
+        "body": "Conversione Patente Straniera SRL è titolare del trattamento dei dati raccolti tramite questo sito e il nostro modulo di richiesta."
       },
       "data": {
         "title": "Dati raccolti",

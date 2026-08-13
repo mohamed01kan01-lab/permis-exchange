@@ -16,12 +16,10 @@ const initialState: StepState<DocumentsData> = { success: false };
 
 export function Step4Documents({
   defaultValues,
-  needsTranslation,
   onComplete,
   onBack,
 }: {
   defaultValues?: UploadedDocument[];
-  needsTranslation: boolean;
   onComplete: (documents: UploadedDocument[]) => void;
   onBack: () => void;
 }) {
@@ -63,34 +61,10 @@ export function Step4Documents({
         type="LICENSE_BACK"
         label={t("licenseBack")}
         hint={t("hint")}
+        required
         value={find("LICENSE_BACK")}
         onChange={(doc) => upsert(doc, "LICENSE_BACK")}
       />
-      <DocumentUploadField
-        type="ID_DOCUMENT"
-        label={t("idDocument")}
-        hint={t("hint")}
-        required
-        value={find("ID_DOCUMENT")}
-        onChange={(doc) => upsert(doc, "ID_DOCUMENT")}
-      />
-      <DocumentUploadField
-        type="PROOF_OF_ADDRESS"
-        label={t("proofOfAddress")}
-        hint={t("hint")}
-        required
-        value={find("PROOF_OF_ADDRESS")}
-        onChange={(doc) => upsert(doc, "PROOF_OF_ADDRESS")}
-      />
-      {needsTranslation && (
-        <DocumentUploadField
-          type="SWORN_TRANSLATION"
-          label={t("swornTranslation")}
-          hint={t("hint")}
-          value={find("SWORN_TRANSLATION")}
-          onChange={(doc) => upsert(doc, "SWORN_TRANSLATION")}
-        />
-      )}
 
       <FieldError messages={errors.documents} />
 

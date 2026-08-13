@@ -125,7 +125,6 @@ export function DemandeFormShell() {
         {state.step === 4 && (
           <Step4Documents
             defaultValues={state.data.documents}
-            needsTranslation={state.data.procedureType === "NON_EU_CONVERSION"}
             onComplete={(documents) =>
               dispatch({ type: "COMPLETE_STEP", payload: { documents } })
             }
@@ -136,7 +135,7 @@ export function DemandeFormShell() {
         {state.step === 5 &&
           state.data.firstName &&
           state.data.licenceIssuingCountry &&
-          state.data.destinationCountry &&
+          state.data.procedureType &&
           state.data.documents && (
             <Step5Review
               data={

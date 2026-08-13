@@ -38,7 +38,6 @@
     "next": "Suivant"
   },
   "destination": {
-    "destinationCountry": "Pays de destination",
     "procedureType": "Type de démarche",
     "euExchange": "Échange UE / EEE",
     "nonEuConversion": "Conversion hors UE",
@@ -48,9 +47,6 @@
   "documents": {
     "licenseFront": "Permis de conduire (recto)",
     "licenseBack": "Permis de conduire (verso)",
-    "idDocument": "Pièce d'identité",
-    "proofOfAddress": "Justificatif de domicile",
-    "swornTranslation": "Traduction assermentée",
     "hint": "JPG, PNG ou PDF, 10 Mo max.",
     "back": "Précédent",
     "next": "Suivant"

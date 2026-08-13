@@ -23,22 +23,23 @@
       "hosting": "Dati ospitati nell'UE",
       "support": "Supporto entro 24h"
     },
+    "verifiedClient": "Cliente verificato",
+    "licencePrefix": "Patente",
     "quotes": {
-      "sophie": {
-        "name": "Sophie M.",
-        "location": "Bruxelles, Belgio",
-        "text": "Ho scambiato la mia patente francese con una belga senza un solo spostamento in ufficio. Tutto online."
-      },
-      "julien": {
-        "name": "Julien K.",
-        "location": "Lione, Francia",
-        "text": "La mia patente veniva dal Canada e temevo complicazioni. Il team ha gestito la traduzione giurata e tutto il follow-up."
-      },
-      "amara": {
-        "name": "Amara D.",
-        "location": "Cotonou → Parigi",
-        "text": "Sono stata informata a ogni fase, fino alla ricezione della nuova patente. Esattamente ciò di cui avevo bisogno arrivando in Francia."
-      }
+      "t1": "L'intera procedura è stata spiegata con chiarezza, senza gergo amministrativo. Un vero risparmio di tempo.",
+      "t2": "Sono riuscito a convertire la mia patente straniera in una patente italiana senza spostamenti inutili.",
+      "t3": "Aggiornamenti rapidi su WhatsApp a ogni fase, sapevo sempre a che punto fosse la mia pratica.",
+      "t4": "Zero rifiuti grazie ai loro controlli preventivi. Lo consiglio senza esitazione.",
+      "t5": "Un accompagnamento umano e professionale dall'inizio alla fine della mia conversione.",
+      "t6": "Temevo la burocrazia, ma tutto si è svolto in modo semplice e veloce.",
+      "t7": "Il questionario iniziale mi ha permesso di sapere subito se ero idoneo.",
+      "t8": "Un team reattivo che risponde davvero a ogni domanda.",
+      "t9": "Patente convertita in poche settimane, senza sorprese né documenti dimenticati.",
+      "t10": "Mi hanno evitato diversi errori amministrativi che avrebbero ritardato la mia pratica.",
+      "t11": "Servizio serio e trasparente, con spiegazioni chiare a ogni fase.",
+      "t12": "Lo consiglio a tutti gli espatriati che vogliono convertire la patente in Italia.",
+      "t13": "Un supporto rassicurante su un argomento che non conoscevo affatto.",
+      "t14": "Veloce, efficiente e sempre raggiungibile in caso di domande."
     }
   },
   "comparison": {
@@ -56,8 +57,8 @@
       },
       "documents": {
         "label": "Documenti richiesti",
-        "eu": "Patente attuale, documento d'identità, prova di residenza",
-        "nonEu": "Gli stessi, più una traduzione giurata e talvolta un certificato di conformità"
+        "eu": "Patente attuale (fronte/retro)",
+        "nonEu": "Patente attuale (fronte/retro), traduzione giurata se richiesta"
       },
       "delay": {
         "label": "Tempistica stimata",
@@ -73,7 +74,7 @@
         "label": "Esame di guida richiesto"
       }
     },
-    "disclaimer": "Informazioni fornite a titolo indicativo: tempistiche e requisiti variano in base al paese di destinazione e vengono confermati dal nostro team dopo l'analisi della tua pratica."
+    "disclaimer": "Informazioni fornite a titolo indicativo: tempistiche e requisiti variano in base al paese di provenienza della tua patente e vengono confermati dal nostro team dopo l'analisi della tua pratica."
   },
   "quiz": {
     "eyebrow": "Non sei sicuro di quale pratica ti riguarda?",
@@ -102,38 +103,38 @@
     }
   },
   "hero": {
-    "eyebrow": "Servizio di scambio patente internazionale",
-    "title": "Scambia la tua patente di guida senza il caos burocratico",
-    "subtitle": "Permis-Exchange gestisce la tua pratica dall'inizio alla fine, con una connessione diretta ai registri EUCARIS e RESPER, per tempi più rapidi e zero rifiuti.",
+    "eyebrow": "Servizio di conversione patente per l'Italia",
+    "title": "Converti la tua patente di guida straniera in patente italiana senza il caos burocratico",
+    "subtitle": "Conversione patente straniera gestisce la tua pratica dall'inizio alla fine, con una connessione diretta ai registri EUCARIS e Motorizzazione Civile, per tempi più rapidi e zero rifiuti.",
     "ctaPrimary": "Inizia la mia richiesta",
     "ctaSecondary": "Scopri come funziona",
     "stat1Value": "48h",
     "stat1Label": "per l'analisi della tua pratica",
     "stat2Value": "0",
-    "stat2Label": "rifiuti grazie ai controlli EUCARIS/RESPER",
-    "stat3Value": "27+",
-    "stat3Label": "paesi UE/SEE coperti"
+    "stat2Label": "rifiuti grazie ai controlli EUCARIS/Motorizzazione Civile",
+    "stat3Value": "180+",
+    "stat3Label": "paesi di provenienza della patente accettati"
   },
   "process": {
     "eyebrow": "Il processo",
-    "title": "Come si svolge lo scambio della tua patente",
-    "subtitle": "Quattro fasi seguite dal nostro team, dall'invio della pratica al ritiro della nuova patente.",
+    "title": "Come si svolge la conversione della tua patente",
+    "subtitle": "Quattro fasi seguite dal nostro team, dall'analisi della tua situazione al ritiro della patente italiana.",
     "steps": {
       "step1": {
-        "title": "Invii la tua pratica",
-        "description": "Inserisci i tuoi dati e carica i documenti in pochi minuti tramite il nostro modulo sicuro."
+        "title": "Analisi della tua situazione",
+        "description": "Compili il nostro modulo con le informazioni sulla tua patente straniera e sulla tua residenza in Italia, e individuiamo le procedure applicabili al tuo caso."
       },
       "step2": {
-        "title": "Verifica EUCARIS/RESPER",
-        "description": "Il nostro team controlla la tua patente attuale direttamente presso i registri europei per anticipare eventuali blocchi."
+        "title": "Verifica delle informazioni",
+        "description": "Verifichiamo i documenti necessari per la tua pratica di conversione e ti accompagniamo nella loro preparazione per evitare ritardi."
       },
       "step3": {
-        "title": "Preparazione della pratica ufficiale",
-        "description": "Prepariamo e depositiamo la tua pratica presso l'amministrazione competente del paese di destinazione."
+        "title": "Accompagnamento nelle pratiche amministrative",
+        "description": "Ti guidiamo passo dopo passo nelle formalità legate alla conversione della tua patente straniera in patente italiana, con spiegazioni chiare a ogni fase."
       },
       "step4": {
-        "title": "Ricevi la tua nuova patente",
-        "description": "Sei informato a ogni fase e ricevi la patente scambiata, senza spostamenti inutili."
+        "title": "Monitoraggio della tua pratica",
+        "description": "Assicuriamo un monitoraggio amministrativo fino alla finalizzazione della conversione e ti informiamo a ogni fase."
       }
     }
   },
@@ -146,9 +147,9 @@
         "title": "EUCARIS",
         "description": "Scambio di informazioni sulle patenti di guida tra paesi europei, per validare la tua patente attuale in tempo reale."
       },
-      "resper": {
-        "title": "RESPER",
-        "description": "Registro centrale belga delle patenti di guida, consultato per rendere più affidabile ogni pratica trattata in Belgio."
+      "motorizzazione": {
+        "title": "Motorizzazione Civile",
+        "description": "Registro nazionale italiano delle patenti di guida, consultato per rendere più affidabile ogni pratica di conversione."
       },
       "security": {
         "title": "Dati protetti",
@@ -165,17 +166,17 @@
     "title": "Due percorsi, un solo team",
     "subtitle": "Che la tua patente provenga da un paese UE/SEE o da altrove, adattiamo la procedura alla tua situazione.",
     "euExchange": {
-      "title": "Scambio patente UE / SEE",
-      "description": "Risiedi in un nuovo paese europeo e devi scambiare la tua patente nazionale con quella del tuo paese di residenza.",
+      "title": "Patente UE / SEE",
+      "description": "La tua patente è stata rilasciata in un paese UE/SEE: lo scambio con la patente italiana segue una procedura semplificata.",
       "bullet1": "Verifica della validità della tua patente attuale",
-      "bullet2": "Preparazione della pratica secondo le regole del paese di destinazione",
-      "bullet3": "Assistenza fino al ricevimento della nuova patente",
+      "bullet2": "Preparazione della pratica secondo le regole italiane",
+      "bullet3": "Assistenza fino al ricevimento della tua patente italiana",
       "cta": "Richiedi uno scambio UE/SEE"
     },
     "nonEuConversion": {
-      "title": "Conversione patente extra-UE",
-      "description": "La tua patente è stata rilasciata fuori dall'Unione Europea e deve essere riconosciuta o convertita per essere valida localmente.",
-      "bullet1": "Analisi degli accordi di reciprocità applicabili al tuo paese",
+      "title": "Patente extra-UE",
+      "description": "La tua patente è stata rilasciata fuori dall'Unione Europea: deve essere riconosciuta o convertita in una patente italiana.",
+      "bullet1": "Analisi degli accordi di reciprocità applicabili al tuo paese di provenienza",
       "bullet2": "Traduzione giurata se necessaria",
       "bullet3": "Assistenza per le pratiche complementari (esame, pratica consolare)",
       "cta": "Richiedi una conversione"
@@ -187,11 +188,11 @@
     "items": {
       "q1": {
         "question": "Quanto tempo richiede uno scambio di patente?",
-        "answer": "Grazie alla nostra connessione diretta a EUCARIS e RESPER, l'analisi iniziale della pratica richiede in genere 48 ore lavorative. Il tempo totale dipende poi dal paese di destinazione, generalmente tra 2 e 6 settimane."
+        "answer": "Grazie alla nostra connessione diretta a EUCARIS e alla Motorizzazione Civile, l'analisi iniziale della pratica richiede in genere 48 ore lavorative. Il tempo totale dipende poi dal paese di provenienza della tua patente, generalmente tra 2 e 6 settimane."
       },
       "q2": {
         "question": "Quali documenti devo fornire?",
-        "answer": "La tua patente di guida attuale (fronte/retro), un documento d'identità valido, una prova di residenza recente e, a seconda della situazione, una traduzione giurata della patente."
+        "answer": "La tua patente di guida attuale (fronte/retro) è sufficiente per avviare la pratica. A seconda della situazione, potrà esserti richiesta in seguito una traduzione giurata."
       },
       "q3": {
         "question": "Posso seguire l'avanzamento della mia richiesta?",

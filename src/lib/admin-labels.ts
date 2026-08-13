@@ -1,4 +1,10 @@
-import type { DocumentType, ProcedureType, RequestStatus } from "@prisma/client";
+import type {
+  DocumentType,
+  LicenceTiming,
+  PreQualificationStatus,
+  ProcedureType,
+  RequestStatus,
+} from "@prisma/client";
 
 export const STATUS_LABELS: Record<RequestStatus, string> = {
   SUBMITTED: "Reçue",
@@ -43,3 +49,29 @@ export const ALL_STATUSES: RequestStatus[] = [
   "REJECTED",
   "CANCELLED",
 ];
+
+export const PRE_QUALIFICATION_STATUS_LABELS: Record<PreQualificationStatus, string> = {
+  PENDING: "À examiner",
+  ELIGIBLE: "Éligible",
+  NOT_ELIGIBLE: "Non éligible",
+  CONTACTED: "Recontacté",
+};
+
+export const PRE_QUALIFICATION_STATUS_STYLES: Record<PreQualificationStatus, string> = {
+  PENDING: "bg-primary/10 text-primary",
+  ELIGIBLE: "bg-accent/10 text-accent",
+  NOT_ELIGIBLE: "bg-destructive/10 text-destructive",
+  CONTACTED: "bg-secondary/10 text-secondary",
+};
+
+export const ALL_PRE_QUALIFICATION_STATUSES: PreQualificationStatus[] = [
+  "PENDING",
+  "ELIGIBLE",
+  "NOT_ELIGIBLE",
+  "CONTACTED",
+];
+
+export const LICENCE_TIMING_LABELS: Record<LicenceTiming, string> = {
+  BEFORE_RESIDENCY: "Avant la résidence en Italie",
+  AFTER_RESIDENCY: "Après la résidence en Italie",
+};

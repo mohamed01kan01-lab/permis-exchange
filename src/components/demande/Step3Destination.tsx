@@ -7,7 +7,7 @@ import {
   type StepState,
 } from "@/app/[locale]/demande/actions";
 import type { DestinationData } from "@/lib/validation/destination.schema";
-import { COUNTRIES, isEuEeaCountry } from "@/lib/constants/countries";
+import { isEuEeaCountry } from "@/lib/constants/countries";
 import { FieldError } from "./FieldError";
 import { SubmitButton } from "./SubmitButton";
 import { cn } from "@/lib/utils";
@@ -51,29 +51,6 @@ export function Step3Destination({
 
   return (
     <form ref={formRef} action={formAction} className="flex flex-col gap-5" noValidate>
-      <div>
-        <label htmlFor="destinationCountry" className="text-sm font-medium text-foreground">
-          {t("destinationCountry")}
-        </label>
-        <select
-          id="destinationCountry"
-          name="destinationCountry"
-          defaultValue={defaultValues?.destinationCountry ?? ""}
-          aria-invalid={!!errors.destinationCountry}
-          className="mt-1.5 h-10 w-full max-w-sm rounded-lg border border-input bg-transparent px-3 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
-        >
-          <option value="" disabled>
-            —
-          </option>
-          {COUNTRIES.map((country) => (
-            <option key={country.code} value={country.code}>
-              {country.name}
-            </option>
-          ))}
-        </select>
-        <FieldError messages={errors.destinationCountry} />
-      </div>
-
       <fieldset>
         <legend className="text-sm font-medium text-foreground">{t("procedureType")}</legend>
         <div className="mt-2 grid grid-cols-1 gap-3 sm:grid-cols-2">

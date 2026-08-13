@@ -16,13 +16,20 @@ import {
 
 gsap.registerPlugin(ScrollTrigger);
 
-const CARD_KEYS = ["eucaris", "resper", "security", "team"] as const;
+const CARD_KEYS = ["eucaris", "motorizzazione", "security", "team"] as const;
 
 const CARD_ICONS: Record<(typeof CARD_KEYS)[number], React.ComponentType<IconProps>> = {
   eucaris: IconNetwork,
-  resper: IconDatabase,
+  motorizzazione: IconDatabase,
   security: IconShieldLock,
   team: IconUsersGroup,
+};
+
+const CARD_ROTATIONS: Record<(typeof CARD_KEYS)[number], number> = {
+  eucaris: -12,
+  motorizzazione: 9,
+  security: -7,
+  team: 14,
 };
 
 export function TrustSignals() {
@@ -151,6 +158,12 @@ export function TrustSignals() {
                   <div
                     aria-hidden
                     className="pointer-events-none absolute -top-10 -right-10 h-28 w-28 rounded-full bg-accent opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-15"
+                  />
+                  <Icon
+                    aria-hidden
+                    className="pointer-events-none absolute -right-4 -bottom-4 size-24 text-foreground/6"
+                    stroke={1.25}
+                    style={{ transform: `rotate(${CARD_ROTATIONS[key]}deg)` }}
                   />
                   <span className="relative flex size-11 items-center justify-center rounded-xl bg-accent/10 text-accent transition-transform duration-300 group-hover:scale-110">
                     <Icon className="size-5" stroke={1.75} aria-hidden />

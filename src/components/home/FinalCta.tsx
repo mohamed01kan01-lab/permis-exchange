@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,6 +10,12 @@ import { TransitionLink } from "@/components/site/TransitionLink";
 import { useMagnetic } from "@/hooks/useMagnetic";
 
 gsap.registerPlugin(ScrollTrigger);
+
+const CLUSTER_PHOTOS = [
+  { src: "/images/testimonial-02.jpeg", className: "left-0 top-1 -rotate-6", z: 10 },
+  { src: "/images/testimonial-14.jpeg", className: "left-10 top-0 rotate-3", z: 20 },
+  { src: "/images/testimonial-07.jpeg", className: "left-20 top-1.5 rotate-9", z: 10 },
+] as const;
 
 export function FinalCta() {
   const t = useTranslations("home.cta");
@@ -90,6 +97,22 @@ export function FinalCta() {
       />
 
       <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6">
+        <div
+          data-cta-fade
+          aria-hidden
+          className="relative mx-auto mb-8 h-16 w-40"
+        >
+          {CLUSTER_PHOTOS.map((photo) => (
+            <div
+              key={photo.src}
+              className={`absolute size-14 overflow-hidden rounded-xl border-4 border-background shadow-lg ${photo.className}`}
+              style={{ zIndex: photo.z }}
+            >
+              <Image src={photo.src} alt="" fill sizes="56px" className="object-cover" style={{ objectPosition: "50% 20%" }} />
+            </div>
+          ))}
+        </div>
+
         <h2
           data-cta-fade
           className="text-3xl font-bold text-primary-foreground sm:text-4xl"
@@ -101,7 +124,7 @@ export function FinalCta() {
         </p>
         <TransitionLink
           ref={ctaRef}
-          href="/demande"
+          href="/questionnaire"
           data-cta-fade
           className="mt-8 inline-flex items-center justify-center rounded-full bg-background px-8 py-3.5 text-base font-semibold text-foreground shadow-lg shadow-black/10 transition-shadow hover:shadow-xl hover:shadow-black/20"
         >

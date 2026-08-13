@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Questionario di prequalifica — Conversione patente straniera"
+  },
+  "common": {
+    "yes": "Sì",
+    "no": "No",
+    "next": "Avanti",
+    "back": "Indietro",
+    "loading": "Caricamento..."
+  },
+  "steps": {
+    "1": "La tua patente",
+    "2": "Residenza in Italia",
+    "3": "Storico",
+    "4": "Contatti",
+    "5": "Riepilogo"
+  },
+  "licence": {
+    "country": "Da quale paese proviene la tua patente attuale?",
+    "stillValid": "La tua patente è ancora valida?",
+    "categories": "Quali categorie possiedi?"
+  },
+  "residency": {
+    "hasResidency": "Hai la residenza italiana?",
+    "since": "Da quando sei in Italia?"
+  },
+  "history": {
+    "timingQuestion": "Hai ottenuto la tua patente attuale prima o dopo la tua residenza in Italia?",
+    "timingBefore": "Prima della mia residenza in Italia",
+    "timingAfter": "Dopo la mia residenza in Italia",
+    "obtainedByExchange": "La tua patente attuale è stata ottenuta tramite uno scambio di patente (e non con l'esame normale)?",
+    "previousAttempt": "Hai già provato a convertire la tua patente straniera in italiana?",
+    "previousResult": "Qual è stato il risultato di quel tentativo?"
+  },
+  "contact": {
+    "firstName": "Nome",
+    "lastName": "Cognome",
+    "email": "Indirizzo email",
+    "phone": "Telefono",
+    "phoneHint": "Idealmente un numero raggiungibile su WhatsApp."
+  },
+  "review": {
+    "licenceSection": "La tua patente",
+    "residencySection": "Residenza e storico",
+    "contactSection": "Contatti",
+    "country": "Paese di rilascio",
+    "stillValid": "Ancora valida",
+    "categories": "Categorie",
+    "hasResidency": "Residenza italiana",
+    "since": "Dal",
+    "timing": "Patente ottenuta",
+    "obtainedByExchange": "Ottenuta tramite scambio",
+    "previousAttempt": "Tentativo precedente",
+    "name": "Nome completo",
+    "email": "Email",
+    "phone": "Telefono",
+    "submit": "Invia il questionario",
+    "submitting": "Invio in corso..."
+  },
+  "confirmation": {
+    "title": "Grazie, il tuo questionario è stato ricevuto",
+    "subtitle": "Il nostro team esamina le tue risposte e ti ricontatterà via email o WhatsApp entro 48 ore lavorative per confermare la tua idoneità e i prossimi passi.",
+    "backHome": "Torna alla home"
+  }
+}

@@ -92,7 +92,6 @@ export async function submitRequest(
     licenceIssueDate: formData.get("licenceIssueDate") ?? "",
     licenceExpiryDate: formData.get("licenceExpiryDate") ?? "",
     licenceCategories: formData.getAll("licenceCategories"),
-    destinationCountry: formData.get("destinationCountry") ?? "",
     procedureType: formData.get("procedureType") ?? "",
     documents: JSON.parse((formData.get("documents") as string) ?? "[]"),
     consent: formData.get("consent") === "on",
@@ -129,7 +128,7 @@ export async function submitRequest(
         ? new Date(data.licenceExpiryDate)
         : null,
       licenceCategories: data.licenceCategories,
-      destinationCountry: data.destinationCountry,
+      destinationCountry: "IT",
       procedureType: data.procedureType,
       consentAt: new Date(),
       documents: {
@@ -152,7 +151,7 @@ export async function submitRequest(
       firstName: data.firstName,
       lastName: data.lastName,
       email: data.email,
-      destinationCountryName: getCountryName(data.destinationCountry),
+      destinationCountryName: getCountryName("IT"),
       procedureLabel:
         data.procedureType === "EU_EEA_EXCHANGE"
           ? "Échange UE / EEE"

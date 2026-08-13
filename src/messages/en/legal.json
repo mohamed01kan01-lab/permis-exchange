@@ -6,7 +6,7 @@
     "sections": {
       "editor": {
         "title": "Site publisher",
-        "body": "The Permis-Exchange website is published by Permis-Exchange SRL, a company incorporated under Belgian law, with registered office at Rue de la Loi 1, 1000 Brussels, Belgium. Company registration number: to be completed. Contact: contact@permis-exchange.example."
+        "body": "The Permis-Exchange website is published by Permis-Exchange SRL. Company registration number: to be completed. Contact: contact@permis-exchange.example."
       },
       "publication": {
         "title": "Publication director",
@@ -28,7 +28,7 @@
     "sections": {
       "purpose": {
         "title": "Purpose",
-        "body": "These terms govern the use of the Permis-Exchange website and subscription to our licence exchange and conversion support services."
+        "body": "These terms govern the use of the Permis-Exchange website and subscription to our foreign-to-Italian driving licence conversion support services."
       },
       "acceptance": {
         "title": "Acceptance",
@@ -36,7 +36,7 @@
       },
       "service": {
         "title": "Service description",
-        "body": "Permis-Exchange assists clients in preparing and following up their driving licence exchange or conversion file, liaising with the EUCARIS and RESPER registries and the relevant administrations. Our team reviews the file, identifies missing documents, and follows up until the new licence is issued."
+        "body": "Permis-Exchange assists clients in preparing and following up their foreign-to-Italian driving licence conversion file, liaising with the EUCARIS registry, the Motorizzazione Civile, and the relevant administrations. Our team reviews the file, identifies missing documents, and follows up until the new licence is issued."
       },
       "obligations": {
         "title": "Client obligations",

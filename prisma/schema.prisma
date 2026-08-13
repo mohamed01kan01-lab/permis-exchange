@@ -70,6 +70,55 @@ model LicenseExchangeRequest {
   @@index([email])
 }
 
+enum LicenceTiming {
+  BEFORE_RESIDENCY
+  AFTER_RESIDENCY
+}
+
+enum PreQualificationStatus {
+  PENDING
+  ELIGIBLE
+  NOT_ELIGIBLE
+  CONTACTED
+}
+
+// Questionnaire de préqualification — première étape avant le dossier complet
+// (LicenseExchangeRequest). Rempli en libre-service, revu manuellement par
+// l'équipe qui décide de l'éligibilité avant d'inviter le client à déposer
+// son dossier complet.
+model PreQualification {
+  id     String                 @id @default(cuid())
+  locale String
+  status PreQualificationStatus @default(PENDING)
+
+  firstName String
+  lastName  String
+  email     String
+  phone     String
+
+  licenceIssuingCountry String // ISO 3166-1 alpha-2
+  licenceStillValid     Boolean
+  licenceCategories     String[]
+
+  hasItalianResidency   Boolean
+  italianResidencySince DateTime?
+
+  licenceTiming LicenceTiming
+
+  previousConversionAttempt Boolean
+  previousConversionResult  String?
+
+  licenceObtainedByExchange Boolean
+
+  reviewNotes String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([status])
+  @@index([email])
+}
+
 model Document {
   id        String                  @id @default(cuid())
   request   LicenseExchangeRequest  @relation(fields: [requestId], references: [id], onDelete: Cascade)

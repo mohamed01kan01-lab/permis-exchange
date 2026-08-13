@@ -1,215 +1,216 @@
 {
-  "checklist": {
-    "eyebrow": "Préparez votre dossier",
-    "title": "Les documents à prévoir",
-    "subtitle": "La liste varie selon votre situation. Basculez pour voir ce qu'il vous faut.",
-    "toggleEu": "Échange UE/EEE",
-    "toggleNonEu": "Conversion hors UE",
-    "items": {
-      "licence": "Permis de conduire actuel (recto/verso)",
-      "id": "Pièce d'identité valide",
-      "address": "Justificatif de domicile de moins de 3 mois",
-      "photo": "Photo d'identité récente",
-      "translation": "Traduction assermentée du permis",
-      "conformity": "Attestation de conformité ou d'équivalence"
+    "checklist": {
+        "eyebrow": "Préparez votre dossier",
+        "title": "Les documents à prévoir",
+        "subtitle": "La liste varie selon votre situation. Basculez pour voir ce qu'il vous faut.",
+        "toggleEu": "Échange UE/EEE",
+        "toggleNonEu": "Conversion hors UE",
+        "items": {
+            "licence": "Permis de conduire actuel (recto/verso)",
+            "id": "Pièce d'identité valide",
+            "address": "Justificatif de domicile de moins de 3 mois",
+            "photo": "Photo d'identité récente",
+            "translation": "Traduction assermentée du permis",
+            "conformity": "Attestation de conformité ou d'équivalence"
+        },
+        "disclaimer": "Liste indicative : notre équipe confirme les pièces exactes nécessaires selon le pays concerné."
     },
-    "disclaimer": "Liste indicative : notre équipe confirme les pièces exactes nécessaires selon le pays concerné."
-  },
-  "testimonials": {
-    "eyebrow": "Ils nous ont fait confiance",
-    "title": "Des démarches menées à bien, sans stress",
-    "badges": {
-      "gdpr": "Conforme RGPD",
-      "hosting": "Données hébergées en UE",
-      "support": "Support sous 24h"
+    "testimonials": {
+        "eyebrow": "Ils nous ont fait confiance",
+        "title": "Des démarches menées à bien, sans stress",
+        "badges": {
+            "gdpr": "Conforme RGPD",
+            "hosting": "Données hébergées en UE",
+            "support": "Support sous 24h"
+        },
+        "verifiedClient": "Client vérifié",
+        "licencePrefix": "Permis",
+        "quotes": {
+            "t1": "Toute la procédure a été expliquée clairement, sans jargon administratif. Un vrai gain de temps.",
+            "t2": "J'ai pu convertir mon permis étranger en permis italien sans me déplacer inutilement.",
+            "t3": "Suivi rapide par WhatsApp à chaque étape, je savais toujours où en était mon dossier.",
+            "t4": "Zéro rejet grâce à leur vérification en amont. Je recommande sans hésiter.",
+            "t5": "Un accompagnement humain et professionnel du début à la fin de ma conversion.",
+            "t6": "J'appréhendais les démarches, mais tout s'est déroulé simplement et rapidement.",
+            "t7": "Le questionnaire initial m'a permis de savoir tout de suite si j'étais éligible.",
+            "t8": "Une équipe réactive qui répond vraiment à toutes les questions.",
+            "t9": "Mon permis converti en quelques semaines, sans surprise ni document oublié.",
+            "t10": "Ils m'ont évité plusieurs erreurs administratives qui auraient retardé mon dossier.",
+            "t11": "Service sérieux, transparent, avec des explications claires à chaque étape.",
+            "t12": "Je recommande à tous les expatriés qui veulent convertir leur permis en Italie.",
+            "t13": "Un accompagnement rassurant sur un sujet que je ne maîtrisais pas du tout.",
+            "t14": "Rapide, efficace, et toujours joignable en cas de question."
+        }
     },
-    "quotes": {
-      "sophie": {
-        "name": "Sophie M.",
-        "location": "Bruxelles, Belgique",
-        "text": "J'ai pu échanger mon permis français contre un permis belge sans un seul aller-retour à l'administration. Tout s'est fait en ligne."
-      },
-      "julien": {
-        "name": "Julien K.",
-        "location": "Lyon, France",
-        "text": "Mon permis venait du Canada, je pensais que ce serait compliqué. L'équipe a géré la traduction assermentée et le suivi du dossier."
-      },
-      "amara": {
-        "name": "Amara D.",
-        "location": "Cotonou → Paris",
-        "text": "On m'a prévenue à chaque étape, jusqu'à la réception de mon nouveau permis. Exactement ce qu'il me fallait en arrivant en France."
-      }
-    }
-  },
-  "comparison": {
-    "eyebrow": "Comparatif",
-    "title": "UE/EEE ou hors-UE : les différences en un coup d'œil",
-    "subtitle": "Un aperçu général des deux parcours. Chaque dossier reste étudié individuellement par notre équipe.",
-    "criteria": "Critère",
-    "euExchangeHeader": "Échange UE/EEE",
-    "nonEuHeader": "Conversion hors UE",
-    "rows": {
-      "eligibility": {
-        "label": "Éligibilité",
-        "eu": "Permis valide émis dans un pays de l'UE/EEE",
-        "nonEu": "Permis valide émis hors UE, non expiré"
-      },
-      "documents": {
-        "label": "Documents requis",
-        "eu": "Permis actuel, pièce d'identité, justificatif de domicile",
-        "nonEu": "Les mêmes, plus une traduction assermentée et parfois une attestation de conformité"
-      },
-      "delay": {
-        "label": "Délai estimé",
-        "eu": "2 à 4 semaines après vérification EUCARIS",
-        "nonEu": "4 à 8 semaines selon les accords bilatéraux"
-      },
-      "validity": {
-        "label": "Ancienneté du permis",
-        "eu": "Aucune durée minimale généralement exigée",
-        "nonEu": "Certains pays exigent une durée de validité minimale"
-      },
-      "exam": {
-        "label": "Examen de conduite requis"
-      }
+    "comparison": {
+        "eyebrow": "Comparatif",
+        "title": "UE/EEE ou hors-UE : les différences en un coup d'œil",
+        "subtitle": "Un aperçu général des deux parcours. Chaque dossier reste étudié individuellement par notre équipe.",
+        "criteria": "Critère",
+        "euExchangeHeader": "Échange UE/EEE",
+        "nonEuHeader": "Conversion hors UE",
+        "rows": {
+            "eligibility": {
+                "label": "Éligibilité",
+                "eu": "Permis valide émis dans un pays de l'UE/EEE",
+                "nonEu": "Permis valide émis hors UE, non expiré"
+            },
+            "documents": {
+                "label": "Documents requis",
+                "eu": "Permis actuel (recto/verso)",
+                "nonEu": "Permis actuel (recto/verso), traduction assermentée si requise"
+            },
+            "delay": {
+                "label": "Délai estimé",
+                "eu": "2 à 4 semaines après vérification EUCARIS",
+                "nonEu": "4 à 8 semaines selon les accords bilatéraux"
+            },
+            "validity": {
+                "label": "Ancienneté du permis",
+                "eu": "Aucune durée minimale généralement exigée",
+                "nonEu": "Certains pays exigent une durée de validité minimale"
+            },
+            "exam": {
+                "label": "Examen de conduite requis"
+            }
+        },
+        "disclaimer": "Informations données à titre indicatif : les délais et exigences varient selon le pays d'origine de votre permis et sont confirmés par notre équipe après étude de votre dossier."
     },
-    "disclaimer": "Informations données à titre indicatif : les délais et exigences varient selon le pays de destination et sont confirmés par notre équipe après étude de votre dossier."
-  },
-  "quiz": {
-    "eyebrow": "Pas sûr de la démarche qui vous concerne ?",
-    "title": "Trouvez votre parcours en 20 secondes",
-    "subtitle": "Répondez à 2 questions, nous vous indiquons immédiatement la démarche adaptée à votre situation.",
-    "step1": {
-      "question": "Dans quel pays votre permis actuel a-t-il été délivré ?",
-      "placeholder": "Choisissez un pays"
+    "quiz": {
+        "eyebrow": "Pas sûr de la démarche qui vous concerne ?",
+        "title": "Trouvez votre parcours en 20 secondes",
+        "subtitle": "Répondez à 2 questions, nous vous indiquons immédiatement la démarche adaptée à votre situation.",
+        "step1": {
+            "question": "Dans quel pays votre permis actuel a-t-il été délivré ?",
+            "placeholder": "Choisissez un pays"
+        },
+        "step2": {
+            "question": "Dans quel pays résidez-vous actuellement ?",
+            "placeholder": "Choisissez un pays"
+        },
+        "back": "Précédent",
+        "restart": "Recommencer",
+        "result": {
+            "euExchange": {
+                "title": "Échange UE / EEE",
+                "description": "Votre permis a été délivré dans un pays de l'UE/EEE : il vous faut un échange standard vers le permis de votre pays de résidence."
+            },
+            "nonEuConversion": {
+                "title": "Conversion hors UE",
+                "description": "Votre permis a été délivré hors de l'UE : une procédure de reconnaissance ou de conversion est nécessaire."
+            },
+            "cta": "Continuer ma demande"
+        }
     },
-    "step2": {
-      "question": "Dans quel pays résidez-vous actuellement ?",
-      "placeholder": "Choisissez un pays"
+    "hero": {
+        "eyebrow": "Service de conversion de permis pour l'Italie",
+        "title": "Échanger votre permis de conduire étranger en italien sans le casse-tête administratif",
+        "subtitle": "Conversione patente straniera gère votre dossier de bout en bout, avec une connexion directe aux registres EUCARIS et Motorizzazione Civile, pour un traitement plus rapide et sans rejet.",
+        "ctaPrimary": "Démarrer ma demande",
+        "ctaSecondary": "Voir comment ça marche",
+        "stat1Value": "48h",
+        "stat1Label": "Pour l'analyse de votre dossier",
+        "stat2Value": "0",
+        "stat2Label": "Rejet grâce à la vérification EUCARIS/Motorizzazione Civile",
+        "stat3Value": "180+",
+        "stat3Label": "Pays d'origine de permis acceptés"
     },
-    "back": "Précédent",
-    "restart": "Recommencer",
-    "result": {
-      "euExchange": {
-        "title": "Échange UE / EEE",
-        "description": "Votre permis a été délivré dans un pays de l'UE/EEE : il vous faut un échange standard vers le permis de votre pays de résidence."
-      },
-      "nonEuConversion": {
-        "title": "Conversion hors UE",
-        "description": "Votre permis a été délivré hors de l'UE : une procédure de reconnaissance ou de conversion est nécessaire."
-      },
-      "cta": "Continuer ma demande"
-    }
-  },
-  "hero": {
-    "eyebrow": "Service d'échange de permis international",
-    "title": "Échangez votre permis de conduire sans le casse-tête administratif",
-    "subtitle": "Permis-Exchange gère votre dossier de bout en bout, avec une connexion directe aux registres EUCARIS et RESPER, pour un traitement plus rapide et sans rejet.",
-    "ctaPrimary": "Démarrer ma demande",
-    "ctaSecondary": "Voir comment ça marche",
-    "stat1Value": "48h",
-    "stat1Label": "pour l'analyse de votre dossier",
-    "stat2Value": "0",
-    "stat2Label": "rejet grâce à la vérification EUCARIS/RESPER",
-    "stat3Value": "27+",
-    "stat3Label": "pays UE/EEE couverts"
-  },
-  "process": {
-    "eyebrow": "Le processus",
-    "title": "Comment se déroule votre échange de permis",
-    "subtitle": "Quatre étapes suivies par notre équipe, de la soumission de votre dossier à la réception de votre nouveau permis.",
-    "steps": {
-      "step1": {
-        "title": "Vous soumettez votre dossier",
-        "description": "Renseignez vos informations et téléversez vos documents en quelques minutes via notre formulaire sécurisé."
-      },
-      "step2": {
-        "title": "Vérification EUCARIS/RESPER",
-        "description": "Notre équipe contrôle votre permis actuel directement auprès des registres européens pour anticiper tout blocage."
-      },
-      "step3": {
-        "title": "Constitution du dossier officiel",
-        "description": "Nous préparons et déposons votre dossier auprès de l'administration compétente du pays de destination."
-      },
-      "step4": {
-        "title": "Réception de votre nouveau permis",
-        "description": "Vous êtes informé à chaque étape et recevez votre permis échangé, sans déplacement inutile."
-      }
-    }
-  },
-  "trust": {
-    "eyebrow": "Pourquoi nous faire confiance",
-    "title": "Une connexion directe aux registres officiels",
-    "subtitle": "Nous travaillons avec les mêmes systèmes que les administrations, ce qui nous permet de détecter les problèmes avant qu'ils ne bloquent votre dossier.",
-    "cards": {
-      "eucaris": {
-        "title": "EUCARIS",
-        "description": "Échange d'informations sur les permis de conduire entre pays européens, pour valider votre permis actuel en temps réel."
-      },
-      "resper": {
-        "title": "RESPER",
-        "description": "Registre central belge des permis de conduire, consulté pour fiabiliser chaque dossier traité en Belgique."
-      },
-      "security": {
-        "title": "Données sécurisées",
-        "description": "Vos documents d'identité sont chiffrés et stockés selon les standards RGPD, accessibles uniquement à l'équipe en charge de votre dossier."
-      },
-      "team": {
-        "title": "Une équipe dédiée",
-        "description": "Un interlocuteur suit votre dossier du début à la fin et répond à vos questions à chaque étape."
-      }
-    }
-  },
-  "scope": {
-    "eyebrow": "Nos services",
-    "title": "Deux parcours, une seule équipe",
-    "subtitle": "Que votre permis vienne d'un pays de l'UE/EEE ou d'ailleurs, nous adaptons la démarche à votre situation.",
-    "euExchange": {
-      "title": "Échange permis UE / EEE",
-      "description": "Vous résidez dans un nouveau pays européen et devez échanger votre permis national contre celui de votre pays de résidence.",
-      "bullet1": "Vérification de la validité de votre permis actuel",
-      "bullet2": "Constitution du dossier selon les règles du pays de destination",
-      "bullet3": "Suivi jusqu'à la réception du nouveau permis",
-      "cta": "Demander un échange UE/EEE"
+    "process": {
+        "eyebrow": "Le processus",
+        "title": "Comment se déroule la conversion de votre permis",
+        "subtitle": "Quatre étapes suivies par notre équipe, de l'analyse de votre situation à la réception de votre permis italien.",
+        "steps": {
+            "step1": {
+                "title": "Analyse de votre situation",
+                "description": "Vous remplissez notre formulaire avec les informations sur votre permis étranger et votre résidence en Italie, et nous identifions les démarches applicables à votre cas."
+            },
+            "step2": {
+                "title": "Vérification des informations",
+                "description": "Nous vérifions les documents nécessaires à votre dossier de conversion et vous accompagnons dans leur préparation pour éviter tout retard."
+            },
+            "step3": {
+                "title": "Accompagnement dans les démarches",
+                "description": "Nous vous guidons étape par étape dans les formalités liées à la conversion de votre permis étranger en permis italien, avec des explications claires à chaque étape."
+            },
+            "step4": {
+                "title": "Suivi de votre dossier",
+                "description": "Nous assurons un suivi administratif jusqu'à la finalisation de votre conversion et vous informons à chaque étape."
+            }
+        }
     },
-    "nonEuConversion": {
-      "title": "Conversion permis hors UE",
-      "description": "Votre permis a été délivré hors de l'Union européenne et doit être reconnu ou converti pour être valide localement.",
-      "bullet1": "Analyse des accords de réciprocité applicables à votre pays",
-      "bullet2": "Traduction assermentée si nécessaire",
-      "bullet3": "Accompagnement sur les démarches complémentaires (examen, dossier consulaire)",
-      "cta": "Demander une conversion"
+    "trust": {
+        "eyebrow": "Pourquoi nous faire confiance",
+        "title": "Une connexion directe aux registres officiels",
+        "subtitle": "Nous travaillons avec les mêmes systèmes que les administrations, ce qui nous permet de détecter les problèmes avant qu'ils ne bloquent votre dossier.",
+        "cards": {
+            "eucaris": {
+                "title": "EUCARIS",
+                "description": "Échange d'informations sur les permis de conduire entre pays européens, pour valider votre permis actuel en temps réel."
+            },
+            "motorizzazione": {
+                "title": "Motorizzazione Civile",
+                "description": "Registre italien des permis de conduire, consulté pour fiabiliser chaque dossier de conversion en Italie."
+            },
+            "security": {
+                "title": "Données sécurisées",
+                "description": "Vos documents d'identité sont chiffrés et stockés selon les standards RGPD, accessibles uniquement à l'équipe en charge de votre dossier."
+            },
+            "team": {
+                "title": "Une équipe dédiée",
+                "description": "Un interlocuteur suit votre dossier du début à la fin et répond à vos questions à chaque étape."
+            }
+        }
+    },
+    "scope": {
+        "eyebrow": "Nos services",
+        "title": "Deux parcours, une seule équipe",
+        "subtitle": "Que votre permis vienne d'un pays de l'UE/EEE ou d'ailleurs, nous adaptons la démarche à votre situation.",
+        "euExchange": {
+            "title": "Permis UE / EEE",
+            "description": "Votre permis a été délivré dans un pays de l'UE/EEE : l'échange vers un permis italien suit une procédure simplifiée.",
+            "bullet1": "Vérification de la validité de votre permis actuel",
+            "bullet2": "Constitution du dossier selon les règles italiennes",
+            "bullet3": "Suivi jusqu'à la réception de votre permis italien",
+            "cta": "Demander un échange UE/EEE"
+        },
+        "nonEuConversion": {
+            "title": "Permis hors UE",
+            "description": "Votre permis a été délivré hors de l'Union européenne : une procédure de reconnaissance ou de conversion vers le permis italien est nécessaire.",
+            "bullet1": "Analyse des accords de réciprocité applicables à votre pays d'origine",
+            "bullet2": "Traduction assermentée si nécessaire",
+            "bullet3": "Accompagnement sur les démarches complémentaires (examen, dossier consulaire)",
+            "cta": "Demander une conversion"
+        }
+    },
+    "faq": {
+        "eyebrow": "Questions fréquentes",
+        "title": "Tout ce que vous devez savoir",
+        "items": {
+            "q1": {
+                "question": "Combien de temps prend un échange de permis ?",
+                "answer": "Grâce à notre connexion directe à EUCARIS et à la Motorizzazione Civile, l'analyse initiale de votre dossier prend généralement 48h ouvrées. Le délai total dépend ensuite de votre pays d'origine, en général entre 2 et 6 semaines."
+            },
+            "q2": {
+                "question": "Quels documents dois-je fournir ?",
+                "answer": "Votre permis de conduire actuel (recto/verso) suffit pour constituer votre dossier. Selon votre situation, une traduction assermentée pourra vous être demandée par la suite."
+            },
+            "q3": {
+                "question": "Puis-je suivre l'avancement de ma demande ?",
+                "answer": "Oui, un interlocuteur dédié vous tient informé à chaque étape par email, et vous pouvez le contacter à tout moment."
+            },
+            "q4": {
+                "question": "Que se passe-t-il si mon dossier est incomplet ?",
+                "answer": "Notre équipe vous recontacte rapidement pour vous indiquer précisément les documents ou informations manquants, avant tout dépôt officiel."
+            },
+            "q5": {
+                "question": "Mes données sont-elles en sécurité ?",
+                "answer": "Tous les documents transmis sont chiffrés et stockés conformément au RGPD. Seule l'équipe en charge de votre dossier y a accès."
+            }
+        }
+    },
+    "cta": {
+        "title": "Prêt à simplifier votre échange de permis ?",
+        "subtitle": "Soumettez votre dossier en quelques minutes, notre équipe s'occupe du reste.",
+        "button": "Faire ma demande maintenant"
     }
-  },
-  "faq": {
-    "eyebrow": "Questions fréquentes",
-    "title": "Tout ce que vous devez savoir",
-    "items": {
-      "q1": {
-        "question": "Combien de temps prend un échange de permis ?",
-        "answer": "Grâce à notre connexion directe à EUCARIS et RESPER, l'analyse initiale de votre dossier prend généralement 48h ouvrées. Le délai total dépend ensuite du pays de destination, en général entre 2 et 6 semaines."
-      },
-      "q2": {
-        "question": "Quels documents dois-je fournir ?",
-        "answer": "Votre permis de conduire actuel (recto/verso), une pièce d'identité valide, un justificatif de domicile récent, et selon votre situation, une traduction assermentée de votre permis."
-      },
-      "q3": {
-        "question": "Puis-je suivre l'avancement de ma demande ?",
-        "answer": "Oui, un interlocuteur dédié vous tient informé à chaque étape par email, et vous pouvez le contacter à tout moment."
-      },
-      "q4": {
-        "question": "Que se passe-t-il si mon dossier est incomplet ?",
-        "answer": "Notre équipe vous recontacte rapidement pour vous indiquer précisément les documents ou informations manquants, avant tout dépôt officiel."
-      },
-      "q5": {
-        "question": "Mes données sont-elles en sécurité ?",
-        "answer": "Tous les documents transmis sont chiffrés et stockés conformément au RGPD. Seule l'équipe en charge de votre dossier y a accès."
-      }
-    }
-  },
-  "cta": {
-    "title": "Prêt à simplifier votre échange de permis ?",
-    "subtitle": "Soumettez votre dossier en quelques minutes, notre équipe s'occupe du reste.",
-    "button": "Faire ma demande maintenant"
-  }
 }

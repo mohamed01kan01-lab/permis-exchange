@@ -6,7 +6,7 @@
     "sections": {
       "editor": {
         "title": "Éditeur du site",
-        "body": "Le site Permis-Exchange est édité par Permis-Exchange SRL, société de droit belge, dont le siège social est situé Rue de la Loi 1, 1000 Bruxelles, Belgique. Numéro d'entreprise (BCE) : à compléter. Contact : contact@permis-exchange.example."
+        "body": "Le site Permis-Exchange est édité par Permis-Exchange SRL. Numéro d'entreprise : à compléter. Contact : contact@permis-exchange.example."
       },
       "publication": {
         "title": "Directeur de la publication",
@@ -28,7 +28,7 @@
     "sections": {
       "purpose": {
         "title": "Objet",
-        "body": "Les présentes conditions régissent l'utilisation du site Permis-Exchange et la souscription à nos services d'accompagnement pour l'échange ou la conversion de permis de conduire."
+        "body": "Les présentes conditions régissent l'utilisation du site Permis-Exchange et la souscription à nos services d'accompagnement pour la conversion d'un permis de conduire étranger en permis italien."
       },
       "acceptance": {
         "title": "Acceptation",
@@ -36,7 +36,7 @@
       },
       "service": {
         "title": "Description du service",
-        "body": "Permis-Exchange accompagne ses clients dans la constitution et le suivi de leur dossier d'échange ou de conversion de permis de conduire, en lien avec les registres EUCARIS et RESPER et les administrations compétentes. Notre équipe vérifie le dossier, identifie les documents manquants et assure le suivi jusqu'à la délivrance du nouveau permis."
+        "body": "Permis-Exchange accompagne ses clients dans la constitution et le suivi de leur dossier de conversion de permis de conduire étranger en permis italien, en lien avec les registres EUCARIS et la Motorizzazione Civile et les administrations compétentes. Notre équipe vérifie le dossier, identifie les documents manquants et assure le suivi jusqu'à la délivrance du nouveau permis."
       },
       "obligations": {
         "title": "Obligations du client",

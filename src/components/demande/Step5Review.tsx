@@ -43,9 +43,6 @@ export function Step5Review({
   const documentLabels: Record<UploadedDocument["type"], string> = {
     LICENSE_FRONT: tDocs("licenseFront"),
     LICENSE_BACK: tDocs("licenseBack"),
-    ID_DOCUMENT: tDocs("idDocument"),
-    PROOF_OF_ADDRESS: tDocs("proofOfAddress"),
-    SWORN_TRANSLATION: tDocs("swornTranslation"),
   };
 
   const formRef = useShakeOnError<HTMLFormElement>(state.errors);
@@ -78,7 +75,6 @@ export function Step5Review({
       {data.licenceCategories.map((category) => (
         <input key={category} type="hidden" name="licenceCategories" value={category} />
       ))}
-      <input type="hidden" name="destinationCountry" value={data.destinationCountry} />
       <input type="hidden" name="procedureType" value={data.procedureType} />
       <input type="hidden" name="documents" value={JSON.stringify(data.documents)} />
 
@@ -114,10 +110,7 @@ export function Step5Review({
       <section className="rounded-2xl border border-border bg-card p-6">
         <h3 className="text-sm font-semibold text-foreground">{t("destinationSection")}</h3>
         <dl className="mt-3 grid grid-cols-1 gap-x-6 gap-y-2 text-sm sm:grid-cols-2">
-          <ReviewRow
-            label={t("destinationCountry")}
-            value={getCountryName(data.destinationCountry)}
-          />
+          <ReviewRow label={t("destinationCountry")} value={getCountryName("IT")} />
           <ReviewRow
             label={t("procedure")}
             value={

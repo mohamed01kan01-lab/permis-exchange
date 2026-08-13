@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Questionnaire de préqualification — Permis-Exchange"
+  },
+  "common": {
+    "yes": "Oui",
+    "no": "Non",
+    "next": "Suivant",
+    "back": "Précédent",
+    "loading": "Chargement..."
+  },
+  "steps": {
+    "1": "Votre permis",
+    "2": "Résidence en Italie",
+    "3": "Historique",
+    "4": "Coordonnées",
+    "5": "Récapitulatif"
+  },
+  "licence": {
+    "country": "De quel pays provient votre permis actuel ?",
+    "stillValid": "Votre permis est-il toujours valide ?",
+    "categories": "Quelles catégories possédez-vous ?"
+  },
+  "residency": {
+    "hasResidency": "Avez-vous la résidence italienne ?",
+    "since": "Depuis quand êtes-vous en Italie ?"
+  },
+  "history": {
+    "timingQuestion": "Avez-vous obtenu votre permis actuel avant ou après votre résidence italienne ?",
+    "timingBefore": "Avant ma résidence en Italie",
+    "timingAfter": "Après ma résidence en Italie",
+    "obtainedByExchange": "Votre permis actuel a-t-il été obtenu par un échange de permis (et non par l'examen normal) ?",
+    "previousAttempt": "Avez-vous déjà essayé de convertir votre permis étranger en italien ?",
+    "previousResult": "Quel a été le résultat de cette démarche ?"
+  },
+  "contact": {
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Adresse email",
+    "phone": "Téléphone",
+    "phoneHint": "Idéalement un numéro joignable sur WhatsApp."
+  },
+  "review": {
+    "licenceSection": "Votre permis",
+    "residencySection": "Résidence & historique",
+    "contactSection": "Coordonnées",
+    "country": "Pays d'émission",
+    "stillValid": "Toujours valide",
+    "categories": "Catégories",
+    "hasResidency": "Résidence italienne",
+    "since": "Depuis le",
+    "timing": "Permis obtenu",
+    "obtainedByExchange": "Obtenu par échange",
+    "previousAttempt": "Tentative antérieure",
+    "name": "Nom complet",
+    "email": "Email",
+    "phone": "Téléphone",
+    "submit": "Envoyer le questionnaire",
+    "submitting": "Envoi en cours..."
+  },
+  "confirmation": {
+    "title": "Merci, votre questionnaire est bien reçu",
+    "subtitle": "Notre équipe analyse vos réponses et vous recontacte par email ou WhatsApp sous 48h ouvrées pour vous confirmer votre éligibilité et les prochaines étapes.",
+    "backHome": "Retour à l'accueil"
+  }
+}

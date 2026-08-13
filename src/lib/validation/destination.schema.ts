@@ -3,7 +3,6 @@ import { z } from "zod";
 export const procedureTypes = ["EU_EEA_EXCHANGE", "NON_EU_CONVERSION"] as const;
 
 export const destinationSchema = z.object({
-  destinationCountry: z.string().length(2, "Sélectionnez un pays"),
   procedureType: z.enum(procedureTypes, {
     message: "Sélectionnez un type de démarche",
   }),

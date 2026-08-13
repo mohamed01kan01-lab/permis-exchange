@@ -15,6 +15,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       home: (await import(`../messages/${locale}/home.json`)).default,
       demande: (await import(`../messages/${locale}/demande.json`)).default,
       legal: (await import(`../messages/${locale}/legal.json`)).default,
+      questionnaire: (await import(`../messages/${locale}/questionnaire.json`)).default,
     },
   };
 });

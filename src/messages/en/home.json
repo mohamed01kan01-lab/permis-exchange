@@ -23,22 +23,23 @@
       "hosting": "Data hosted in the EU",
       "support": "Support within 24h"
     },
+    "verifiedClient": "Verified client",
+    "licencePrefix": "Licence",
     "quotes": {
-      "sophie": {
-        "name": "Sophie M.",
-        "location": "Brussels, Belgium",
-        "text": "I exchanged my French licence for a Belgian one without a single trip to the administration. Everything happened online."
-      },
-      "julien": {
-        "name": "Julien K.",
-        "location": "Lyon, France",
-        "text": "My licence was from Canada and I expected a headache. The team handled the sworn translation and the whole follow-up."
-      },
-      "amara": {
-        "name": "Amara D.",
-        "location": "Cotonou → Paris",
-        "text": "I was kept informed at every step, right up to receiving my new licence. Exactly what I needed when I arrived in France."
-      }
+      "t1": "The whole process was explained clearly, without administrative jargon. A real time-saver.",
+      "t2": "I was able to convert my foreign licence into an Italian one without unnecessary trips.",
+      "t3": "Fast WhatsApp follow-up at every step, I always knew where my file stood.",
+      "t4": "Zero rejection thanks to their upfront checks. I recommend them without hesitation.",
+      "t5": "Professional, human support from start to finish of my conversion.",
+      "t6": "I was dreading the paperwork, but everything went smoothly and quickly.",
+      "t7": "The initial questionnaire let me know right away whether I was eligible.",
+      "t8": "A responsive team that actually answers every question.",
+      "t9": "My licence was converted within weeks, no surprises, no missing documents.",
+      "t10": "They helped me avoid several administrative mistakes that would have delayed my file.",
+      "t11": "Serious, transparent service, with clear explanations at every step.",
+      "t12": "I recommend this to every expat looking to convert their licence in Italy.",
+      "t13": "Reassuring support on a subject I knew nothing about.",
+      "t14": "Fast, efficient, and always reachable whenever I had a question."
     }
   },
   "comparison": {
@@ -56,8 +57,8 @@
       },
       "documents": {
         "label": "Required documents",
-        "eu": "Current licence, ID, proof of address",
-        "nonEu": "The same, plus a sworn translation and sometimes a conformity certificate"
+        "eu": "Current licence (front/back)",
+        "nonEu": "Current licence (front/back), sworn translation if required"
       },
       "delay": {
         "label": "Estimated timeline",
@@ -73,7 +74,7 @@
         "label": "Driving exam required"
       }
     },
-    "disclaimer": "Provided for guidance only: timelines and requirements vary by destination country and are confirmed by our team after reviewing your file."
+    "disclaimer": "Provided for guidance only: timelines and requirements vary by your licence's country of origin and are confirmed by our team after reviewing your file."
   },
   "quiz": {
     "eyebrow": "Not sure which process applies to you?",
@@ -102,38 +103,38 @@
     }
   },
   "hero": {
-    "eyebrow": "International licence exchange service",
-    "title": "Exchange your driving licence without the administrative headache",
-    "subtitle": "Permis-Exchange manages your file end to end, with a direct connection to the EUCARIS and RESPER registries, for faster processing and no rejections.",
+    "eyebrow": "Driving licence conversion service for Italy",
+    "title": "Exchange your foreign driving licence for an Italian one without the administrative headache",
+    "subtitle": "Conversione patente straniera manages your file end to end, with a direct connection to the EUCARIS and Motorizzazione Civile registries, for faster processing and no rejections.",
     "ctaPrimary": "Start my request",
     "ctaSecondary": "See how it works",
     "stat1Value": "48h",
     "stat1Label": "to analyse your file",
     "stat2Value": "0",
-    "stat2Label": "rejections thanks to EUCARIS/RESPER checks",
-    "stat3Value": "27+",
-    "stat3Label": "EU/EEA countries covered"
+    "stat2Label": "rejections thanks to EUCARIS/Motorizzazione Civile checks",
+    "stat3Value": "180+",
+    "stat3Label": "countries of licence origin accepted"
   },
   "process": {
     "eyebrow": "The process",
-    "title": "How your licence exchange unfolds",
-    "subtitle": "Four steps handled by our team, from submitting your file to receiving your new licence.",
+    "title": "How your licence conversion unfolds",
+    "subtitle": "Four steps handled by our team, from analysing your situation to receiving your Italian licence.",
     "steps": {
       "step1": {
-        "title": "You submit your file",
-        "description": "Fill in your information and upload your documents in minutes through our secure form."
+        "title": "Analysing your situation",
+        "description": "You fill in our form with details about your foreign licence and your residency in Italy, and we identify the process that applies to your case."
       },
       "step2": {
-        "title": "EUCARIS/RESPER verification",
-        "description": "Our team checks your current licence directly against the European registries to anticipate any blockers."
+        "title": "Verifying your information",
+        "description": "We check the documents needed for your conversion file and help you prepare them to avoid any delays."
       },
       "step3": {
-        "title": "Official file preparation",
-        "description": "We prepare and submit your file to the relevant administration in your destination country."
+        "title": "Support through the process",
+        "description": "We guide you step by step through the formalities of converting your foreign licence into an Italian one, with clear explanations at every stage."
       },
       "step4": {
-        "title": "Receive your new licence",
-        "description": "You're kept informed at every step and receive your exchanged licence without unnecessary trips."
+        "title": "Following up your file",
+        "description": "We handle the administrative follow-up until your conversion is finalised and keep you informed at every step."
       }
     }
   },
@@ -146,9 +147,9 @@
         "title": "EUCARIS",
         "description": "Driving licence information exchange between European countries, used to validate your current licence in real time."
       },
-      "resper": {
-        "title": "RESPER",
-        "description": "Belgium's central driving licence registry, consulted to make every file processed in Belgium more reliable."
+      "motorizzazione": {
+        "title": "Motorizzazione Civile",
+        "description": "Italy's national driving licence registry, consulted to make every conversion file more reliable."
       },
       "security": {
         "title": "Secure data",
@@ -165,17 +166,17 @@
     "title": "Two paths, one team",
     "subtitle": "Whether your licence comes from an EU/EEA country or elsewhere, we adapt the process to your situation.",
     "euExchange": {
-      "title": "EU / EEA licence exchange",
-      "description": "You live in a new European country and need to exchange your national licence for your country of residence's licence.",
+      "title": "EU / EEA licence",
+      "description": "Your licence was issued in an EU/EEA country: exchanging it for an Italian licence follows a simplified procedure.",
       "bullet1": "Validity check of your current licence",
-      "bullet2": "File preparation per the destination country's rules",
-      "bullet3": "Follow-up until you receive your new licence",
+      "bullet2": "File preparation per Italian rules",
+      "bullet3": "Follow-up until you receive your Italian licence",
       "cta": "Request an EU/EEA exchange"
     },
     "nonEuConversion": {
-      "title": "Non-EU licence conversion",
-      "description": "Your licence was issued outside the European Union and needs to be recognised or converted to be valid locally.",
-      "bullet1": "Review of reciprocity agreements that apply to your country",
+      "title": "Non-EU licence",
+      "description": "Your licence was issued outside the European Union: it needs to be recognised or converted into an Italian licence.",
+      "bullet1": "Review of reciprocity agreements that apply to your country of origin",
       "bullet2": "Sworn translation when required",
       "bullet3": "Support with additional steps (exam, consular file)",
       "cta": "Request a conversion"
@@ -187,11 +188,11 @@
     "items": {
       "q1": {
         "question": "How long does a licence exchange take?",
-        "answer": "Thanks to our direct connection to EUCARIS and RESPER, the initial review of your file usually takes 48 business hours. The total timeline then depends on your destination country, typically 2 to 6 weeks."
+        "answer": "Thanks to our direct connection to EUCARIS and the Motorizzazione Civile, the initial review of your file usually takes 48 business hours. The total timeline then depends on your licence's country of origin, typically 2 to 6 weeks."
       },
       "q2": {
         "question": "What documents do I need to provide?",
-        "answer": "Your current driving licence (front/back), a valid ID document, a recent proof of address, and depending on your situation, a sworn translation of your licence."
+        "answer": "Your current driving licence (front/back) is enough to start your file. Depending on your situation, a sworn translation may be requested afterwards."
       },
       "q3": {
         "question": "Can I track the progress of my request?",
