@@ -4,7 +4,7 @@ export const procedureTypes = ["EU_EEA_EXCHANGE", "NON_EU_CONVERSION"] as const;
 
 export const destinationSchema = z.object({
   procedureType: z.enum(procedureTypes, {
-    message: "Sélectionnez un type de démarche",
+    message: "selectProcedure",
   }),
 });
 

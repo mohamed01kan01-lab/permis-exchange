@@ -1,20 +1,20 @@
 import { z } from "zod";
 
 export const licenceSchema = z.object({
-  licenceIssuingCountry: z.string().length(2, "Sélectionnez un pays"),
-  licenceNumber: z.string().trim().min(1, "Le numéro de permis est requis").max(40),
+  licenceIssuingCountry: z.string().length(2, "selectCountry"),
+  licenceNumber: z.string().trim().min(1, "required").max(40),
   licenceIssueDate: z
     .string()
-    .min(1, "La date de délivrance est requise")
-    .refine((v) => !Number.isNaN(Date.parse(v)), "Date invalide"),
+    .min(1, "required")
+    .refine((v) => !Number.isNaN(Date.parse(v)), "invalidDate"),
   licenceExpiryDate: z
     .string()
     .optional()
     .or(z.literal(""))
-    .refine((v) => !v || !Number.isNaN(Date.parse(v)), "Date invalide"),
+    .refine((v) => !v || !Number.isNaN(Date.parse(v)), "invalidDate"),
   licenceCategories: z
     .array(z.string())
-    .min(1, "Sélectionnez au moins une catégorie"),
+    .min(1, "selectCategory"),
 });
 
 export type LicenceData = z.infer<typeof licenceSchema>;

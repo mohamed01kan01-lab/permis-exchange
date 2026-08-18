@@ -25,5 +25,17 @@
   "themeToggle": {
     "switchToLight": "Switch to light theme",
     "switchToDark": "Switch to dark theme"
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalidDate": "Invalid date",
+    "invalidEmail": "Invalid email address",
+    "invalidPhone": "Invalid phone number",
+    "selectCountry": "Select a country",
+    "selectCategory": "Select at least one category",
+    "selectProcedure": "Select a procedure type",
+    "pleaseAnswer": "Please answer",
+    "allDocumentsRequired": "Please provide all required documents",
+    "consentRequired": "You must accept to continue"
   }
 }

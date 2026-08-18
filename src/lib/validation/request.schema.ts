@@ -7,7 +7,7 @@ import { documentsSchema } from "./documents.schema";
 export const consentSchema = z.object({
   consent: z
     .boolean()
-    .refine((v) => v === true, "Vous devez accepter pour continuer"),
+    .refine((v) => v === true, "consentRequired"),
 });
 
 export const requestSchema = identitySchema

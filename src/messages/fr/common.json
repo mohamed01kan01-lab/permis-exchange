@@ -25,5 +25,17 @@
   "themeToggle": {
     "switchToLight": "Passer au thème clair",
     "switchToDark": "Passer au thème sombre"
+  },
+  "validation": {
+    "required": "Ce champ est requis",
+    "invalidDate": "Date invalide",
+    "invalidEmail": "Adresse email invalide",
+    "invalidPhone": "Numéro de téléphone invalide",
+    "selectCountry": "Sélectionnez un pays",
+    "selectCategory": "Sélectionnez au moins une catégorie",
+    "selectProcedure": "Sélectionnez un type de démarche",
+    "pleaseAnswer": "Merci de répondre",
+    "allDocumentsRequired": "Merci de fournir tous les documents obligatoires",
+    "consentRequired": "Vous devez accepter pour continuer"
   }
 }

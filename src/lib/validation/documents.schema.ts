@@ -20,7 +20,7 @@ export const documentsSchema = z.object({
         REQUIRED_DOCUMENT_TYPES.every((required) =>
           docs.some((doc) => doc.type === required),
         ),
-      "Merci de fournir tous les documents obligatoires",
+      "allDocumentsRequired",
     ),
 });
 
