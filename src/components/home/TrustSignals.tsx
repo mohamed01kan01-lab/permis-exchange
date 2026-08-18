@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -177,6 +178,26 @@ export function TrustSignals() {
                 </div>
               );
             })}
+          </div>
+
+          <div className="mt-12 flex flex-col items-center gap-4">
+            <p className="text-xs text-muted-foreground">{t("complianceNote")}</p>
+            <div className="flex items-center gap-8 opacity-70 grayscale">
+              <Image
+                src="/images/partners/partner-1.jpeg"
+                alt="Ministero delle Infrastrutture e dei Trasporti"
+                width={140}
+                height={56}
+                className="h-8 w-auto object-contain"
+              />
+              <Image
+                src="/images/partners/partner-2.jpeg"
+                alt="Unione Europea"
+                width={84}
+                height={56}
+                className="h-8 w-auto object-contain"
+              />
+            </div>
           </div>
         </div>
       </div>

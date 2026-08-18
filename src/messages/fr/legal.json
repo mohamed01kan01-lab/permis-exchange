@@ -6,7 +6,7 @@
     "sections": {
       "editor": {
         "title": "Éditeur du site",
-        "body": "Le site Permis-Exchange est édité par Permis-Exchange SRL. Numéro d'entreprise : à compléter. Contact : contact@permis-exchange.example."
+        "body": "Le site Permis-Exchange est édité par Permis-Exchange SRL, Via delle Magnolie, 1, 70026 Modugno BA, Italie. Numéro d'entreprise : à compléter. Contact : contatto@conversionepatente.it."
       },
       "publication": {
         "title": "Directeur de la publication",
@@ -87,7 +87,7 @@
       },
       "rights": {
         "title": "Vos droits",
-        "body": "Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et d'opposition au traitement de vos données, ainsi que d'un droit à la portabilité. Vous pouvez exercer ces droits en nous contactant à privacy@permis-exchange.example."
+        "body": "Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et d'opposition au traitement de vos données, ainsi que d'un droit à la portabilité. Vous pouvez exercer ces droits en nous contactant à contatto@conversionepatente.it."
       },
       "security": {
         "title": "Sécurité",

@@ -1,7 +1,6 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-const FROM = process.env.RESEND_FROM ?? "Permis-Exchange <notifications@permis-exchange.example>";
+const FROM = process.env.RESEND_FROM ?? "Conversione patente straniera <contatto@conversionepatente.it>";
 const ADMIN_EMAIL = process.env.ADMIN_NOTIFICATION_EMAIL;
 const ADMIN_WHATSAPP_NUMBER = process.env.ADMIN_WHATSAPP_NUMBER; // format: indicatif+numéro, sans "+" ni espaces
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000";
@@ -17,12 +16,26 @@ function buildWhatsAppLink(message: string) {
 }
 
 /**
+ * Instancié à la demande plutôt qu'au chargement du module : `new Resend()`
+ * jette immédiatement si RESEND_API_KEY est absente, ce qui ferait planter
+ * tout fichier qui importe ce module (y compris des Server Actions sans
+ * aucun rapport avec l'email) si c'était fait au niveau module.
+ */
+let resendClient: Resend | null = null;
+function getResendClient() {
+  if (!resendClient) {
+    resendClient = new Resend(process.env.RESEND_API_KEY);
+  }
+  return resendClient;
+}
+
+/**
  * Le SDK Resend ne rejette jamais : il résout vers { data, error }. Sans cette
  * inspection, un envoi refusé (domaine non vérifié, clé absente) passerait
  * pour un succès.
  */
 async function send(payload: { to: string; subject: string; html: string }) {
-  const { error } = await resend.emails.send({
+  const { error } = await getResendClient().emails.send({
     from: FROM,
     to: payload.to,
     subject: payload.subject,
