@@ -46,6 +46,11 @@ export function Footer() {
                 {nav("cta")}
               </Link>
             </li>
+            <li>
+              <Link href="/contact" className="hover:text-foreground">
+                {nav("contact")}
+              </Link>
+            </li>
           </ul>
         </div>
 

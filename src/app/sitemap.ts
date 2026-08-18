@@ -6,6 +6,7 @@ const PATHS: { path: string; priority: number; changeFrequency: MetadataRoute.Si
   { path: "", priority: 1, changeFrequency: "weekly" },
   { path: "/questionnaire", priority: 0.9, changeFrequency: "monthly" },
   { path: "/demande", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/contact", priority: 0.5, changeFrequency: "yearly" },
   { path: "/cgu", priority: 0.3, changeFrequency: "yearly" },
   { path: "/confidentialite", priority: 0.3, changeFrequency: "yearly" },
   { path: "/mentions-legales", priority: 0.3, changeFrequency: "yearly" },

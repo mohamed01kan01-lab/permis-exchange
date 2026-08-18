@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Contact — Permis-Exchange",
+    "description": "Get in touch with our team for any question about converting your foreign driving licence into an Italian one."
+  },
+  "eyebrow": "Get in touch",
+  "title": "A question before you start?",
+  "subtitle": "Our team replies by email within 48 business hours. To find out if you're eligible for conversion, start directly with our questionnaire.",
+  "emailLabel": "Email",
+  "addressLabel": "Address",
+  "addressValue": "Via delle Magnolie, 1, 70026 Modugno BA, Italy",
+  "hoursLabel": "Response time",
+  "hoursValue": "Within 48 business hours",
+  "cta": "Start the questionnaire",
+  "mapTitle": "Our location"
+}

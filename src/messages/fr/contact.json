@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Contact — Permis-Exchange",
+    "description": "Contactez notre équipe pour toute question sur la conversion de votre permis de conduire étranger en permis italien."
+  },
+  "eyebrow": "Nous contacter",
+  "title": "Une question avant de commencer ?",
+  "subtitle": "Notre équipe vous répond par email sous 48h ouvrées. Pour savoir si vous êtes éligible à la conversion, commencez directement par notre questionnaire.",
+  "emailLabel": "Email",
+  "addressLabel": "Adresse",
+  "addressValue": "Via delle Magnolie, 1, 70026 Modugno BA, Italie",
+  "hoursLabel": "Délai de réponse",
+  "hoursValue": "Sous 48h ouvrées",
+  "cta": "Commencer le questionnaire",
+  "mapTitle": "Notre localisation"
+}

@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { IconMenu } from "@tabler/icons-react";
+import { Link } from "@/i18n/navigation";
 import { TransitionLink } from "./TransitionLink";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 import { ThemeToggle } from "./ThemeToggle";
@@ -48,6 +49,12 @@ export function MobileMenu() {
               {t(link.key)}
             </SheetClose>
           ))}
+          <SheetClose
+            render={<Link href="/contact" />}
+            className="rounded-lg px-3 py-3 transition-colors hover:bg-muted"
+          >
+            {t("contact")}
+          </SheetClose>
         </nav>
 
         <SheetFooter className="gap-4 border-t border-border">

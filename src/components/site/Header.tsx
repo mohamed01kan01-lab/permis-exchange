@@ -37,6 +37,10 @@ export function Header() {
             {t("faq")}
             <span className="absolute inset-x-0 -bottom-0.5 h-px scale-x-0 bg-primary transition-transform duration-200 group-hover:scale-x-100" />
           </a>
+          <Link href="/contact" className="group relative py-1 hover:text-foreground">
+            {t("contact")}
+            <span className="absolute inset-x-0 -bottom-0.5 h-px scale-x-0 bg-primary transition-transform duration-200 group-hover:scale-x-100" />
+          </Link>
         </nav>
 
         <div className="flex items-center gap-3">

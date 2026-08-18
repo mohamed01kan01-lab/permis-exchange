@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Contatti — Conversione patente straniera",
+    "description": "Contatta il nostro team per qualsiasi domanda sulla conversione della tua patente di guida straniera in patente italiana."
+  },
+  "eyebrow": "Contattaci",
+  "title": "Una domanda prima di iniziare?",
+  "subtitle": "Il nostro team risponde via email entro 48 ore lavorative. Per sapere se sei idoneo alla conversione, inizia direttamente con il nostro questionario.",
+  "emailLabel": "Email",
+  "addressLabel": "Indirizzo",
+  "addressValue": "Via delle Magnolie, 1, 70026 Modugno BA, Italia",
+  "hoursLabel": "Tempo di risposta",
+  "hoursValue": "Entro 48 ore lavorative",
+  "cta": "Inizia il questionario",
+  "mapTitle": "La nostra sede"
+}
