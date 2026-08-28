@@ -5,7 +5,7 @@
   },
   "steps": {
     "1": "Identité",
-    "2": "Permis actuel",
+    "2": "Permis de conduire actuel",
     "3": "Destination",
     "4": "Documents",
     "5": "Récapitulatif"
@@ -29,11 +29,11 @@
     "next": "Suivant"
   },
   "licence": {
-    "licenceIssuingCountry": "Pays émetteur du permis",
-    "licenceNumber": "Numéro de permis",
+    "licenceIssuingCountry": "Pays émetteur du permis de conduire",
+    "licenceNumber": "Numéro de permis de conduire",
     "licenceIssueDate": "Date de délivrance",
     "licenceExpiryDate": "Date d'expiration (optionnel)",
-    "licenceCategories": "Catégories du permis",
+    "licenceCategories": "Catégories du permis de conduire",
     "back": "Précédent",
     "next": "Suivant"
   },
@@ -53,7 +53,7 @@
   },
   "review": {
     "identitySection": "Identité",
-    "licenceSection": "Permis actuel",
+    "licenceSection": "Permis de conduire actuel",
     "destinationSection": "Destination",
     "documentsSection": "Documents",
     "fullName": "Nom complet",
@@ -62,7 +62,7 @@
     "address": "Adresse",
     "residenceCountry": "Pays de résidence",
     "issuingCountry": "Pays émetteur",
-    "licenceNumber": "Numéro de permis",
+    "licenceNumber": "Numéro de permis de conduire",
     "categories": "Catégories",
     "destinationCountry": "Pays de destination",
     "procedure": "Type de démarche",

@@ -1,50 +1,27 @@
-# Pour le formulaire voici les questions à poser (plus de doc à fournir directement):
+# Nouveau feedback client
 
-De quel pays appartient votre permis actuel
+## Nouvelles images dans le dossier public
 
-Votre permis est il toujours valide ?
+- Nouveau logo logo.png
+- Nouvelle og tag img new-og-img.jpeg
+- changer les deux catalogue de photos et mettre les photos précisement dans les dossier /images/catalogue/1 et /2
+- les images partners devrait être en couleur et augmenter leurs tailles
 
-Quels sont les catégories que vous disposez ?
+NB: Analyse des dimensions et aspects ratio pour un bon affichage
 
-Avez-vous la résidence italienne ?
+## le titre écrire au début du site c'est pas trop long ? Essayer de fait en sorte que ça soit un peu moins long mais a vous de voir comment vous allez procéder pour que ça ai un peu d'esthétique
 
-Depuis quand êtes vous en Italie ?
+- Piste : réduit la taille d'un cran et raccourci le texte sans perdre la logique.
 
-Avez-vous obtenu votre permis actuel avant ou après votre la résidence italienne ?
+## faite une vraie section statistiques pour le site web
 
-Avez-vous déjà essayé de convertir votre permis étranger en Italien ? Si oui quel était le résultat de cette démarche ?
+## ''permis de conduire ''et non '' permis ''
 
-Votre permis de conduire actuel est elle obtenu par une échange de permis de conduire où vous l’avez obtenu selon la procédure normale ?
+Surtout en it, la traduction litérale n'est pas approprié, il faut que ça soit contextuelle
+Changer ça en même temps sans oublier les faute d'orthographe
 
-# Modifications à effectuer
+## la page contact dois avoir le numéro et le numéro nous devrions avoir la main pour le changer dans la dashboard
 
-1- la première des chose a fait par un client après avoir visité le site web et lire le contenu, il dois répondre au questionnaire d'abord, maintenant une fois les questionnaires répondu, les les réponse devrait être envoyé dans notre dashboard et notre mail pro et et notre WhatsApp, une fois le message reçu par nous nous allons vérifier les réponses du questionnaire pour savoir si la personne est éligible pour fait l'échange de permis de conduire dans son cas où pas. Si oui alors nous allons lui envoyer un mail ou un message WhatsApp qui lui dira maintenant de reparti sur le site et fait maintenant son demande de permis de conduire en remplissant maintenant le formulaire qui es là qui constituera son dossier de demande d'échange de permis de conduire. Et âpre nous on continu le procédure avec le client en interne ( sur WhatsApp)
+## mettre les informations de la page contact dans le bas du site web (footer) ( genre , le mail , le numéro, le nom du site , la localisation et tout )
 
-- Le nom du site serai ''Conversione patente straniera'' en it
-- Les pays disponible sur le site web pour la sélection ne sont pas toute au complet, il dois y avoir tout les pays puis que nous visons le plus les immigrés et ils viennent de tout les pays
-- les base de données dans laquelle le permis de conduire sont enregistrées en Italie c'est la Motorisation civile et la base de européenne ( traduction Italien '' Motorizzazione civile''')
-- les témoignages on dois les complété et nous devrions avoir des images des personnes tenant un permis de conduire pour illustrer chaque témoignages ( je vais vous envoyer photo pour les témoignages)
-- au début de la page d'accueil il faut une photo en arrière plan pour que ça soit un peu professionnel comme pour l'autre site que je vous ai envoyé
-- pour le titre vous devriez précisé le pays donc se sera '' échanger votre permis de conduire étranger en italien sans le/les casse-tête administratif ''
-- dans le formulaire dossier de demande d'échange de permis de conduire, nous devrions enlevé ' la pièce d'identité, justificatif de domicile et la traduction '''
-
-# Comment ça marche ?
-
-1. Analyse de votre situation
-
-Vous commencez par remplir notre formulaire en ligne avec les informations concernant votre permis de conduire étranger, votre résidence en Italie et votre situation administrative.
-Notre équipe analyse votre dossier afin d’identifier les démarches applicables à votre cas. 2. Vérification des informations
-
-Après l’étude de votre situation, nous allons procéder à la vérification de vos documents nécessaires pour constituer votre dossier de conversion.
-Nous vous accompagnons dans la préparation des pièces administratives afin d’éviter les erreurs ou les oublis qui pourraient retarder la procédure. 3. Accompagnement dans les démarches administratives
-⁠ vous bénéficier d’un accompagnement personnalisé transparent et professionnel. Chaque étape vous est expliqué avec clarté afin que vous puissiez suivre l’évolution de votre dossier en toute sérénités
-Nous vous guidons étape par étape dans les différentes formalités liées à la conversion de votre permis étranger en permis italien.
-Notre rôle est de vous simplifier la procédure et de vous aider à convertir votre permis de conduire .
-
-4. Suivi de votre dossier
-   Une fois la procédure engagée, nous assurons un suivi administratif de votre dossier et nous vous informons des différentes étapes jusqu’à la finalisation de la démarche de conversion de votre permis de conduire
-
-# Images
-
-Les images à utiliser pour les différentes sections et og-img sont dans
-le dossier /images dans public. Analyse-les, renomme-les puis utilise les dans les différentes sections. Pour les témoignages on va aussi les utiliser mais pas en miniature circulaire mais plutot sous forme de card carousel (utiliser shadcn/ui).
+## bouton de messagerie a droite à bas du site : maintenant le bouton de messagerie c'est a la personne même de dit par quel moyen il veut continuer, s'il veut nous écrire avec un mail , il choisit mail s'il veut nous écrire avec un numéro WhatsApp : il choisit WhatsApp.

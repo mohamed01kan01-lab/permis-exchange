@@ -119,6 +119,16 @@ model PreQualification {
   @@index([email])
 }
 
+// Réglages du site éditables depuis le dashboard admin, une seule ligne
+// ("singleton") pour l'ensemble du site, toutes locales confondues.
+model SiteSettings {
+  id             String   @id @default("singleton")
+  contactEmail   String?
+  contactPhone   String?
+  contactAddress String?
+  updatedAt      DateTime @updatedAt
+}
+
 model Document {
   id        String                  @id @default(cuid())
   request   LicenseExchangeRequest  @relation(fields: [requestId], references: [id], onDelete: Cascade)

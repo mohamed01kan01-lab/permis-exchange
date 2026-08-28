@@ -26,6 +26,12 @@
     "switchToLight": "Passa al tema chiaro",
     "switchToDark": "Passa al tema scuro"
   },
+  "contactWidget": {
+    "label": "Contattaci",
+    "email": "Via email",
+    "whatsapp": "Via WhatsApp",
+    "whatsappPrefill": "Ciao, ho una domanda sulla conversione della mia patente di guida."
+  },
   "validation": {
     "required": "Questo campo è obbligatorio",
     "invalidDate": "Data non valida",

@@ -29,10 +29,10 @@ const NON_EU_EXTRA_ITEMS = [
 ] as const;
 
 const COLLAGE_PHOTOS = [
-  { src: "/images/testimonial-01.jpeg", className: "left-[6%] top-[10%] w-[42%] rotate-[-6deg]", z: 10 },
-  { src: "/images/testimonial-09.jpeg", className: "right-[4%] top-0 w-[38%] rotate-[5deg]", z: 20 },
-  { src: "/images/testimonial-05.jpeg", className: "left-0 bottom-0 w-[36%] rotate-[4deg]", z: 20 },
-  { src: "/images/testimonial-12.jpeg", className: "right-[8%] bottom-[2%] w-[42%] rotate-[-4deg]", z: 10 },
+  { src: "/images/catalogue/2/img1.jpeg", className: "left-[6%] top-[10%] w-[42%] rotate-[-6deg]", z: 10 },
+  { src: "/images/catalogue/2/img2.jpeg", className: "right-[4%] top-0 w-[38%] rotate-[5deg]", z: 20 },
+  { src: "/images/catalogue/2/img4.jpeg", className: "left-0 bottom-0 w-[36%] rotate-[4deg]", z: 20 },
+  { src: "/images/catalogue/2/img5.jpeg", className: "right-[8%] bottom-[2%] w-[42%] rotate-[-4deg]", z: 10 },
 ] as const;
 
 export function DocumentChecklist() {
@@ -141,7 +141,7 @@ export function DocumentChecklist() {
                   fill
                   sizes="(min-width: 1024px) 22vw, 40vw"
                   className="object-cover"
-                  style={{ objectPosition: "50% 20%" }}
+                  style={{ objectPosition: "50% 10%" }}
                 />
               </div>
             ))}

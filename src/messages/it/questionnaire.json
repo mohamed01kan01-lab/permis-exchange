@@ -11,15 +11,15 @@
     "loading": "Caricamento..."
   },
   "steps": {
-    "1": "La tua patente",
+    "1": "La tua patente di guida",
     "2": "Residenza in Italia",
     "3": "Storico",
     "4": "Contatti",
     "5": "Riepilogo"
   },
   "licence": {
-    "country": "Da quale paese proviene la tua patente attuale?",
-    "stillValid": "La tua patente è ancora valida?",
+    "country": "Da quale paese proviene la tua patente di guida attuale?",
+    "stillValid": "La tua patente di guida è ancora valida?",
     "categories": "Quali categorie possiedi?"
   },
   "residency": {
@@ -27,11 +27,11 @@
     "since": "Da quando sei in Italia?"
   },
   "history": {
-    "timingQuestion": "Hai ottenuto la tua patente attuale prima o dopo la tua residenza in Italia?",
+    "timingQuestion": "Hai ottenuto la tua patente di guida attuale prima o dopo la tua residenza in Italia?",
     "timingBefore": "Prima della mia residenza in Italia",
     "timingAfter": "Dopo la mia residenza in Italia",
-    "obtainedByExchange": "La tua patente attuale è stata ottenuta tramite uno scambio di patente (e non con l'esame normale)?",
-    "previousAttempt": "Hai già provato a convertire la tua patente straniera in italiana?",
+    "obtainedByExchange": "La tua patente di guida attuale è stata ottenuta tramite uno scambio di patente (e non con l'esame normale)?",
+    "previousAttempt": "Hai già provato a convertire la tua patente di guida straniera in italiana?",
     "previousResult": "Qual è stato il risultato di quel tentativo?"
   },
   "contact": {
@@ -42,7 +42,7 @@
     "phoneHint": "Idealmente un numero raggiungibile su WhatsApp."
   },
   "review": {
-    "licenceSection": "La tua patente",
+    "licenceSection": "La tua patente di guida",
     "residencySection": "Residenza e storico",
     "contactSection": "Contatti",
     "country": "Paese di rilascio",
@@ -50,7 +50,7 @@
     "categories": "Categorie",
     "hasResidency": "Residenza italiana",
     "since": "Dal",
-    "timing": "Patente ottenuta",
+    "timing": "Patente di guida ottenuta",
     "obtainedByExchange": "Ottenuta tramite scambio",
     "previousAttempt": "Tentativo precedente",
     "name": "Nome completo",

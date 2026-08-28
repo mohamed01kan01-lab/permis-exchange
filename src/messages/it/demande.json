@@ -5,7 +5,7 @@
   },
   "steps": {
     "1": "Identità",
-    "2": "Patente attuale",
+    "2": "Patente di guida attuale",
     "3": "Destinazione",
     "4": "Documenti",
     "5": "Riepilogo"
@@ -29,11 +29,11 @@
     "next": "Avanti"
   },
   "licence": {
-    "licenceIssuingCountry": "Paese di rilascio della patente",
-    "licenceNumber": "Numero di patente",
+    "licenceIssuingCountry": "Paese di rilascio della patente di guida",
+    "licenceNumber": "Numero di patente di guida",
     "licenceIssueDate": "Data di rilascio",
     "licenceExpiryDate": "Data di scadenza (opzionale)",
-    "licenceCategories": "Categorie della patente",
+    "licenceCategories": "Categorie della patente di guida",
     "back": "Indietro",
     "next": "Avanti"
   },
@@ -53,7 +53,7 @@
   },
   "review": {
     "identitySection": "Identità",
-    "licenceSection": "Patente attuale",
+    "licenceSection": "Patente di guida attuale",
     "destinationSection": "Destinazione",
     "documentsSection": "Documenti",
     "fullName": "Nome completo",
@@ -62,7 +62,7 @@
     "address": "Indirizzo",
     "residenceCountry": "Paese di residenza",
     "issuingCountry": "Paese di rilascio",
-    "licenceNumber": "Numero di patente",
+    "licenceNumber": "Numero di patente di guida",
     "categories": "Categorie",
     "destinationCountry": "Paese di destinazione",
     "procedure": "Tipo di pratica",

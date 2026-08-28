@@ -5,7 +5,7 @@
   },
   "steps": {
     "1": "Identity",
-    "2": "Current licence",
+    "2": "Current driving licence",
     "3": "Destination",
     "4": "Documents",
     "5": "Review"
@@ -29,11 +29,11 @@
     "next": "Next"
   },
   "licence": {
-    "licenceIssuingCountry": "Licence issuing country",
-    "licenceNumber": "Licence number",
+    "licenceIssuingCountry": "Driving licence issuing country",
+    "licenceNumber": "Driving licence number",
     "licenceIssueDate": "Issue date",
     "licenceExpiryDate": "Expiry date (optional)",
-    "licenceCategories": "Licence categories",
+    "licenceCategories": "Driving licence categories",
     "back": "Back",
     "next": "Next"
   },
@@ -53,7 +53,7 @@
   },
   "review": {
     "identitySection": "Identity",
-    "licenceSection": "Current licence",
+    "licenceSection": "Current driving licence",
     "destinationSection": "Destination",
     "documentsSection": "Documents",
     "fullName": "Full name",
@@ -62,7 +62,7 @@
     "address": "Address",
     "residenceCountry": "Country of residence",
     "issuingCountry": "Issuing country",
-    "licenceNumber": "Licence number",
+    "licenceNumber": "Driving licence number",
     "categories": "Categories",
     "destinationCountry": "Destination country",
     "procedure": "Procedure type",

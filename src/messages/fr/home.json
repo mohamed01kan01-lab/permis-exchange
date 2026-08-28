@@ -10,7 +10,7 @@
             "id": "Pièce d'identité valide",
             "address": "Justificatif de domicile de moins de 3 mois",
             "photo": "Photo d'identité récente",
-            "translation": "Traduction assermentée du permis",
+            "translation": "Traduction assermentée du permis de conduire",
             "conformity": "Attestation de conformité ou d'équivalence"
         },
         "disclaimer": "Liste indicative : notre équipe confirme les pièces exactes nécessaires selon le pays concerné."
@@ -27,17 +27,17 @@
         "licencePrefix": "Permis",
         "quotes": {
             "t1": "Toute la procédure a été expliquée clairement, sans jargon administratif. Un vrai gain de temps.",
-            "t2": "J'ai pu convertir mon permis étranger en permis italien sans me déplacer inutilement.",
+            "t2": "J'ai pu convertir mon permis de conduire étranger en permis italien sans me déplacer inutilement.",
             "t3": "Suivi rapide par WhatsApp à chaque étape, je savais toujours où en était mon dossier.",
             "t4": "Zéro rejet grâce à leur vérification en amont. Je recommande sans hésiter.",
             "t5": "Un accompagnement humain et professionnel du début à la fin de ma conversion.",
             "t6": "J'appréhendais les démarches, mais tout s'est déroulé simplement et rapidement.",
             "t7": "Le questionnaire initial m'a permis de savoir tout de suite si j'étais éligible.",
             "t8": "Une équipe réactive qui répond vraiment à toutes les questions.",
-            "t9": "Mon permis converti en quelques semaines, sans surprise ni document oublié.",
+            "t9": "Mon permis de conduire converti en quelques semaines, sans surprise ni document oublié.",
             "t10": "Ils m'ont évité plusieurs erreurs administratives qui auraient retardé mon dossier.",
             "t11": "Service sérieux, transparent, avec des explications claires à chaque étape.",
-            "t12": "Je recommande à tous les expatriés qui veulent convertir leur permis en Italie.",
+            "t12": "Je recommande à tous les expatriés qui veulent convertir leur permis de conduire en Italie.",
             "t13": "Un accompagnement rassurant sur un sujet que je ne maîtrisais pas du tout.",
             "t14": "Rapide, efficace, et toujours joignable en cas de question."
         }
@@ -52,13 +52,13 @@
         "rows": {
             "eligibility": {
                 "label": "Éligibilité",
-                "eu": "Permis valide émis dans un pays de l'UE/EEE",
-                "nonEu": "Permis valide émis hors UE, non expiré"
+                "eu": "Permis de conduire valide émis dans un pays de l'UE/EEE",
+                "nonEu": "Permis de conduire valide émis hors UE, non expiré"
             },
             "documents": {
                 "label": "Documents requis",
-                "eu": "Permis actuel (recto/verso)",
-                "nonEu": "Permis actuel (recto/verso), traduction assermentée si requise"
+                "eu": "Permis de conduire actuel (recto/verso)",
+                "nonEu": "Permis de conduire actuel (recto/verso), traduction assermentée si requise"
             },
             "delay": {
                 "label": "Délai estimé",
@@ -66,7 +66,7 @@
                 "nonEu": "4 à 8 semaines selon les accords bilatéraux"
             },
             "validity": {
-                "label": "Ancienneté du permis",
+                "label": "Ancienneté du permis de conduire",
                 "eu": "Aucune durée minimale généralement exigée",
                 "nonEu": "Certains pays exigent une durée de validité minimale"
             },
@@ -74,7 +74,7 @@
                 "label": "Examen de conduite requis"
             }
         },
-        "disclaimer": "Informations données à titre indicatif : les délais et exigences varient selon le pays d'origine de votre permis et sont confirmés par notre équipe après étude de votre dossier."
+        "disclaimer": "Informations données à titre indicatif : les délais et exigences varient selon le pays d'origine de votre permis de conduire et sont confirmés par notre équipe après étude de votre dossier."
     },
     "quiz": {
         "eyebrow": "Pas sûr de la démarche qui vous concerne ?",
@@ -104,25 +104,30 @@
     },
     "hero": {
         "eyebrow": "Service de conversion de permis pour l'Italie",
-        "title": "Échanger votre permis de conduire étranger en italien sans le casse-tête administratif",
+        "title": "Convertissez votre permis de conduire étranger en permis italien, sans le casse-tête administratif.",
         "subtitle": "Conversione patente straniera gère votre dossier de bout en bout, avec une connexion directe aux registres EUCARIS et Motorizzazione Civile, pour un traitement plus rapide et sans rejet.",
         "ctaPrimary": "Démarrer ma demande",
-        "ctaSecondary": "Voir comment ça marche",
-        "stat1Value": "48h",
-        "stat1Label": "Pour l'analyse de votre dossier",
-        "stat2Value": "0",
-        "stat2Label": "Rejet grâce à la vérification EUCARIS/Motorizzazione Civile",
-        "stat3Value": "180+",
-        "stat3Label": "Pays d'origine de permis acceptés"
+        "ctaSecondary": "Voir comment ça marche"
+    },
+    "stats": {
+        "eyebrow": "En chiffres",
+        "title": "Un accompagnement qui fait ses preuves",
+        "subtitle": "Quelques chiffres clés sur notre service de conversion de permis de conduire.",
+        "items": {
+            "time": { "label": "Pour l'analyse de votre dossier" },
+            "rejections": { "label": "Rejet grâce à la vérification en amont" },
+            "countries": { "label": "Pays de permis acceptés" },
+            "online": { "label": "Démarches réalisables en ligne" }
+        }
     },
     "process": {
         "eyebrow": "Le processus",
-        "title": "Comment se déroule la conversion de votre permis",
+        "title": "Comment se déroule la conversion de votre permis de conduire",
         "subtitle": "Quatre étapes suivies par notre équipe, de l'analyse de votre situation à la réception de votre permis italien.",
         "steps": {
             "step1": {
                 "title": "Analyse de votre situation",
-                "description": "Vous remplissez notre formulaire avec les informations sur votre permis étranger et votre résidence en Italie, et nous identifions les démarches applicables à votre cas."
+                "description": "Vous remplissez notre formulaire avec les informations sur votre permis de conduire étranger et votre résidence en Italie, et nous identifions les démarches applicables à votre cas."
             },
             "step2": {
                 "title": "Vérification des informations",
@@ -130,7 +135,7 @@
             },
             "step3": {
                 "title": "Accompagnement dans les démarches",
-                "description": "Nous vous guidons étape par étape dans les formalités liées à la conversion de votre permis étranger en permis italien, avec des explications claires à chaque étape."
+                "description": "Nous vous guidons étape par étape dans les formalités liées à la conversion de votre permis de conduire étranger en permis italien, avec des explications claires à chaque étape."
             },
             "step4": {
                 "title": "Suivi de votre dossier",
@@ -165,18 +170,18 @@
     "scope": {
         "eyebrow": "Nos services",
         "title": "Deux parcours, une seule équipe",
-        "subtitle": "Que votre permis vienne d'un pays de l'UE/EEE ou d'ailleurs, nous adaptons la démarche à votre situation.",
+        "subtitle": "Que votre permis de conduire vienne d'un pays de l'UE/EEE ou d'ailleurs, nous adaptons la démarche à votre situation.",
         "euExchange": {
             "title": "Permis UE / EEE",
-            "description": "Votre permis a été délivré dans un pays de l'UE/EEE : l'échange vers un permis italien suit une procédure simplifiée.",
-            "bullet1": "Vérification de la validité de votre permis actuel",
+            "description": "Votre permis de conduire a été délivré dans un pays de l'UE/EEE : l'échange vers un permis italien suit une procédure simplifiée.",
+            "bullet1": "Vérification de la validité de votre permis de conduire actuel",
             "bullet2": "Constitution du dossier selon les règles italiennes",
             "bullet3": "Suivi jusqu'à la réception de votre permis italien",
             "cta": "Demander un échange UE/EEE"
         },
         "nonEuConversion": {
             "title": "Permis hors UE",
-            "description": "Votre permis a été délivré hors de l'Union européenne : une procédure de reconnaissance ou de conversion vers le permis italien est nécessaire.",
+            "description": "Votre permis de conduire a été délivré hors de l'Union européenne : une procédure de reconnaissance ou de conversion vers le permis italien est nécessaire.",
             "bullet1": "Analyse des accords de réciprocité applicables à votre pays d'origine",
             "bullet2": "Traduction assermentée si nécessaire",
             "bullet3": "Accompagnement sur les démarches complémentaires (examen, dossier consulaire)",
@@ -188,7 +193,7 @@
         "title": "Tout ce que vous devez savoir",
         "items": {
             "q1": {
-                "question": "Combien de temps prend un échange de permis ?",
+                "question": "Combien de temps prend un échange de permis de conduire ?",
                 "answer": "Grâce à notre connexion directe à EUCARIS et à la Motorizzazione Civile, l'analyse initiale de votre dossier prend généralement 48h ouvrées. Le délai total dépend ensuite de votre pays d'origine, en général entre 2 et 6 semaines."
             },
             "q2": {
@@ -210,7 +215,7 @@
         }
     },
     "cta": {
-        "title": "Prêt à simplifier votre échange de permis ?",
+        "title": "Prêt à simplifier votre échange de permis de conduire ?",
         "subtitle": "Soumettez votre dossier en quelques minutes, notre équipe s'occupe du reste.",
         "button": "Faire ma demande maintenant"
     }

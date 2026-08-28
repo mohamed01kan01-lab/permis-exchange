@@ -11,15 +11,15 @@
     "loading": "Loading..."
   },
   "steps": {
-    "1": "Your licence",
+    "1": "Your driving licence",
     "2": "Residency in Italy",
     "3": "History",
     "4": "Contact details",
     "5": "Review"
   },
   "licence": {
-    "country": "Which country issued your current licence?",
-    "stillValid": "Is your licence still valid?",
+    "country": "Which country issued your current driving licence?",
+    "stillValid": "Is your driving licence still valid?",
     "categories": "Which categories do you hold?"
   },
   "residency": {
@@ -27,11 +27,11 @@
     "since": "Since when have you been in Italy?"
   },
   "history": {
-    "timingQuestion": "Did you get your current licence before or after becoming a resident in Italy?",
+    "timingQuestion": "Did you get your current driving licence before or after becoming a resident in Italy?",
     "timingBefore": "Before my residency in Italy",
     "timingAfter": "After my residency in Italy",
-    "obtainedByExchange": "Was your current licence obtained through a licence exchange (rather than the standard exam)?",
-    "previousAttempt": "Have you already tried to convert your foreign licence to an Italian one?",
+    "obtainedByExchange": "Was your current driving licence obtained through a licence exchange (rather than the standard exam)?",
+    "previousAttempt": "Have you already tried to convert your foreign driving licence to an Italian one?",
     "previousResult": "What was the outcome of that attempt?"
   },
   "contact": {
@@ -42,7 +42,7 @@
     "phoneHint": "Ideally a number reachable on WhatsApp."
   },
   "review": {
-    "licenceSection": "Your licence",
+    "licenceSection": "Your driving licence",
     "residencySection": "Residency & history",
     "contactSection": "Contact details",
     "country": "Issuing country",
@@ -50,7 +50,7 @@
     "categories": "Categories",
     "hasResidency": "Italian residency",
     "since": "Since",
-    "timing": "Licence obtained",
+    "timing": "Driving licence obtained",
     "obtainedByExchange": "Obtained by exchange",
     "previousAttempt": "Previous attempt",
     "name": "Full name",

@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { IconSteeringWheel } from "@tabler/icons-react";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { TransitionLink } from "./TransitionLink";
 import { LocaleSwitcher } from "./LocaleSwitcher";
@@ -18,8 +18,8 @@ export function Header() {
           href="/"
           className="flex min-w-0 items-center gap-2 font-heading text-sm font-semibold text-foreground sm:text-lg"
         >
-          <span className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-            <IconSteeringWheel className="size-5" stroke={1.75} aria-hidden />
+          <span className="flex size-8 shrink-0 overflow-hidden rounded-lg">
+            <Image src="/logo.png" alt="" width={32} height={32} className="size-full object-cover" />
           </span>
           <span className="truncate">{tFooter("company")}</span>
         </Link>

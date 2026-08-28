@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { IconMail, IconMapPin, IconClock } from "@tabler/icons-react";
+import { IconMail, IconMapPin, IconClock, IconPhone } from "@tabler/icons-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { TransitionLink } from "@/components/site/TransitionLink";
 import { buildAlternates } from "@/lib/seo";
-
-const CONTACT_EMAIL = "contatto@conversionepatente.it";
-const MAP_QUERY = "Via delle Magnolie, 1, 70026 Modugno BA, Italia";
+import { getSiteSettings } from "@/lib/settings";
 
 export async function generateMetadata({
   params,
@@ -33,6 +31,7 @@ export default async function ContactPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "contact" });
+  const settings = await getSiteSettings();
 
   return (
     <>
@@ -50,34 +49,57 @@ export default async function ContactPage({
               <p className="mt-4 text-muted-foreground">{t("subtitle")}</p>
 
               <dl className="mt-10 flex flex-col gap-6">
-                <div className="flex items-start gap-4">
-                  <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                    <IconMail className="size-5" stroke={1.75} aria-hidden />
-                  </span>
-                  <div>
-                    <dt className="text-xs text-muted-foreground">{t("emailLabel")}</dt>
-                    <dd>
-                      <a
-                        href={`mailto:${CONTACT_EMAIL}`}
-                        className="text-sm font-medium text-foreground hover:text-primary"
-                      >
-                        {CONTACT_EMAIL}
-                      </a>
-                    </dd>
+                {settings?.contactEmail && (
+                  <div className="flex items-start gap-4">
+                    <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                      <IconMail className="size-5" stroke={1.75} aria-hidden />
+                    </span>
+                    <div>
+                      <dt className="text-xs text-muted-foreground">{t("emailLabel")}</dt>
+                      <dd>
+                        <a
+                          href={`mailto:${settings.contactEmail}`}
+                          className="text-sm font-medium text-foreground hover:text-primary"
+                        >
+                          {settings.contactEmail}
+                        </a>
+                      </dd>
+                    </div>
                   </div>
-                </div>
+                )}
 
-                <div className="flex items-start gap-4">
-                  <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                    <IconMapPin className="size-5" stroke={1.75} aria-hidden />
-                  </span>
-                  <div>
-                    <dt className="text-xs text-muted-foreground">{t("addressLabel")}</dt>
-                    <dd className="text-sm font-medium text-foreground">
-                      {t("addressValue")}
-                    </dd>
+                {settings?.contactPhone && (
+                  <div className="flex items-start gap-4">
+                    <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                      <IconPhone className="size-5" stroke={1.75} aria-hidden />
+                    </span>
+                    <div>
+                      <dt className="text-xs text-muted-foreground">{t("phoneLabel")}</dt>
+                      <dd>
+                        <a
+                          href={`tel:${settings.contactPhone}`}
+                          className="text-sm font-medium text-foreground hover:text-primary"
+                        >
+                          {settings.contactPhone}
+                        </a>
+                      </dd>
+                    </div>
                   </div>
-                </div>
+                )}
+
+                {settings?.contactAddress && (
+                  <div className="flex items-start gap-4">
+                    <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                      <IconMapPin className="size-5" stroke={1.75} aria-hidden />
+                    </span>
+                    <div>
+                      <dt className="text-xs text-muted-foreground">{t("addressLabel")}</dt>
+                      <dd className="text-sm font-medium text-foreground">
+                        {settings.contactAddress}
+                      </dd>
+                    </div>
+                  </div>
+                )}
 
                 <div className="flex items-start gap-4">
                   <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
@@ -100,15 +122,17 @@ export default async function ContactPage({
               </TransitionLink>
             </div>
 
-            <div className="overflow-hidden rounded-2xl border border-border">
-              <iframe
-                title={t("mapTitle")}
-                src={`https://www.google.com/maps?q=${encodeURIComponent(MAP_QUERY)}&output=embed`}
-                className="h-80 w-full lg:h-full lg:min-h-100"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
+            {settings?.contactAddress && (
+              <div className="overflow-hidden rounded-2xl border border-border">
+                <iframe
+                  title={t("mapTitle")}
+                  src={`https://www.google.com/maps?q=${encodeURIComponent(settings.contactAddress)}&output=embed`}
+                  className="h-80 w-full lg:h-full lg:min-h-100"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            )}
           </div>
         </div>
       </main>

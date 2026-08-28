@@ -11,15 +11,15 @@
     "loading": "Chargement..."
   },
   "steps": {
-    "1": "Votre permis",
+    "1": "Votre permis de conduire",
     "2": "Résidence en Italie",
     "3": "Historique",
     "4": "Coordonnées",
     "5": "Récapitulatif"
   },
   "licence": {
-    "country": "De quel pays provient votre permis actuel ?",
-    "stillValid": "Votre permis est-il toujours valide ?",
+    "country": "De quel pays provient votre permis de conduire actuel ?",
+    "stillValid": "Votre permis de conduire est-il toujours valide ?",
     "categories": "Quelles catégories possédez-vous ?"
   },
   "residency": {
@@ -27,11 +27,11 @@
     "since": "Depuis quand êtes-vous en Italie ?"
   },
   "history": {
-    "timingQuestion": "Avez-vous obtenu votre permis actuel avant ou après votre résidence italienne ?",
+    "timingQuestion": "Avez-vous obtenu votre permis de conduire actuel avant ou après votre résidence italienne ?",
     "timingBefore": "Avant ma résidence en Italie",
     "timingAfter": "Après ma résidence en Italie",
-    "obtainedByExchange": "Votre permis actuel a-t-il été obtenu par un échange de permis (et non par l'examen normal) ?",
-    "previousAttempt": "Avez-vous déjà essayé de convertir votre permis étranger en italien ?",
+    "obtainedByExchange": "Votre permis de conduire actuel a-t-il été obtenu par un échange de permis (et non par l'examen normal) ?",
+    "previousAttempt": "Avez-vous déjà essayé de convertir votre permis de conduire étranger en italien ?",
     "previousResult": "Quel a été le résultat de cette démarche ?"
   },
   "contact": {
@@ -42,7 +42,7 @@
     "phoneHint": "Idéalement un numéro joignable sur WhatsApp."
   },
   "review": {
-    "licenceSection": "Votre permis",
+    "licenceSection": "Votre permis de conduire",
     "residencySection": "Résidence & historique",
     "contactSection": "Coordonnées",
     "country": "Pays d'émission",
@@ -50,7 +50,7 @@
     "categories": "Catégories",
     "hasResidency": "Résidence italienne",
     "since": "Depuis le",
-    "timing": "Permis obtenu",
+    "timing": "Permis de conduire obtenu",
     "obtainedByExchange": "Obtenu par échange",
     "previousAttempt": "Tentative antérieure",
     "name": "Nom complet",

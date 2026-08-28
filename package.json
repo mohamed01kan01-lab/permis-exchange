@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "postinstall": "prisma generate",
-    "admin:seed": "tsx prisma/seed.ts"
+    "admin:seed": "tsx prisma/seed.ts",
+    "settings:seed": "tsx prisma/seed-settings.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

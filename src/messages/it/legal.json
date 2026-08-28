@@ -36,7 +36,7 @@
       },
       "service": {
         "title": "Descrizione del servizio",
-        "body": "Conversione patente straniera assiste i clienti nella preparazione e nel monitoraggio della pratica di conversione della patente straniera in patente italiana, in collegamento con il registro EUCARIS, la Motorizzazione Civile e le amministrazioni competenti. Il nostro team verifica la pratica, individua i documenti mancanti e segue il dossier fino al rilascio della nuova patente."
+        "body": "Conversione patente straniera assiste i clienti nella preparazione e nel monitoraggio della pratica di conversione della patente di guida straniera in patente italiana, in collegamento con il registro EUCARIS, la Motorizzazione Civile e le amministrazioni competenti. Il nostro team verifica la pratica, individua i documenti mancanti e segue il dossier fino al rilascio della nuova patente."
       },
       "obligations": {
         "title": "Obblighi del cliente",
@@ -67,11 +67,11 @@
       },
       "data": {
         "title": "Dati raccolti",
-        "body": "Raccogliamo la tua identità, i tuoi contatti, le informazioni relative alla tua patente attuale e i documenti che carichi (patente, documento d'identità, prova di residenza)."
+        "body": "Raccogliamo la tua identità, i tuoi contatti, le informazioni relative alla tua patente di guida attuale e i documenti che carichi (patente, documento d'identità, prova di residenza)."
       },
       "purpose": {
         "title": "Finalità",
-        "body": "Questi dati sono utilizzati esclusivamente per istruire e seguire la tua richiesta di scambio o conversione della patente, e per ricontattarti in merito."
+        "body": "Questi dati sono utilizzati esclusivamente per istruire e seguire la tua richiesta di scambio o conversione della patente di guida, e per ricontattarti in merito."
       },
       "legalBasis": {
         "title": "Base giuridica",

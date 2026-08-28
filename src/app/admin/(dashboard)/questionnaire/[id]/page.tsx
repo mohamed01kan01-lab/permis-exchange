@@ -58,7 +58,7 @@ export default async function QuestionnaireDetailPage({
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <section className="rounded-2xl border border-border bg-card p-6">
-          <h2 className="text-sm font-semibold text-foreground">Permis actuel</h2>
+          <h2 className="text-sm font-semibold text-foreground">Permis de conduire actuel</h2>
           <dl className="mt-4 flex flex-col gap-3">
             <InfoRow
               label="Pays émetteur"
@@ -93,7 +93,7 @@ export default async function QuestionnaireDetailPage({
               />
             )}
             <InfoRow
-              label="Permis obtenu"
+              label="Permis de conduire obtenu"
               value={LICENCE_TIMING_LABELS[item.licenceTiming]}
             />
             <InfoRow

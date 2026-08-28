@@ -2,9 +2,10 @@
 
 import { useRef, useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
 import gsap from "gsap";
 import {
-  IconSteeringWheel,
   IconLoader2,
   IconEye,
   IconEyeOff,
@@ -55,8 +56,8 @@ export default function AdminLoginPage() {
     <main className="flex min-h-full items-center justify-center bg-muted/40 px-4 py-16">
       <div className="w-full max-w-sm">
         <div className="flex flex-col items-center text-center">
-          <span className="flex size-11 items-center justify-center rounded-xl bg-primary text-primary-foreground">
-            <IconSteeringWheel className="size-6" stroke={1.75} aria-hidden />
+          <span className="flex size-11 overflow-hidden rounded-xl">
+            <Image src="/logo.png" alt="" width={44} height={44} className="size-full object-cover" />
           </span>
           <h1 className="mt-4 text-xl font-bold text-foreground">Administration</h1>
           <p className="mt-1 text-sm text-muted-foreground">Permis-Exchange</p>
@@ -139,13 +140,13 @@ export default function AdminLoginPage() {
           </form>
         </div>
 
-        <a
+        <Link
           href="/"
           className="mt-6 flex items-center justify-center gap-1.5 text-sm text-muted-foreground hover:text-foreground"
         >
           <IconArrowLeft className="size-3.5" stroke={1.75} aria-hidden />
           Retour au site
-        </a>
+        </Link>
       </div>
     </main>
   );

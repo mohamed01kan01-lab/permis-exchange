@@ -2,12 +2,13 @@
 
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import {
   IconChevronUp,
   IconClipboardList,
   IconInbox,
   IconLogout,
-  IconSteeringWheel,
+  IconSettings,
 } from "@tabler/icons-react";
 import {
   Sidebar,
@@ -57,8 +58,8 @@ export function AdminSidebar({ user }: { user: AdminUser }) {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" render={<Link href="/admin" />}>
-              <span className="flex aspect-square size-8 shrink-0 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                <IconSteeringWheel className="size-4" stroke={1.75} aria-hidden />
+              <span className="flex aspect-square size-8 shrink-0 overflow-hidden rounded-lg">
+                <Image src="/logo.png" alt="" width={32} height={32} className="size-full object-cover" />
               </span>
               <div className="flex flex-col gap-0.5 leading-none">
                 <span className="font-semibold text-sidebar-foreground">
@@ -92,6 +93,23 @@ export function AdminSidebar({ user }: { user: AdminUser }) {
                 >
                   <IconInbox className="size-4" stroke={1.75} aria-hidden />
                   <span>Demandes</span>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+
+        <SidebarGroup>
+          <SidebarGroupLabel>Paramètres</SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              <SidebarMenuItem>
+                <SidebarMenuButton
+                  isActive={pathname.startsWith("/admin/settings")}
+                  render={<Link href="/admin/settings" />}
+                >
+                  <IconSettings className="size-4" stroke={1.75} aria-hidden />
+                  <span>Paramètres</span>
                 </SidebarMenuButton>
               </SidebarMenuItem>
             </SidebarMenu>

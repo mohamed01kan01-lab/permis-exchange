@@ -75,7 +75,7 @@ export default async function SubmissionDetailPage({
         </section>
 
         <section className="rounded-2xl border border-border bg-card p-6">
-          <h2 className="text-sm font-semibold text-foreground">Permis actuel</h2>
+          <h2 className="text-sm font-semibold text-foreground">Permis de conduire actuel</h2>
           <dl className="mt-4 flex flex-col gap-3">
             <InfoRow
               label="Pays émetteur"

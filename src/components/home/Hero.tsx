@@ -6,11 +6,6 @@ import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { useGSAP } from "@gsap/react";
-import {
-    IconClockHour4,
-    IconShieldCheck,
-    IconWorld,
-} from "@tabler/icons-react";
 import { TransitionLink } from "@/components/site/TransitionLink";
 import { useMagnetic } from "@/hooks/useMagnetic";
 
@@ -18,27 +13,27 @@ gsap.registerPlugin(SplitText);
 
 const COLLAGE_PHOTOS = [
     {
-        src: "/images/testimonial-03.jpeg",
+        src: "/images/catalogue/1/img1.jpeg",
         className: "left-[4%] top-[6%] w-[46%] rotate-[-7deg]",
         z: 10,
     },
     {
-        src: "/images/testimonial-08.jpeg",
+        src: "/images/catalogue/1/img2.jpeg",
         className: "right-[2%] top-0 w-[40%] rotate-[6deg]",
         z: 20,
     },
     {
-        src: "/images/testimonial-06.jpeg",
+        src: "/images/catalogue/1/img4.jpeg",
         className: "left-0 bottom-[4%] w-[38%] rotate-[5deg]",
         z: 20,
     },
     {
-        src: "/images/testimonial-10.jpeg",
+        src: "/images/catalogue/1/img5.jpeg",
         className: "right-[6%] bottom-0 w-[44%] rotate-[-5deg]",
         z: 10,
     },
     {
-        src: "/images/testimonial-11.jpeg",
+        src: "/images/catalogue/1/img6.jpeg",
         className:
             "left-1/2 top-1/2 w-[36%] -translate-x-1/2 -translate-y-1/2 rotate-[2deg]",
         z: 30,
@@ -54,27 +49,6 @@ export function Hero() {
     const blob1Ref = useRef<HTMLDivElement>(null);
     const blob2Ref = useRef<HTMLDivElement>(null);
     const primaryCtaRef = useMagnetic<HTMLAnchorElement>(0.3);
-
-    const stats = [
-        {
-            value: t("stat1Value"),
-            label: t("stat1Label"),
-            icon: IconClockHour4,
-            rotation: -15,
-        },
-        {
-            value: t("stat2Value"),
-            label: t("stat2Label"),
-            icon: IconShieldCheck,
-            rotation: 10,
-        },
-        {
-            value: t("stat3Value"),
-            label: t("stat3Label"),
-            icon: IconWorld,
-            rotation: -8,
-        },
-    ];
 
     useGSAP(
         () => {
@@ -305,7 +279,7 @@ export function Hero() {
                         </p>
                         <h1
                             ref={titleRef}
-                            className="mt-4 text-4xl font-bold leading-tight text-foreground sm:text-5xl"
+                            className="mt-4 text-3xl font-bold leading-tight text-foreground sm:text-4xl"
                         >
                             {t("title")}
                         </h1>
@@ -357,43 +331,6 @@ export function Hero() {
                         ))}
                     </div>
                 </div>
-
-                <dl
-                    data-hero-fade
-                    className="mt-16 grid grid-cols-1 gap-4 border-t border-border pt-10 sm:grid-cols-3"
-                >
-                    {stats.map((stat) => (
-                        <div
-                            key={stat.label}
-                            className="relative flex items-center gap-4 overflow-hidden rounded-2xl border border-border bg-card p-5"
-                        >
-                            <stat.icon
-                                aria-hidden
-                                className="pointer-events-none absolute -right-3 -bottom-3 size-16 text-foreground/6"
-                                stroke={1.25}
-                                style={{
-                                    transform: `rotate(${stat.rotation}deg)`,
-                                }}
-                            />
-                            <span className="relative flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                                <stat.icon
-                                    className="size-5"
-                                    stroke={1.75}
-                                    aria-hidden
-                                />
-                            </span>
-                            <div className="relative">
-                                <dt className="sr-only">{stat.label}</dt>
-                                <dd className="text-2xl font-bold text-foreground">
-                                    {stat.value}
-                                </dd>
-                                <p className="mt-0.5 text-xs text-muted-foreground">
-                                    {stat.label}
-                                </p>
-                            </div>
-                        </div>
-                    ))}
-                </dl>
             </div>
         </section>
     );

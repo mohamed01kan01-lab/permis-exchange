@@ -7,7 +7,9 @@ import { routing } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/components/site/ThemeProvider";
+import { ContactWidget } from "@/components/site/ContactWidget";
 import { APP_URL, OG_LOCALE_MAP, buildAlternates } from "@/lib/seo";
+import { getSiteSettings } from "@/lib/settings";
 import "../globals.css";
 
 const poppins = Poppins({
@@ -123,6 +125,8 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
 
+  const settings = await getSiteSettings();
+
   return (
     <html
       lang={locale}
@@ -137,6 +141,10 @@ export default async function LocaleLayout({
         <ThemeProvider>
           <NextIntlClientProvider>
             {children}
+            <ContactWidget
+              email={settings?.contactEmail ?? null}
+              whatsappPhone={settings?.contactPhone ?? null}
+            />
             <Toaster position="top-center" />
           </NextIntlClientProvider>
         </ThemeProvider>

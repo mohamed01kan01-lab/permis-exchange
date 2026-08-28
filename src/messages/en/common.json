@@ -26,6 +26,12 @@
     "switchToLight": "Switch to light theme",
     "switchToDark": "Switch to dark theme"
   },
+  "contactWidget": {
+    "label": "Contact us",
+    "email": "By email",
+    "whatsapp": "By WhatsApp",
+    "whatsappPrefill": "Hello, I have a question about converting my driving licence."
+  },
   "validation": {
     "required": "This field is required",
     "invalidDate": "Invalid date",

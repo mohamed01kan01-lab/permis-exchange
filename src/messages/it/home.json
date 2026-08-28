@@ -10,7 +10,7 @@
       "id": "Documento d'identità valido",
       "address": "Prova di residenza di meno di 3 mesi",
       "photo": "Foto tessera recente",
-      "translation": "Traduzione giurata della patente",
+      "translation": "Traduzione giurata della patente di guida",
       "conformity": "Certificato di conformità o equivalenza"
     },
     "disclaimer": "Elenco indicativo: il nostro team conferma i documenti esatti richiesti in base al paese interessato."
@@ -27,17 +27,17 @@
     "licencePrefix": "Patente",
     "quotes": {
       "t1": "L'intera procedura è stata spiegata con chiarezza, senza gergo amministrativo. Un vero risparmio di tempo.",
-      "t2": "Sono riuscito a convertire la mia patente straniera in una patente italiana senza spostamenti inutili.",
+      "t2": "Sono riuscito a convertire la mia patente di guida straniera in una patente italiana senza spostamenti inutili.",
       "t3": "Aggiornamenti rapidi su WhatsApp a ogni fase, sapevo sempre a che punto fosse la mia pratica.",
       "t4": "Zero rifiuti grazie ai loro controlli preventivi. Lo consiglio senza esitazione.",
       "t5": "Un accompagnamento umano e professionale dall'inizio alla fine della mia conversione.",
       "t6": "Temevo la burocrazia, ma tutto si è svolto in modo semplice e veloce.",
       "t7": "Il questionario iniziale mi ha permesso di sapere subito se ero idoneo.",
       "t8": "Un team reattivo che risponde davvero a ogni domanda.",
-      "t9": "Patente convertita in poche settimane, senza sorprese né documenti dimenticati.",
+      "t9": "Patente di guida convertita in poche settimane, senza sorprese né documenti dimenticati.",
       "t10": "Mi hanno evitato diversi errori amministrativi che avrebbero ritardato la mia pratica.",
       "t11": "Servizio serio e trasparente, con spiegazioni chiare a ogni fase.",
-      "t12": "Lo consiglio a tutti gli espatriati che vogliono convertire la patente in Italia.",
+      "t12": "Lo consiglio a tutti gli espatriati che vogliono convertire la patente di guida in Italia.",
       "t13": "Un supporto rassicurante su un argomento che non conoscevo affatto.",
       "t14": "Veloce, efficiente e sempre raggiungibile in caso di domande."
     }
@@ -52,13 +52,13 @@
     "rows": {
       "eligibility": {
         "label": "Idoneità",
-        "eu": "Patente valida rilasciata in un paese UE/SEE",
-        "nonEu": "Patente valida e non scaduta rilasciata fuori dall'UE"
+        "eu": "Patente di guida valida rilasciata in un paese UE/SEE",
+        "nonEu": "Patente di guida valida e non scaduta rilasciata fuori dall'UE"
       },
       "documents": {
         "label": "Documenti richiesti",
-        "eu": "Patente attuale (fronte/retro)",
-        "nonEu": "Patente attuale (fronte/retro), traduzione giurata se richiesta"
+        "eu": "Patente di guida attuale (fronte/retro)",
+        "nonEu": "Patente di guida attuale (fronte/retro), traduzione giurata se richiesta"
       },
       "delay": {
         "label": "Tempistica stimata",
@@ -66,7 +66,7 @@
         "nonEu": "4-8 settimane secondo gli accordi bilaterali"
       },
       "validity": {
-        "label": "Anzianità della patente",
+        "label": "Anzianità della patente di guida",
         "eu": "Nessuna durata minima generalmente richiesta",
         "nonEu": "Alcuni paesi richiedono una durata di validità minima"
       },
@@ -74,7 +74,7 @@
         "label": "Esame di guida richiesto"
       }
     },
-    "disclaimer": "Informazioni fornite a titolo indicativo: tempistiche e requisiti variano in base al paese di provenienza della tua patente e vengono confermati dal nostro team dopo l'analisi della tua pratica."
+    "disclaimer": "Informazioni fornite a titolo indicativo: tempistiche e requisiti variano in base al paese di provenienza della tua patente di guida e vengono confermati dal nostro team dopo l'analisi della tua pratica."
   },
   "quiz": {
     "eyebrow": "Non sei sicuro di quale pratica ti riguarda?",
@@ -103,26 +103,31 @@
     }
   },
   "hero": {
-    "eyebrow": "Servizio di conversione patente per l'Italia",
-    "title": "Converti la tua patente di guida straniera in patente italiana senza il caos burocratico",
+    "eyebrow": "Servizio di conversione patente di guida per l'Italia",
+    "title": "Converti la tua patente di guida straniera in patente italiana, senza burocrazia.",
     "subtitle": "Conversione patente straniera gestisce la tua pratica dall'inizio alla fine, con una connessione diretta ai registri EUCARIS e Motorizzazione Civile, per tempi più rapidi e zero rifiuti.",
     "ctaPrimary": "Inizia la mia richiesta",
-    "ctaSecondary": "Scopri come funziona",
-    "stat1Value": "48h",
-    "stat1Label": "per l'analisi della tua pratica",
-    "stat2Value": "0",
-    "stat2Label": "rifiuti grazie ai controlli EUCARIS/Motorizzazione Civile",
-    "stat3Value": "180+",
-    "stat3Label": "paesi di provenienza della patente accettati"
+    "ctaSecondary": "Scopri come funziona"
+  },
+  "stats": {
+    "eyebrow": "In numeri",
+    "title": "Un accompagnamento che funziona",
+    "subtitle": "Alcuni numeri chiave sul nostro servizio di conversione della patente di guida.",
+    "items": {
+      "time": { "label": "Per l'analisi della tua pratica" },
+      "rejections": { "label": "Rifiuti grazie ai controlli preventivi" },
+      "countries": { "label": "Paesi di provenienza della patente accettati" },
+      "online": { "label": "Pratiche gestibili online" }
+    }
   },
   "process": {
     "eyebrow": "Il processo",
-    "title": "Come si svolge la conversione della tua patente",
+    "title": "Come si svolge la conversione della tua patente di guida",
     "subtitle": "Quattro fasi seguite dal nostro team, dall'analisi della tua situazione al ritiro della patente italiana.",
     "steps": {
       "step1": {
         "title": "Analisi della tua situazione",
-        "description": "Compili il nostro modulo con le informazioni sulla tua patente straniera e sulla tua residenza in Italia, e individuiamo le procedure applicabili al tuo caso."
+        "description": "Compili il nostro modulo con le informazioni sulla tua patente di guida straniera e sulla tua residenza in Italia, e individuiamo le procedure applicabili al tuo caso."
       },
       "step2": {
         "title": "Verifica delle informazioni",
@@ -130,7 +135,7 @@
       },
       "step3": {
         "title": "Accompagnamento nelle pratiche amministrative",
-        "description": "Ti guidiamo passo dopo passo nelle formalità legate alla conversione della tua patente straniera in patente italiana, con spiegazioni chiare a ogni fase."
+        "description": "Ti guidiamo passo dopo passo nelle formalità legate alla conversione della tua patente di guida straniera in patente italiana, con spiegazioni chiare a ogni fase."
       },
       "step4": {
         "title": "Monitoraggio della tua pratica",
@@ -165,18 +170,18 @@
   "scope": {
     "eyebrow": "I nostri servizi",
     "title": "Due percorsi, un solo team",
-    "subtitle": "Che la tua patente provenga da un paese UE/SEE o da altrove, adattiamo la procedura alla tua situazione.",
+    "subtitle": "Che la tua patente di guida provenga da un paese UE/SEE o da altrove, adattiamo la procedura alla tua situazione.",
     "euExchange": {
       "title": "Patente UE / SEE",
-      "description": "La tua patente è stata rilasciata in un paese UE/SEE: lo scambio con la patente italiana segue una procedura semplificata.",
-      "bullet1": "Verifica della validità della tua patente attuale",
+      "description": "La tua patente di guida è stata rilasciata in un paese UE/SEE: lo scambio con la patente italiana segue una procedura semplificata.",
+      "bullet1": "Verifica della validità della tua patente di guida attuale",
       "bullet2": "Preparazione della pratica secondo le regole italiane",
       "bullet3": "Assistenza fino al ricevimento della tua patente italiana",
       "cta": "Richiedi uno scambio UE/SEE"
     },
     "nonEuConversion": {
       "title": "Patente extra-UE",
-      "description": "La tua patente è stata rilasciata fuori dall'Unione Europea: deve essere riconosciuta o convertita in una patente italiana.",
+      "description": "La tua patente di guida è stata rilasciata fuori dall'Unione Europea: deve essere riconosciuta o convertita in una patente italiana.",
       "bullet1": "Analisi degli accordi di reciprocità applicabili al tuo paese di provenienza",
       "bullet2": "Traduzione giurata se necessaria",
       "bullet3": "Assistenza per le pratiche complementari (esame, pratica consolare)",
@@ -188,7 +193,7 @@
     "title": "Tutto quello che devi sapere",
     "items": {
       "q1": {
-        "question": "Quanto tempo richiede uno scambio di patente?",
+        "question": "Quanto tempo richiede uno scambio di patente di guida?",
         "answer": "Grazie alla nostra connessione diretta a EUCARIS e alla Motorizzazione Civile, l'analisi iniziale della pratica richiede in genere 48 ore lavorative. Il tempo totale dipende poi dal paese di provenienza della tua patente, generalmente tra 2 e 6 settimane."
       },
       "q2": {
@@ -210,7 +215,7 @@
     }
   },
   "cta": {
-    "title": "Pronto a semplificare il tuo scambio di patente?",
+    "title": "Pronto a semplificare il tuo scambio di patente di guida?",
     "subtitle": "Invia la tua pratica in pochi minuti, al resto pensa il nostro team.",
     "button": "Invia la richiesta ora"
   }

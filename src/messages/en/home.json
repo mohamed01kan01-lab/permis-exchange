@@ -10,7 +10,7 @@
       "id": "Valid ID document",
       "address": "Proof of address less than 3 months old",
       "photo": "Recent ID photo",
-      "translation": "Sworn translation of the licence",
+      "translation": "Sworn translation of the driving licence",
       "conformity": "Certificate of conformity or equivalence"
     },
     "disclaimer": "Indicative list: our team confirms the exact documents required based on the country involved."
@@ -27,17 +27,17 @@
     "licencePrefix": "Licence",
     "quotes": {
       "t1": "The whole process was explained clearly, without administrative jargon. A real time-saver.",
-      "t2": "I was able to convert my foreign licence into an Italian one without unnecessary trips.",
+      "t2": "I was able to convert my foreign driving licence into an Italian one without unnecessary trips.",
       "t3": "Fast WhatsApp follow-up at every step, I always knew where my file stood.",
       "t4": "Zero rejection thanks to their upfront checks. I recommend them without hesitation.",
       "t5": "Professional, human support from start to finish of my conversion.",
       "t6": "I was dreading the paperwork, but everything went smoothly and quickly.",
       "t7": "The initial questionnaire let me know right away whether I was eligible.",
       "t8": "A responsive team that actually answers every question.",
-      "t9": "My licence was converted within weeks, no surprises, no missing documents.",
+      "t9": "My driving licence was converted within weeks, no surprises, no missing documents.",
       "t10": "They helped me avoid several administrative mistakes that would have delayed my file.",
       "t11": "Serious, transparent service, with clear explanations at every step.",
-      "t12": "I recommend this to every expat looking to convert their licence in Italy.",
+      "t12": "I recommend this to every expat looking to convert their driving licence in Italy.",
       "t13": "Reassuring support on a subject I knew nothing about.",
       "t14": "Fast, efficient, and always reachable whenever I had a question."
     }
@@ -52,13 +52,13 @@
     "rows": {
       "eligibility": {
         "label": "Eligibility",
-        "eu": "Valid licence issued in an EU/EEA country",
-        "nonEu": "Valid, non-expired licence issued outside the EU"
+        "eu": "Valid driving licence issued in an EU/EEA country",
+        "nonEu": "Valid, non-expired driving licence issued outside the EU"
       },
       "documents": {
         "label": "Required documents",
-        "eu": "Current licence (front/back)",
-        "nonEu": "Current licence (front/back), sworn translation if required"
+        "eu": "Current driving licence (front/back)",
+        "nonEu": "Current driving licence (front/back), sworn translation if required"
       },
       "delay": {
         "label": "Estimated timeline",
@@ -66,7 +66,7 @@
         "nonEu": "4 to 8 weeks depending on bilateral agreements"
       },
       "validity": {
-        "label": "Licence age",
+        "label": "Driving licence age",
         "eu": "No minimum duration generally required",
         "nonEu": "Some countries require a minimum validity period"
       },
@@ -74,7 +74,7 @@
         "label": "Driving exam required"
       }
     },
-    "disclaimer": "Provided for guidance only: timelines and requirements vary by your licence's country of origin and are confirmed by our team after reviewing your file."
+    "disclaimer": "Provided for guidance only: timelines and requirements vary by your driving licence's country of origin and are confirmed by our team after reviewing your file."
   },
   "quiz": {
     "eyebrow": "Not sure which process applies to you?",
@@ -104,25 +104,30 @@
   },
   "hero": {
     "eyebrow": "Driving licence conversion service for Italy",
-    "title": "Exchange your foreign driving licence for an Italian one without the administrative headache",
+    "title": "Convert your foreign driving licence into an Italian one, no administrative headache.",
     "subtitle": "Conversione patente straniera manages your file end to end, with a direct connection to the EUCARIS and Motorizzazione Civile registries, for faster processing and no rejections.",
     "ctaPrimary": "Start my request",
-    "ctaSecondary": "See how it works",
-    "stat1Value": "48h",
-    "stat1Label": "to analyse your file",
-    "stat2Value": "0",
-    "stat2Label": "rejections thanks to EUCARIS/Motorizzazione Civile checks",
-    "stat3Value": "180+",
-    "stat3Label": "countries of licence origin accepted"
+    "ctaSecondary": "See how it works"
+  },
+  "stats": {
+    "eyebrow": "By the numbers",
+    "title": "Support that gets results",
+    "subtitle": "A few key figures about our driving licence conversion service.",
+    "items": {
+      "time": { "label": "To analyse your file" },
+      "rejections": { "label": "Rejections thanks to upfront checks" },
+      "countries": { "label": "Countries of licence origin accepted" },
+      "online": { "label": "Steps you can complete online" }
+    }
   },
   "process": {
     "eyebrow": "The process",
-    "title": "How your licence conversion unfolds",
+    "title": "How your driving licence conversion unfolds",
     "subtitle": "Four steps handled by our team, from analysing your situation to receiving your Italian licence.",
     "steps": {
       "step1": {
         "title": "Analysing your situation",
-        "description": "You fill in our form with details about your foreign licence and your residency in Italy, and we identify the process that applies to your case."
+        "description": "You fill in our form with details about your foreign driving licence and your residency in Italy, and we identify the process that applies to your case."
       },
       "step2": {
         "title": "Verifying your information",
@@ -130,7 +135,7 @@
       },
       "step3": {
         "title": "Support through the process",
-        "description": "We guide you step by step through the formalities of converting your foreign licence into an Italian one, with clear explanations at every stage."
+        "description": "We guide you step by step through the formalities of converting your foreign driving licence into an Italian one, with clear explanations at every stage."
       },
       "step4": {
         "title": "Following up your file",
@@ -165,18 +170,18 @@
   "scope": {
     "eyebrow": "Our services",
     "title": "Two paths, one team",
-    "subtitle": "Whether your licence comes from an EU/EEA country or elsewhere, we adapt the process to your situation.",
+    "subtitle": "Whether your driving licence comes from an EU/EEA country or elsewhere, we adapt the process to your situation.",
     "euExchange": {
       "title": "EU / EEA licence",
-      "description": "Your licence was issued in an EU/EEA country: exchanging it for an Italian licence follows a simplified procedure.",
-      "bullet1": "Validity check of your current licence",
+      "description": "Your driving licence was issued in an EU/EEA country: exchanging it for an Italian licence follows a simplified procedure.",
+      "bullet1": "Validity check of your current driving licence",
       "bullet2": "File preparation per Italian rules",
       "bullet3": "Follow-up until you receive your Italian licence",
       "cta": "Request an EU/EEA exchange"
     },
     "nonEuConversion": {
       "title": "Non-EU licence",
-      "description": "Your licence was issued outside the European Union: it needs to be recognised or converted into an Italian licence.",
+      "description": "Your driving licence was issued outside the European Union: it needs to be recognised or converted into an Italian licence.",
       "bullet1": "Review of reciprocity agreements that apply to your country of origin",
       "bullet2": "Sworn translation when required",
       "bullet3": "Support with additional steps (exam, consular file)",
@@ -188,7 +193,7 @@
     "title": "Everything you need to know",
     "items": {
       "q1": {
-        "question": "How long does a licence exchange take?",
+        "question": "How long does a driving licence exchange take?",
         "answer": "Thanks to our direct connection to EUCARIS and the Motorizzazione Civile, the initial review of your file usually takes 48 business hours. The total timeline then depends on your licence's country of origin, typically 2 to 6 weeks."
       },
       "q2": {
@@ -210,7 +215,7 @@
     }
   },
   "cta": {
-    "title": "Ready to simplify your licence exchange?",
+    "title": "Ready to simplify your driving licence exchange?",
     "subtitle": "Submit your file in a few minutes, our team takes care of the rest.",
     "button": "Start my request now"
   }
