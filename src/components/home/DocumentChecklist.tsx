@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import gsap from "gsap";
@@ -12,7 +12,10 @@ import {
   IconCamera,
   IconLanguage,
   IconCertificate,
+  IconChevronLeft,
+  IconChevronRight,
 } from "@tabler/icons-react";
+import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
 
 type ProcedureType = "eu" | "nonEu";
 
@@ -28,20 +31,53 @@ const NON_EU_EXTRA_ITEMS = [
   { key: "conformity", icon: IconCertificate },
 ] as const;
 
-const COLLAGE_PHOTOS = [
-  { src: "/images/catalogue/2/img1.jpeg", className: "left-[6%] top-[10%] w-[42%] rotate-[-6deg]", z: 10 },
-  { src: "/images/catalogue/2/img2.jpeg", className: "right-[4%] top-0 w-[38%] rotate-[5deg]", z: 20 },
-  { src: "/images/catalogue/2/img4.jpeg", className: "left-0 bottom-0 w-[36%] rotate-[4deg]", z: 20 },
-  { src: "/images/catalogue/2/img5.jpeg", className: "right-[8%] bottom-[2%] w-[42%] rotate-[-4deg]", z: 10 },
+const CAROUSEL_PHOTOS = [
+  "/images/catalogue/2/img1.jpeg",
+  "/images/catalogue/2/img2.jpeg",
+  "/images/catalogue/2/img4.jpeg",
+  "/images/catalogue/2/img5.jpeg",
+  "/images/catalogue/2/img6.jpeg",
+  "/images/catalogue/2/img7.jpeg",
+  "/images/catalogue/2/img8.jpeg",
+  "/images/catalogue/2/img9.jpeg",
+  "/images/catalogue/2/img10.jpeg",
+  "/images/catalogue/2/img11.jpeg",
+  "/images/catalogue/2/img12.jpeg",
+  "/images/catalogue/2/img14.jpeg",
+  "/images/catalogue/2/img15.jpeg",
 ] as const;
+
+const CAROUSEL_AUTOPLAY_DELAY = 3800;
 
 export function DocumentChecklist() {
   const t = useTranslations("home.checklist");
   const sectionRef = useRef<HTMLElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
   const [procedure, setProcedure] = useState<ProcedureType>("eu");
+  const [api, setApi] = useState<CarouselApi>();
+  const [selected, setSelected] = useState(0);
+  const [snapCount, setSnapCount] = useState(0);
 
   const items = procedure === "eu" ? EU_ITEMS : [...EU_ITEMS, ...NON_EU_EXTRA_ITEMS];
+
+  useEffect(() => {
+    if (!api) return;
+    setSnapCount(api.scrollSnapList().length);
+    setSelected(api.selectedScrollSnap());
+    api.on("select", () => setSelected(api.selectedScrollSnap()));
+    api.on("reInit", () => {
+      setSnapCount(api.scrollSnapList().length);
+      setSelected(api.selectedScrollSnap());
+    });
+  }, [api]);
+
+  useEffect(() => {
+    if (!api) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const interval = setInterval(() => api.scrollNext(), CAROUSEL_AUTOPLAY_DELAY);
+    return () => clearInterval(interval);
+  }, [api]);
 
   useGSAP(
     () => {
@@ -125,26 +161,59 @@ export function DocumentChecklist() {
             </p>
           </div>
 
-          <div
-            aria-hidden
-            className="relative mx-auto aspect-square w-full max-w-xs sm:max-w-sm lg:max-w-none"
-          >
-            {COLLAGE_PHOTOS.map((photo) => (
-              <div
-                key={photo.src}
-                className={`absolute aspect-[4/5] overflow-hidden rounded-2xl border-4 border-background shadow-xl ${photo.className}`}
-                style={{ zIndex: photo.z }}
-              >
-                <Image
-                  src={photo.src}
-                  alt=""
-                  fill
-                  sizes="(min-width: 1024px) 22vw, 40vw"
-                  className="object-cover"
-                  style={{ objectPosition: "50% 10%" }}
+          <div className="relative mx-auto w-full max-w-xs sm:max-w-sm lg:max-w-none">
+            <Carousel setApi={setApi} opts={{ loop: true, align: "start" }}>
+              <CarouselContent>
+                {CAROUSEL_PHOTOS.map((src, index) => (
+                  <CarouselItem key={src} className="basis-full sm:basis-1/2">
+                    <div className="relative aspect-4/5 overflow-hidden rounded-2xl border-4 border-background shadow-xl">
+                      <Image
+                        src={src}
+                        alt=""
+                        fill
+                        sizes="(min-width: 1024px) 22vw, 40vw"
+                        className="object-cover"
+                        style={{ objectPosition: "50% 10%" }}
+                        priority={index === 0}
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
+
+            <button
+              type="button"
+              onClick={() => api?.scrollPrev()}
+              aria-label={t("carouselPrev")}
+              className="absolute -left-3 top-1/2 z-10 flex size-9 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-border bg-card text-foreground shadow-md transition-colors hover:bg-muted sm:-left-4"
+            >
+              <IconChevronLeft className="size-4.5" stroke={2} aria-hidden />
+            </button>
+            <button
+              type="button"
+              onClick={() => api?.scrollNext()}
+              aria-label={t("carouselNext")}
+              className="absolute -right-3 top-1/2 z-10 flex size-9 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-border bg-card text-foreground shadow-md transition-colors hover:bg-muted sm:-right-4"
+            >
+              <IconChevronRight className="size-4.5" stroke={2} aria-hidden />
+            </button>
+
+            <div className="mt-5 flex items-center justify-center gap-2">
+              {Array.from({ length: snapCount }).map((_, index) => (
+                <button
+                  key={index}
+                  type="button"
+                  onClick={() => api?.scrollTo(index)}
+                  aria-label={`${t("carouselGoTo")} ${index + 1}`}
+                  className={`h-2 rounded-full transition-all duration-200 ${
+                    index === selected
+                      ? "w-6 bg-primary"
+                      : "w-2 bg-border hover:bg-muted-foreground/40"
+                  }`}
                 />
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

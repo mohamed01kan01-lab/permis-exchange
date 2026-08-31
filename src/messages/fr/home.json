@@ -13,7 +13,10 @@
             "translation": "Traduction assermentée du permis de conduire",
             "conformity": "Attestation de conformité ou d'équivalence"
         },
-        "disclaimer": "Liste indicative : notre équipe confirme les pièces exactes nécessaires selon le pays concerné."
+        "disclaimer": "Liste indicative : notre équipe confirme les pièces exactes nécessaires selon le pays concerné.",
+        "carouselPrev": "Photo précédente",
+        "carouselNext": "Photo suivante",
+        "carouselGoTo": "Aller à la photo"
     },
     "testimonials": {
         "eyebrow": "Ils nous ont fait confiance",
@@ -107,7 +110,10 @@
         "title": "Convertissez votre permis de conduire étranger en permis italien, sans le casse-tête administratif.",
         "subtitle": "Conversione patente straniera gère votre dossier de bout en bout, avec une connexion directe aux registres EUCARIS et Motorizzazione Civile, pour un traitement plus rapide et sans rejet.",
         "ctaPrimary": "Démarrer ma demande",
-        "ctaSecondary": "Voir comment ça marche"
+        "ctaSecondary": "Voir comment ça marche",
+        "sliderPrev": "Photo précédente",
+        "sliderNext": "Photo suivante",
+        "sliderGoTo": "Aller à la photo"
     },
     "stats": {
         "eyebrow": "En chiffres",

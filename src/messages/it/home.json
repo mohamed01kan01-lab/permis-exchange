@@ -13,7 +13,10 @@
       "translation": "Traduzione giurata della patente di guida",
       "conformity": "Certificato di conformità o equivalenza"
     },
-    "disclaimer": "Elenco indicativo: il nostro team conferma i documenti esatti richiesti in base al paese interessato."
+    "disclaimer": "Elenco indicativo: il nostro team conferma i documenti esatti richiesti in base al paese interessato.",
+    "carouselPrev": "Foto precedente",
+    "carouselNext": "Foto successiva",
+    "carouselGoTo": "Vai alla foto"
   },
   "testimonials": {
     "eyebrow": "Si sono fidati di noi",
@@ -107,7 +110,10 @@
     "title": "Converti la tua patente di guida straniera in patente italiana, senza burocrazia.",
     "subtitle": "Conversione patente straniera gestisce la tua pratica dall'inizio alla fine, con una connessione diretta ai registri EUCARIS e Motorizzazione Civile, per tempi più rapidi e zero rifiuti.",
     "ctaPrimary": "Inizia la mia richiesta",
-    "ctaSecondary": "Scopri come funziona"
+    "ctaSecondary": "Scopri come funziona",
+    "sliderPrev": "Foto precedente",
+    "sliderNext": "Foto successiva",
+    "sliderGoTo": "Vai alla foto"
   },
   "stats": {
     "eyebrow": "In numeri",

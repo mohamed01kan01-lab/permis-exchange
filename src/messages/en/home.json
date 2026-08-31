@@ -13,7 +13,10 @@
       "translation": "Sworn translation of the driving licence",
       "conformity": "Certificate of conformity or equivalence"
     },
-    "disclaimer": "Indicative list: our team confirms the exact documents required based on the country involved."
+    "disclaimer": "Indicative list: our team confirms the exact documents required based on the country involved.",
+    "carouselPrev": "Previous photo",
+    "carouselNext": "Next photo",
+    "carouselGoTo": "Go to photo"
   },
   "testimonials": {
     "eyebrow": "Trusted by our clients",
@@ -107,7 +110,10 @@
     "title": "Convert your foreign driving licence into an Italian one, no administrative headache.",
     "subtitle": "Conversione patente straniera manages your file end to end, with a direct connection to the EUCARIS and Motorizzazione Civile registries, for faster processing and no rejections.",
     "ctaPrimary": "Start my request",
-    "ctaSecondary": "See how it works"
+    "ctaSecondary": "See how it works",
+    "sliderPrev": "Previous photo",
+    "sliderNext": "Next photo",
+    "sliderGoTo": "Go to photo"
   },
   "stats": {
     "eyebrow": "By the numbers",

@@ -1,54 +1,51 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { useGSAP } from "@gsap/react";
+import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 import { TransitionLink } from "@/components/site/TransitionLink";
 import { useMagnetic } from "@/hooks/useMagnetic";
+import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
 
 gsap.registerPlugin(SplitText);
 
-const COLLAGE_PHOTOS = [
-    {
-        src: "/images/catalogue/1/img1.jpeg",
-        className: "left-[4%] top-[6%] w-[46%] rotate-[-7deg]",
-        z: 10,
-    },
-    {
-        src: "/images/catalogue/1/img2.jpeg",
-        className: "right-[2%] top-0 w-[40%] rotate-[6deg]",
-        z: 20,
-    },
-    {
-        src: "/images/catalogue/1/img4.jpeg",
-        className: "left-0 bottom-[4%] w-[38%] rotate-[5deg]",
-        z: 20,
-    },
-    {
-        src: "/images/catalogue/1/img5.jpeg",
-        className: "right-[6%] bottom-0 w-[44%] rotate-[-5deg]",
-        z: 10,
-    },
-    {
-        src: "/images/catalogue/1/img6.jpeg",
-        className:
-            "left-1/2 top-1/2 w-[36%] -translate-x-1/2 -translate-y-1/2 rotate-[2deg]",
-        z: 30,
-    },
+const SLIDER_PHOTOS = [
+    "/images/catalogue/1/img1.jpeg",
+    "/images/catalogue/1/img2.jpeg",
+    "/images/catalogue/1/img3.jpeg",
+    "/images/catalogue/1/img4.jpeg",
+    "/images/catalogue/1/img5.jpeg",
+    "/images/catalogue/1/img6.jpeg",
 ] as const;
+
+const SLIDER_AUTOPLAY_DELAY = 4500;
 
 export function Hero() {
     const t = useTranslations("home.hero");
     const sectionRef = useRef<HTMLElement>(null);
     const titleRef = useRef<HTMLHeadingElement>(null);
-    const gridRef = useRef<HTMLDivElement>(null);
     const glowRef = useRef<HTMLDivElement>(null);
-    const blob1Ref = useRef<HTMLDivElement>(null);
-    const blob2Ref = useRef<HTMLDivElement>(null);
     const primaryCtaRef = useMagnetic<HTMLAnchorElement>(0.3);
+    const [api, setApi] = useState<CarouselApi>();
+    const [selected, setSelected] = useState(0);
+
+    useEffect(() => {
+        if (!api) return;
+        setSelected(api.selectedScrollSnap());
+        api.on("select", () => setSelected(api.selectedScrollSnap()));
+    }, [api]);
+
+    useEffect(() => {
+        if (!api) return;
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+        const interval = setInterval(() => api.scrollNext(), SLIDER_AUTOPLAY_DELAY);
+        return () => clearInterval(interval);
+    }, [api]);
 
     useGSAP(
         () => {
@@ -72,85 +69,37 @@ export function Hero() {
                     const cleanups: Array<() => void> = [];
                     const section = sectionRef.current;
 
-                    // Slow ambient drift for the background glow blobs
-                    if (blob1Ref.current && blob2Ref.current) {
-                        const drift1 = gsap.to(blob1Ref.current, {
-                            x: 30,
-                            y: -20,
-                            duration: 9,
-                            ease: "sine.inOut",
-                            yoyo: true,
-                            repeat: -1,
-                        });
-                        const drift2 = gsap.to(blob2Ref.current, {
-                            x: -24,
-                            y: 24,
-                            duration: 11,
-                            ease: "sine.inOut",
-                            yoyo: true,
-                            repeat: -1,
-                        });
-                        cleanups.push(() => {
-                            drift1.kill();
-                            drift2.kill();
-                        });
-                    }
-
-                    // Mouse-reactive parallax on the grid + a soft glow that follows the cursor
+                    // Soft glow that follows the cursor over the background photo
                     if (
                         section &&
+                        glowRef.current &&
                         window.matchMedia("(hover: hover)").matches
                     ) {
-                        const gridX = gridRef.current
-                            ? gsap.quickTo(gridRef.current, "x", {
-                                  duration: 0.9,
-                                  ease: "power3.out",
-                              })
-                            : null;
-                        const gridY = gridRef.current
-                            ? gsap.quickTo(gridRef.current, "y", {
-                                  duration: 0.9,
-                                  ease: "power3.out",
-                              })
-                            : null;
-                        const glowX = glowRef.current
-                            ? gsap.quickTo(glowRef.current, "x", {
-                                  duration: 0.5,
-                                  ease: "power3.out",
-                              })
-                            : null;
-                        const glowY = glowRef.current
-                            ? gsap.quickTo(glowRef.current, "y", {
-                                  duration: 0.5,
-                                  ease: "power3.out",
-                              })
-                            : null;
+                        const glowX = gsap.quickTo(glowRef.current, "x", {
+                            duration: 0.5,
+                            ease: "power3.out",
+                        });
+                        const glowY = gsap.quickTo(glowRef.current, "y", {
+                            duration: 0.5,
+                            ease: "power3.out",
+                        });
 
-                        if (glowRef.current)
-                            gsap.set(glowRef.current, { autoAlpha: 0 });
+                        gsap.set(glowRef.current, { autoAlpha: 0 });
 
                         const handleMove = (e: MouseEvent) => {
                             const rect = section.getBoundingClientRect();
-                            const relX =
-                                (e.clientX - rect.left) / rect.width - 0.5;
-                            const relY =
-                                (e.clientY - rect.top) / rect.height - 0.5;
-                            gridX?.(relX * -24);
-                            gridY?.(relY * -24);
-                            glowX?.(e.clientX - rect.left);
-                            glowY?.(e.clientY - rect.top);
-                            if (glowRef.current)
-                                gsap.to(glowRef.current, {
-                                    autoAlpha: 1,
-                                    duration: 0.3,
-                                });
+                            glowX(e.clientX - rect.left);
+                            glowY(e.clientY - rect.top);
+                            gsap.to(glowRef.current, {
+                                autoAlpha: 1,
+                                duration: 0.3,
+                            });
                         };
                         const handleLeave = () => {
-                            if (glowRef.current)
-                                gsap.to(glowRef.current, {
-                                    autoAlpha: 0,
-                                    duration: 0.4,
-                                });
+                            gsap.to(glowRef.current, {
+                                autoAlpha: 0,
+                                duration: 0.4,
+                            });
                         };
 
                         section.addEventListener("mousemove", handleMove);
@@ -205,7 +154,6 @@ export function Hero() {
                                 autoAlpha: 1,
                                 scale: 1,
                                 duration: 0.6,
-                                stagger: 0.1,
                             },
                             "-=0.5",
                         );
@@ -227,34 +175,18 @@ export function Hero() {
             ref={sectionRef}
             className="relative overflow-hidden bg-background"
         >
-            {/* Ambient gradient blobs */}
-            <div
-                ref={blob1Ref}
-                aria-hidden
-                className="pointer-events-none absolute -top-24 left-1/4 h-72 w-72 rounded-full opacity-30 blur-3xl"
-                style={{ backgroundColor: "var(--color-secondary)" }}
+            {/* Full-bleed background photo */}
+            <Image
+                src="/new-og-img.jpeg"
+                alt=""
+                fill
+                priority
+                sizes="100vw"
+                className="object-cover"
             />
             <div
-                ref={blob2Ref}
                 aria-hidden
-                className="pointer-events-none absolute top-1/3 right-1/4 h-80 w-80 rounded-full opacity-20 blur-3xl"
-                style={{ backgroundColor: "var(--color-accent)" }}
-            />
-
-            {/* Dot grid */}
-            <div
-                ref={gridRef}
-                aria-hidden
-                className="pointer-events-none absolute inset-[-10%] opacity-[0.35]"
-                style={{
-                    backgroundImage:
-                        "radial-gradient(circle, var(--color-border) 1.5px, transparent 1.5px)",
-                    backgroundSize: "28px 28px",
-                    maskImage:
-                        "radial-gradient(ellipse 60% 50% at 50% 35%, black 40%, transparent 80%)",
-                    WebkitMaskImage:
-                        "radial-gradient(ellipse 60% 50% at 50% 35%, black 40%, transparent 80%)",
-                }}
+                className="absolute inset-0 bg-linear-to-b from-background/95 to-background/50 lg:bg-linear-to-r lg:from-background/95 lg:to-background/35"
             />
 
             {/* Cursor-follow glow */}
@@ -270,7 +202,7 @@ export function Hero() {
 
             <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
                 <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
-                    <div className="text-center lg:text-left">
+                    <div className="text-left">
                         <p
                             data-hero-fade
                             className="text-sm font-semibold uppercase tracking-wide text-secondary"
@@ -292,7 +224,7 @@ export function Hero() {
 
                         <div
                             data-hero-fade
-                            className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start"
+                            className="mt-10 flex flex-col items-start justify-start gap-4 sm:flex-row"
                         >
                             <TransitionLink
                                 ref={primaryCtaRef}
@@ -310,25 +242,60 @@ export function Hero() {
                         </div>
                     </div>
 
-                    <div className="relative mx-auto aspect-square w-full max-w-sm sm:max-w-md lg:max-w-none">
-                        {COLLAGE_PHOTOS.map((photo, index) => (
-                            <div
-                                key={photo.src}
-                                data-hero-photo
-                                className={`absolute aspect-[4/5] overflow-hidden rounded-2xl border-4 border-background shadow-xl ${photo.className}`}
-                                style={{ zIndex: photo.z }}
-                            >
-                                <Image
-                                    src={photo.src}
-                                    alt=""
-                                    fill
-                                    sizes="(min-width: 1024px) 22vw, 40vw"
-                                    className="object-cover"
-                                    style={{ objectPosition: "50% 20%" }}
-                                    priority={index === 0}
+                    <div
+                        data-hero-photo
+                        className="relative mx-auto aspect-4/5 w-full max-w-sm overflow-hidden rounded-2xl border-4 border-background shadow-xl sm:max-w-md lg:max-w-none"
+                    >
+                        <Carousel setApi={setApi} opts={{ loop: true }} className="h-full">
+                            <CarouselContent className="ml-0 h-full">
+                                {SLIDER_PHOTOS.map((src, index) => (
+                                    <CarouselItem key={src} className="relative h-full basis-full pl-0">
+                                        <Image
+                                            src={src}
+                                            alt=""
+                                            fill
+                                            sizes="(min-width: 1024px) 44vw, 90vw"
+                                            className="object-cover"
+                                            style={{ objectPosition: "50% 20%" }}
+                                            priority={index === 0}
+                                        />
+                                    </CarouselItem>
+                                ))}
+                            </CarouselContent>
+                        </Carousel>
+
+                        <button
+                            type="button"
+                            onClick={() => api?.scrollPrev()}
+                            aria-label={t("sliderPrev")}
+                            className="absolute left-3 top-1/2 z-10 flex size-9 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-background/80 text-foreground shadow-md backdrop-blur transition-colors hover:bg-background"
+                        >
+                            <IconChevronLeft className="size-4.5" stroke={2} aria-hidden />
+                        </button>
+                        <button
+                            type="button"
+                            onClick={() => api?.scrollNext()}
+                            aria-label={t("sliderNext")}
+                            className="absolute right-3 top-1/2 z-10 flex size-9 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-background/80 text-foreground shadow-md backdrop-blur transition-colors hover:bg-background"
+                        >
+                            <IconChevronRight className="size-4.5" stroke={2} aria-hidden />
+                        </button>
+
+                        <div className="absolute inset-x-0 bottom-4 z-10 flex items-center justify-center gap-2">
+                            {SLIDER_PHOTOS.map((src, index) => (
+                                <button
+                                    key={src}
+                                    type="button"
+                                    onClick={() => api?.scrollTo(index)}
+                                    aria-label={`${t("sliderGoTo")} ${index + 1}`}
+                                    className={`h-2 rounded-full transition-all duration-200 ${
+                                        index === selected
+                                            ? "w-6 bg-background"
+                                            : "w-2 bg-background/50 hover:bg-background/80"
+                                    }`}
                                 />
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
