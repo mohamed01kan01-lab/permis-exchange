@@ -47,7 +47,7 @@
     "idDocumentFront": "Documento d'identità (fronte)",
     "idDocumentBack": "Documento d'identità (retro)",
     "idPhoto": "Foto tessera (formato 4x4)",
-    "signatureSpecimen": "Campione di firma (penna blu su foglio bianco)",
+    "signatureSpecimen": "Campione di firma (inchiostro nero su foglio bianco)",
     "hint": "JPG, PNG o PDF, max 10 MB.",
     "back": "Indietro",
     "next": "Avanti"

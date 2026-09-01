@@ -47,7 +47,7 @@
     "idDocumentFront": "Pièce d'identité (recto)",
     "idDocumentBack": "Pièce d'identité (verso)",
     "idPhoto": "Photo d'identité (format 4x4)",
-    "signatureSpecimen": "Spécimen de signature (stylo bleu sur papier blanc)",
+    "signatureSpecimen": "Spécimen de signature (encre noire sur papier blanc)",
     "hint": "JPG, PNG ou PDF, 10 Mo max.",
     "back": "Précédent",
     "next": "Suivant"

@@ -47,7 +47,7 @@
     "idDocumentFront": "ID document (front)",
     "idDocumentBack": "ID document (back)",
     "idPhoto": "ID photo (4x4 format)",
-    "signatureSpecimen": "Signature specimen (blue pen on white paper)",
+    "signatureSpecimen": "Signature specimen (black ink on white paper)",
     "hint": "JPG, PNG or PDF, 10 MB max.",
     "back": "Back",
     "next": "Next"
