@@ -30,9 +30,6 @@
   },
   "licence": {
     "licenceIssuingCountry": "Pays émetteur du permis de conduire",
-    "licenceNumber": "Numéro de permis de conduire",
-    "licenceIssueDate": "Date de délivrance",
-    "licenceExpiryDate": "Date d'expiration (optionnel)",
     "licenceCategories": "Catégories du permis de conduire",
     "back": "Précédent",
     "next": "Suivant"
@@ -47,6 +44,10 @@
   "documents": {
     "licenseFront": "Permis de conduire (recto)",
     "licenseBack": "Permis de conduire (verso)",
+    "idDocumentFront": "Pièce d'identité (recto)",
+    "idDocumentBack": "Pièce d'identité (verso)",
+    "idPhoto": "Photo d'identité (format 4x4)",
+    "signatureSpecimen": "Spécimen de signature (stylo bleu sur papier blanc)",
     "hint": "JPG, PNG ou PDF, 10 Mo max.",
     "back": "Précédent",
     "next": "Suivant"
@@ -62,7 +63,6 @@
     "address": "Adresse",
     "residenceCountry": "Pays de résidence",
     "issuingCountry": "Pays émetteur",
-    "licenceNumber": "Numéro de permis de conduire",
     "categories": "Catégories",
     "destinationCountry": "Pays de destination",
     "procedure": "Type de démarche",
@@ -74,6 +74,7 @@
   "confirmation": {
     "title": "Votre demande a bien été envoyée",
     "subtitle": "Merci ! Notre équipe analyse votre dossier et vous recontacte sous 48h ouvrées.",
+    "spamNotice": "Pensez à vérifier vos courriers indésirables (spams) si vous ne voyez pas notre email.",
     "reference": "Référence de votre demande",
     "backHome": "Retour à l'accueil"
   }

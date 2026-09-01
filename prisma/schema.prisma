@@ -25,6 +25,10 @@ enum DocumentType {
   LICENSE_FRONT
   LICENSE_BACK
   ID_DOCUMENT
+  ID_DOCUMENT_FRONT
+  ID_DOCUMENT_BACK
+  ID_PHOTO
+  SIGNATURE_SPECIMEN
   PROOF_OF_ADDRESS
   SWORN_TRANSLATION
   OTHER
@@ -49,8 +53,8 @@ model LicenseExchangeRequest {
 
   // Permis actuel
   licenceIssuingCountry String // ISO 3166-1 alpha-2
-  licenceNumber         String
-  licenceIssueDate      DateTime
+  licenceNumber         String?
+  licenceIssueDate      DateTime?
   licenceExpiryDate     DateTime?
   licenceCategories     String[]
 

@@ -104,14 +104,14 @@ export function DocumentChecklist() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
-            <div className="text-center">
-              <p className="text-sm font-semibold uppercase tracking-wide text-secondary">
+            <div className="text-left sm:text-center">
+              <span className="inline-flex items-center rounded-full border border-secondary/30 bg-secondary/20 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-wide text-secondary">
                 {t("eyebrow")}
-              </p>
-              <h2 className="mt-4 text-3xl font-bold text-foreground sm:text-4xl">
+              </span>
+              <h2 className="mt-4 text-2xl font-bold text-foreground sm:text-4xl">
                 {t("title")}
               </h2>
-              <p className="mt-4 text-muted-foreground">{t("subtitle")}</p>
+              <p className="mt-4 text-sm text-muted-foreground md:text-base lg:text-lg">{t("subtitle")}</p>
             </div>
 
             <div className="mx-auto mt-8 inline-flex w-full max-w-sm items-center rounded-full border border-border bg-card p-1 text-sm font-medium">

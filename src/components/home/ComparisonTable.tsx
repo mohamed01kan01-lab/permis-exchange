@@ -57,14 +57,14 @@ export function ComparisonTable() {
   return (
     <section ref={sectionRef} className="py-20 sm:py-28">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-wide text-secondary">
+        <div className="mx-auto max-w-2xl text-left sm:text-center">
+          <span className="inline-flex items-center rounded-full border border-secondary/30 bg-secondary/20 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-wide text-secondary">
             {t("eyebrow")}
-          </p>
-          <h2 className="mt-4 text-3xl font-bold text-foreground sm:text-4xl">
+          </span>
+          <h2 className="mt-4 text-2xl font-bold text-foreground sm:text-4xl">
             {t("title")}
           </h2>
-          <p className="mt-4 text-muted-foreground">{t("subtitle")}</p>
+          <p className="mt-4 text-sm text-muted-foreground md:text-base lg:text-lg">{t("subtitle")}</p>
         </div>
 
         <div className="mt-12 overflow-x-auto rounded-2xl border border-border">
@@ -93,7 +93,7 @@ export function ComparisonTable() {
                 <tr
                   key={key}
                   data-comparison-row
-                  className="border-b border-border last:border-0 odd:bg-card even:bg-muted/20"
+                  className="border-b border-border last:border-0 odd:bg-card even:bg-muted/20 transition-colors hover:bg-accent/5"
                 >
                   <th scope="row" className="px-5 py-4 font-medium text-foreground">
                     {t(`rows.${key}.label`)}
@@ -106,7 +106,7 @@ export function ComparisonTable() {
                   </td>
                 </tr>
               ))}
-              <tr data-comparison-row className="odd:bg-card even:bg-muted/20">
+              <tr data-comparison-row className="odd:bg-card even:bg-muted/20 transition-colors hover:bg-accent/5">
                 <th scope="row" className="px-5 py-4 font-medium text-foreground">
                   {t("rows.exam.label")}
                 </th>

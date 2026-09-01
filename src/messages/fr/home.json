@@ -28,6 +28,9 @@
         },
         "verifiedClient": "Client vérifié",
         "licencePrefix": "Permis",
+        "carouselPrev": "Témoignage précédent",
+        "carouselNext": "Témoignage suivant",
+        "carouselGoTo": "Aller au témoignage",
         "quotes": {
             "t1": "Toute la procédure a été expliquée clairement, sans jargon administratif. Un vrai gain de temps.",
             "t2": "J'ai pu convertir mon permis de conduire étranger en permis italien sans me déplacer inutilement.",
@@ -38,7 +41,7 @@
             "t7": "Le questionnaire initial m'a permis de savoir tout de suite si j'étais éligible.",
             "t8": "Une équipe réactive qui répond vraiment à toutes les questions.",
             "t9": "Mon permis de conduire converti en quelques semaines, sans surprise ni document oublié.",
-            "t10": "Ils m'ont évité plusieurs erreurs administratives qui auraient retardé mon dossier.",
+            "t10": "Ils m'ont évité plusieurs erreurs administratives qui auraient fait rejeter mon dossier.",
             "t11": "Service sérieux, transparent, avec des explications claires à chaque étape.",
             "t12": "Je recommande à tous les expatriés qui veulent convertir leur permis de conduire en Italie.",
             "t13": "Un accompagnement rassurant sur un sujet que je ne maîtrisais pas du tout.",
@@ -106,25 +109,25 @@
         }
     },
     "hero": {
-        "eyebrow": "Service de conversion de permis pour l'Italie",
+        "eyebrow": "Conversion de permis en Italie",
         "title": "Convertissez votre permis de conduire étranger en permis italien, sans le casse-tête administratif.",
         "subtitle": "Conversione patente straniera gère votre dossier de bout en bout, avec une connexion directe aux registres EUCARIS et Motorizzazione Civile, pour un traitement plus rapide et sans rejet.",
         "ctaPrimary": "Démarrer ma demande",
-        "ctaSecondary": "Voir comment ça marche",
-        "sliderPrev": "Photo précédente",
-        "sliderNext": "Photo suivante",
-        "sliderGoTo": "Aller à la photo"
+        "ctaSecondary": "Voir comment ça marche"
     },
     "stats": {
         "eyebrow": "En chiffres",
         "title": "Un accompagnement qui fait ses preuves",
         "subtitle": "Quelques chiffres clés sur notre service de conversion de permis de conduire.",
         "items": {
-            "time": { "label": "Pour l'analyse de votre dossier" },
-            "rejections": { "label": "Rejet grâce à la vérification en amont" },
+            "exchanged": { "label": "Permis échangés" },
+            "satisfaction": { "label": "Satisfaction client" },
             "countries": { "label": "Pays de permis acceptés" },
             "online": { "label": "Démarches réalisables en ligne" }
-        }
+        },
+        "sliderPrev": "Photo précédente",
+        "sliderNext": "Photo suivante",
+        "sliderGoTo": "Aller à la photo"
     },
     "process": {
         "eyebrow": "Le processus",
@@ -137,7 +140,7 @@
             },
             "step2": {
                 "title": "Vérification des informations",
-                "description": "Nous vérifions les documents nécessaires à votre dossier de conversion et vous accompagnons dans leur préparation pour éviter tout retard."
+                "description": "Nous vérifions les documents nécessaires à votre dossier de conversion et vous accompagnons dans leur préparation pour éviter tout rejet."
             },
             "step3": {
                 "title": "Accompagnement dans les démarches",

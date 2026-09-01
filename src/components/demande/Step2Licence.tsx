@@ -39,74 +39,30 @@ export function Step2Licence({
 
   return (
     <form ref={formRef} action={formAction} className="flex flex-col gap-5" noValidate>
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-        <div>
-          <label
-            htmlFor="licenceIssuingCountry"
-            className="text-sm font-medium text-foreground"
-          >
-            {t("licenceIssuingCountry")}
-          </label>
-          <select
-            id="licenceIssuingCountry"
-            name="licenceIssuingCountry"
-            defaultValue={defaultValues?.licenceIssuingCountry ?? ""}
-            aria-invalid={!!errors.licenceIssuingCountry}
-            className="mt-1.5 h-10 w-full rounded-lg border border-input bg-transparent px-3 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
-          >
-            <option value="" disabled>
-              —
+      <div>
+        <label
+          htmlFor="licenceIssuingCountry"
+          className="text-sm font-medium text-foreground"
+        >
+          {t("licenceIssuingCountry")}
+        </label>
+        <select
+          id="licenceIssuingCountry"
+          name="licenceIssuingCountry"
+          defaultValue={defaultValues?.licenceIssuingCountry ?? ""}
+          aria-invalid={!!errors.licenceIssuingCountry}
+          className="mt-1.5 h-10 w-full max-w-xs rounded-lg border border-input bg-transparent px-3 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
+        >
+          <option value="" disabled>
+            —
+          </option>
+          {COUNTRIES.map((country) => (
+            <option key={country.code} value={country.code}>
+              {country.name}
             </option>
-            {COUNTRIES.map((country) => (
-              <option key={country.code} value={country.code}>
-                {country.name}
-              </option>
-            ))}
-          </select>
-          <FieldError messages={errors.licenceIssuingCountry} />
-        </div>
-
-        <div>
-          <label htmlFor="licenceNumber" className="text-sm font-medium text-foreground">
-            {t("licenceNumber")}
-          </label>
-          <input
-            id="licenceNumber"
-            name="licenceNumber"
-            defaultValue={defaultValues?.licenceNumber}
-            aria-invalid={!!errors.licenceNumber}
-            className="mt-1.5 h-10 w-full rounded-lg border border-input bg-transparent px-3 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
-          />
-          <FieldError messages={errors.licenceNumber} />
-        </div>
-
-        <div>
-          <label htmlFor="licenceIssueDate" className="text-sm font-medium text-foreground">
-            {t("licenceIssueDate")}
-          </label>
-          <input
-            id="licenceIssueDate"
-            name="licenceIssueDate"
-            type="date"
-            defaultValue={defaultValues?.licenceIssueDate}
-            aria-invalid={!!errors.licenceIssueDate}
-            className="mt-1.5 h-10 w-full rounded-lg border border-input bg-transparent px-3 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
-          />
-          <FieldError messages={errors.licenceIssueDate} />
-        </div>
-
-        <div>
-          <label htmlFor="licenceExpiryDate" className="text-sm font-medium text-foreground">
-            {t("licenceExpiryDate")}
-          </label>
-          <input
-            id="licenceExpiryDate"
-            name="licenceExpiryDate"
-            type="date"
-            defaultValue={defaultValues?.licenceExpiryDate}
-            className="mt-1.5 h-10 w-full rounded-lg border border-input bg-transparent px-3 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
-          />
-        </div>
+          ))}
+        </select>
+        <FieldError messages={errors.licenceIssuingCountry} />
       </div>
 
       <fieldset>

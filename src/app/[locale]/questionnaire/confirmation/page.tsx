@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { IconCircleCheck } from "@tabler/icons-react";
+import { IconCircleCheck, IconInfoCircle } from "@tabler/icons-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { Link } from "@/i18n/navigation";
@@ -28,6 +28,10 @@ export default async function QuestionnaireConfirmationPage() {
           </span>
           <h1 className="mt-6 text-3xl font-bold text-foreground">{t("title")}</h1>
           <p className="mt-4 text-muted-foreground">{t("subtitle")}</p>
+          <p className="mt-3 flex items-center justify-center gap-1.5 text-xs text-muted-foreground/80">
+            <IconInfoCircle className="size-3.5 shrink-0" stroke={1.75} aria-hidden />
+            {t("spamNotice")}
+          </p>
 
           <Link
             href="/"

@@ -28,6 +28,9 @@
     },
     "verifiedClient": "Cliente verificato",
     "licencePrefix": "Patente",
+    "carouselPrev": "Testimonianza precedente",
+    "carouselNext": "Testimonianza successiva",
+    "carouselGoTo": "Vai alla testimonianza",
     "quotes": {
       "t1": "L'intera procedura è stata spiegata con chiarezza, senza gergo amministrativo. Un vero risparmio di tempo.",
       "t2": "Sono riuscito a convertire la mia patente di guida straniera in una patente italiana senza spostamenti inutili.",
@@ -38,7 +41,7 @@
       "t7": "Il questionario iniziale mi ha permesso di sapere subito se ero idoneo.",
       "t8": "Un team reattivo che risponde davvero a ogni domanda.",
       "t9": "Patente di guida convertita in poche settimane, senza sorprese né documenti dimenticati.",
-      "t10": "Mi hanno evitato diversi errori amministrativi che avrebbero ritardato la mia pratica.",
+      "t10": "Mi hanno evitato diversi errori amministrativi che avrebbero fatto rifiutare la mia pratica.",
       "t11": "Servizio serio e trasparente, con spiegazioni chiare a ogni fase.",
       "t12": "Lo consiglio a tutti gli espatriati che vogliono convertire la patente di guida in Italia.",
       "t13": "Un supporto rassicurante su un argomento che non conoscevo affatto.",
@@ -106,25 +109,25 @@
     }
   },
   "hero": {
-    "eyebrow": "Servizio di conversione patente di guida per l'Italia",
+    "eyebrow": "Conversione patente in Italia",
     "title": "Converti la tua patente di guida straniera in patente italiana, senza burocrazia.",
     "subtitle": "Conversione patente straniera gestisce la tua pratica dall'inizio alla fine, con una connessione diretta ai registri EUCARIS e Motorizzazione Civile, per tempi più rapidi e zero rifiuti.",
     "ctaPrimary": "Inizia la mia richiesta",
-    "ctaSecondary": "Scopri come funziona",
-    "sliderPrev": "Foto precedente",
-    "sliderNext": "Foto successiva",
-    "sliderGoTo": "Vai alla foto"
+    "ctaSecondary": "Scopri come funziona"
   },
   "stats": {
     "eyebrow": "In numeri",
     "title": "Un accompagnamento che funziona",
     "subtitle": "Alcuni numeri chiave sul nostro servizio di conversione della patente di guida.",
     "items": {
-      "time": { "label": "Per l'analisi della tua pratica" },
-      "rejections": { "label": "Rifiuti grazie ai controlli preventivi" },
+      "exchanged": { "label": "Patenti convertite" },
+      "satisfaction": { "label": "Soddisfazione clienti" },
       "countries": { "label": "Paesi di provenienza della patente accettati" },
       "online": { "label": "Pratiche gestibili online" }
-    }
+    },
+    "sliderPrev": "Foto precedente",
+    "sliderNext": "Foto successiva",
+    "sliderGoTo": "Vai alla foto"
   },
   "process": {
     "eyebrow": "Il processo",
@@ -137,7 +140,7 @@
       },
       "step2": {
         "title": "Verifica delle informazioni",
-        "description": "Verifichiamo i documenti necessari per la tua pratica di conversione e ti accompagniamo nella loro preparazione per evitare ritardi."
+        "description": "Verifichiamo i documenti necessari per la tua pratica di conversione e ti accompagniamo nella loro preparazione per evitare un rifiuto."
       },
       "step3": {
         "title": "Accompagnamento nelle pratiche amministrative",

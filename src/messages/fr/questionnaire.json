@@ -62,6 +62,7 @@
   "confirmation": {
     "title": "Merci, votre questionnaire est bien reçu",
     "subtitle": "Notre équipe analyse vos réponses et vous recontacte par email ou WhatsApp sous 48h ouvrées pour vous confirmer votre éligibilité et les prochaines étapes.",
+    "spamNotice": "Pensez à vérifier vos courriers indésirables (spams) si vous ne voyez pas notre email.",
     "backHome": "Retour à l'accueil"
   }
 }

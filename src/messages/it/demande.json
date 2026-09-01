@@ -30,9 +30,6 @@
   },
   "licence": {
     "licenceIssuingCountry": "Paese di rilascio della patente di guida",
-    "licenceNumber": "Numero di patente di guida",
-    "licenceIssueDate": "Data di rilascio",
-    "licenceExpiryDate": "Data di scadenza (opzionale)",
     "licenceCategories": "Categorie della patente di guida",
     "back": "Indietro",
     "next": "Avanti"
@@ -47,6 +44,10 @@
   "documents": {
     "licenseFront": "Patente di guida (fronte)",
     "licenseBack": "Patente di guida (retro)",
+    "idDocumentFront": "Documento d'identità (fronte)",
+    "idDocumentBack": "Documento d'identità (retro)",
+    "idPhoto": "Foto tessera (formato 4x4)",
+    "signatureSpecimen": "Campione di firma (penna blu su foglio bianco)",
     "hint": "JPG, PNG o PDF, max 10 MB.",
     "back": "Indietro",
     "next": "Avanti"
@@ -62,7 +63,6 @@
     "address": "Indirizzo",
     "residenceCountry": "Paese di residenza",
     "issuingCountry": "Paese di rilascio",
-    "licenceNumber": "Numero di patente di guida",
     "categories": "Categorie",
     "destinationCountry": "Paese di destinazione",
     "procedure": "Tipo di pratica",
@@ -74,6 +74,7 @@
   "confirmation": {
     "title": "La tua richiesta è stata inviata",
     "subtitle": "Grazie! Il nostro team sta esaminando la tua pratica e ti ricontatterà entro 48 ore lavorative.",
+    "spamNotice": "Controlla anche la cartella spam o posta indesiderata se non vedi la nostra email.",
     "reference": "Riferimento della tua richiesta",
     "backHome": "Torna alla home"
   }

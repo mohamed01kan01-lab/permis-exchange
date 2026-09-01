@@ -24,7 +24,7 @@ export function Header() {
           <span className="truncate">{tFooter("company")}</span>
         </Link>
 
-        <nav className="hidden items-center gap-8 text-sm font-medium text-foreground/80 md:flex">
+        <nav className="hidden items-center gap-8 text-sm font-medium text-foreground/80 lg:flex">
           <a href="#comment-ca-marche" className="group relative py-1 hover:text-foreground">
             {t("howItWorks")}
             <span className="absolute inset-x-0 -bottom-0.5 h-px scale-x-0 bg-primary transition-transform duration-200 group-hover:scale-x-100" />
@@ -44,7 +44,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <div className="hidden items-center gap-3 md:flex">
+          <div className="hidden items-center gap-3 lg:flex">
             <ThemeToggle />
             <LocaleSwitcher />
             <TransitionLink

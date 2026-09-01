@@ -30,9 +30,6 @@
   },
   "licence": {
     "licenceIssuingCountry": "Driving licence issuing country",
-    "licenceNumber": "Driving licence number",
-    "licenceIssueDate": "Issue date",
-    "licenceExpiryDate": "Expiry date (optional)",
     "licenceCategories": "Driving licence categories",
     "back": "Back",
     "next": "Next"
@@ -47,6 +44,10 @@
   "documents": {
     "licenseFront": "Driving licence (front)",
     "licenseBack": "Driving licence (back)",
+    "idDocumentFront": "ID document (front)",
+    "idDocumentBack": "ID document (back)",
+    "idPhoto": "ID photo (4x4 format)",
+    "signatureSpecimen": "Signature specimen (blue pen on white paper)",
     "hint": "JPG, PNG or PDF, 10 MB max.",
     "back": "Back",
     "next": "Next"
@@ -62,7 +63,6 @@
     "address": "Address",
     "residenceCountry": "Country of residence",
     "issuingCountry": "Issuing country",
-    "licenceNumber": "Driving licence number",
     "categories": "Categories",
     "destinationCountry": "Destination country",
     "procedure": "Procedure type",
@@ -74,6 +74,7 @@
   "confirmation": {
     "title": "Your request has been submitted",
     "subtitle": "Thank you! Our team is reviewing your file and will get back to you within 48 business hours.",
+    "spamNotice": "Please also check your spam or junk folder if you don't see our email.",
     "reference": "Your request reference",
     "backHome": "Back to home"
   }

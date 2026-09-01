@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { validateResidencyStep, type StepState } from "@/app/[locale]/questionnaire/actions";
 import type { ResidencyStepData } from "@/lib/validation/prequalification.schema";
 import { FieldError } from "@/components/demande/FieldError";
+import { DateField } from "@/components/demande/DateField";
 import { SubmitButton } from "@/components/demande/SubmitButton";
 import { useShakeOnError } from "@/hooks/useShakeOnError";
 import { YesNoField } from "./YesNoField";
@@ -51,13 +52,11 @@ export function StepResidency({
         <label htmlFor="italianResidencySince" className="text-sm font-medium text-foreground">
           {t("since")}
         </label>
-        <input
+        <DateField
           id="italianResidencySince"
           name="italianResidencySince"
-          type="date"
           defaultValue={defaultValues?.italianResidencySince}
-          aria-invalid={!!errors.italianResidencySince}
-          className="mt-1.5 h-10 w-full max-w-xs rounded-lg border border-input bg-transparent px-3 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
+          ariaInvalid={!!errors.italianResidencySince}
         />
         <FieldError messages={errors.italianResidencySince} />
       </div>

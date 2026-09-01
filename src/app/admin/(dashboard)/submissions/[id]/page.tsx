@@ -81,11 +81,15 @@ export default async function SubmissionDetailPage({
               label="Pays émetteur"
               value={getCountryName(request.licenceIssuingCountry)}
             />
-            <InfoRow label="Numéro" value={request.licenceNumber} />
-            <InfoRow
-              label="Date de délivrance"
-              value={dateFormatter.format(request.licenceIssueDate)}
-            />
+            {request.licenceNumber && (
+              <InfoRow label="Numéro" value={request.licenceNumber} />
+            )}
+            {request.licenceIssueDate && (
+              <InfoRow
+                label="Date de délivrance"
+                value={dateFormatter.format(request.licenceIssueDate)}
+              />
+            )}
             <InfoRow
               label="Catégories"
               value={request.licenceCategories.join(", ") || "—"}

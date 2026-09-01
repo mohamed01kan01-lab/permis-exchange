@@ -62,6 +62,7 @@
   "confirmation": {
     "title": "Thank you, your questionnaire was received",
     "subtitle": "Our team is reviewing your answers and will contact you by email or WhatsApp within 48 business hours to confirm your eligibility and the next steps.",
+    "spamNotice": "Please also check your spam or junk folder if you don't see our email.",
     "backHome": "Back to home"
   }
 }

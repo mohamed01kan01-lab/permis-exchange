@@ -62,6 +62,7 @@
   "confirmation": {
     "title": "Grazie, il tuo questionario è stato ricevuto",
     "subtitle": "Il nostro team esamina le tue risposte e ti ricontatterà via email o WhatsApp entro 48 ore lavorative per confermare la tua idoneità e i prossimi passi.",
+    "spamNotice": "Controlla anche la cartella spam o posta indesiderata se non vedi la nostra email.",
     "backHome": "Torna alla home"
   }
 }

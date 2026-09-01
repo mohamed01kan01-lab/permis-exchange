@@ -28,6 +28,9 @@
     },
     "verifiedClient": "Verified client",
     "licencePrefix": "Licence",
+    "carouselPrev": "Previous testimonial",
+    "carouselNext": "Next testimonial",
+    "carouselGoTo": "Go to testimonial",
     "quotes": {
       "t1": "The whole process was explained clearly, without administrative jargon. A real time-saver.",
       "t2": "I was able to convert my foreign driving licence into an Italian one without unnecessary trips.",
@@ -38,7 +41,7 @@
       "t7": "The initial questionnaire let me know right away whether I was eligible.",
       "t8": "A responsive team that actually answers every question.",
       "t9": "My driving licence was converted within weeks, no surprises, no missing documents.",
-      "t10": "They helped me avoid several administrative mistakes that would have delayed my file.",
+      "t10": "They helped me avoid several administrative mistakes that would have gotten my file rejected.",
       "t11": "Serious, transparent service, with clear explanations at every step.",
       "t12": "I recommend this to every expat looking to convert their driving licence in Italy.",
       "t13": "Reassuring support on a subject I knew nothing about.",
@@ -106,25 +109,25 @@
     }
   },
   "hero": {
-    "eyebrow": "Driving licence conversion service for Italy",
+    "eyebrow": "Driving licence conversion in Italy",
     "title": "Convert your foreign driving licence into an Italian one, no administrative headache.",
     "subtitle": "Conversione patente straniera manages your file end to end, with a direct connection to the EUCARIS and Motorizzazione Civile registries, for faster processing and no rejections.",
     "ctaPrimary": "Start my request",
-    "ctaSecondary": "See how it works",
-    "sliderPrev": "Previous photo",
-    "sliderNext": "Next photo",
-    "sliderGoTo": "Go to photo"
+    "ctaSecondary": "See how it works"
   },
   "stats": {
     "eyebrow": "By the numbers",
     "title": "Support that gets results",
     "subtitle": "A few key figures about our driving licence conversion service.",
     "items": {
-      "time": { "label": "To analyse your file" },
-      "rejections": { "label": "Rejections thanks to upfront checks" },
+      "exchanged": { "label": "Licences exchanged" },
+      "satisfaction": { "label": "Client satisfaction" },
       "countries": { "label": "Countries of licence origin accepted" },
       "online": { "label": "Steps you can complete online" }
-    }
+    },
+    "sliderPrev": "Previous photo",
+    "sliderNext": "Next photo",
+    "sliderGoTo": "Go to photo"
   },
   "process": {
     "eyebrow": "The process",
@@ -137,7 +140,7 @@
       },
       "step2": {
         "title": "Verifying your information",
-        "description": "We check the documents needed for your conversion file and help you prepare them to avoid any delays."
+        "description": "We check the documents needed for your conversion file and help you prepare them to avoid any rejection."
       },
       "step3": {
         "title": "Support through the process",

@@ -1,8 +1,15 @@
 import { z } from "zod";
 
-export const documentTypes = ["LICENSE_FRONT", "LICENSE_BACK"] as const;
+export const documentTypes = [
+  "LICENSE_FRONT",
+  "LICENSE_BACK",
+  "ID_DOCUMENT_FRONT",
+  "ID_DOCUMENT_BACK",
+  "ID_PHOTO",
+  "SIGNATURE_SPECIMEN",
+] as const;
 
-export const REQUIRED_DOCUMENT_TYPES = ["LICENSE_FRONT", "LICENSE_BACK"] as const;
+export const REQUIRED_DOCUMENT_TYPES = documentTypes;
 
 export const uploadedDocumentSchema = z.object({
   type: z.enum(documentTypes),

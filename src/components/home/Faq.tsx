@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { IconChevronDown } from "@tabler/icons-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -56,11 +57,11 @@ export function Faq() {
   return (
     <section ref={sectionRef} id="faq" className="py-20 sm:py-28">
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
-        <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-wide text-secondary">
+        <div className="text-left sm:text-center">
+          <span className="inline-flex items-center rounded-full border border-secondary/30 bg-secondary/20 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-wide text-secondary">
             {t("eyebrow")}
-          </p>
-          <h2 className="mt-4 text-3xl font-bold text-foreground sm:text-4xl">
+          </span>
+          <h2 className="mt-4 text-2xl font-bold text-foreground sm:text-4xl">
             {t("title")}
           </h2>
         </div>
@@ -74,18 +75,11 @@ export function Faq() {
             >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-semibold text-foreground">
                 {t(`items.${key}.question`)}
-                <svg
+                <IconChevronDown
                   aria-hidden
-                  className="h-5 w-5 flex-shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                  className="size-5 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180"
+                  stroke={1.75}
+                />
               </summary>
               <p className="mt-4 text-sm text-muted-foreground">
                 {t(`items.${key}.answer`)}

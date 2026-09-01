@@ -34,12 +34,13 @@ function getResendClient() {
  * inspection, un envoi refusé (domaine non vérifié, clé absente) passerait
  * pour un succès.
  */
-async function send(payload: { to: string; subject: string; html: string }) {
+async function send(payload: { to: string; subject: string; html: string; text: string }) {
   const { error } = await getResendClient().emails.send({
     from: FROM,
     to: payload.to,
     subject: payload.subject,
     html: payload.html,
+    text: payload.text,
   });
 
   if (error) {
@@ -69,6 +70,8 @@ export async function sendNewSubmissionEmail({
     return;
   }
 
+  const detailUrl = `${APP_URL}/admin/submissions/${requestId}`;
+
   await send({
     to: ADMIN_EMAIL,
     subject: `Nouvelle demande — ${firstName} ${lastName}`,
@@ -80,6 +83,7 @@ export async function sendNewSubmissionEmail({
       destinationCountryName,
       procedureLabel,
     }),
+    text: `Nouvelle demande reçue de ${firstName} ${lastName} (${email}), destination ${destinationCountryName}, ${procedureLabel}. Voir le dossier : ${detailUrl}`,
   });
 }
 
@@ -119,6 +123,7 @@ export async function sendNewPreQualificationEmail({
       detailUrl,
       whatsappLink,
     }),
+    text: `Nouveau questionnaire reçu de ${firstName} ${lastName} (${email}, ${phone}), permis émis en ${licenceIssuingCountryName}. Voir le questionnaire : ${detailUrl}`,
   });
 }
 
@@ -135,6 +140,7 @@ export async function sendEligibilityInviteEmail({
     to,
     subject: "Vous pouvez continuer votre demande",
     html: eligibilityInviteHtml({ firstName, demandeUrl }),
+    text: `Bonjour ${firstName}, après analyse de vos réponses, votre situation est éligible à la conversion de votre permis de conduire. Continuez votre demande : ${demandeUrl}`,
   });
 }
 
@@ -163,7 +169,7 @@ function newPreQualificationHtml({
     <tr><td align="center">
       <table width="560" cellpadding="0" cellspacing="0" style="background:#fff;border-radius:12px;padding:48px 40px;box-shadow:0 1px 3px rgba(0,0,0,.08);">
         <tr><td style="padding-bottom:32px;border-bottom:1px solid #E9EFF5;">
-          <p style="margin:0;font-size:22px;font-weight:700;color:#1E3A8A;">Permis-Exchange</p>
+          <p style="margin:0;font-size:22px;font-weight:700;color:#1E3A8A;">Conversione patente straniera</p>
         </td></tr>
         <tr><td style="padding-top:32px;">
           <p style="margin:0 0 8px;font-size:18px;font-weight:600;color:#1E3A8A;">Nouveau questionnaire reçu</p>
@@ -211,7 +217,7 @@ function eligibilityInviteHtml({
     <tr><td align="center">
       <table width="560" cellpadding="0" cellspacing="0" style="background:#fff;border-radius:12px;padding:48px 40px;box-shadow:0 1px 3px rgba(0,0,0,.08);">
         <tr><td style="padding-bottom:32px;border-bottom:1px solid #E9EFF5;">
-          <p style="margin:0;font-size:22px;font-weight:700;color:#1E3A8A;">Permis-Exchange</p>
+          <p style="margin:0;font-size:22px;font-weight:700;color:#1E3A8A;">Conversione patente straniera</p>
         </td></tr>
         <tr><td style="padding-top:32px;">
           <p style="margin:0 0 8px;font-size:18px;font-weight:600;color:#1E3A8A;">Bonjour ${firstName},</p>
@@ -257,7 +263,7 @@ function newSubmissionHtml({
     <tr><td align="center">
       <table width="560" cellpadding="0" cellspacing="0" style="background:#fff;border-radius:12px;padding:48px 40px;box-shadow:0 1px 3px rgba(0,0,0,.08);">
         <tr><td style="padding-bottom:32px;border-bottom:1px solid #E9EFF5;">
-          <p style="margin:0;font-size:22px;font-weight:700;color:#1E3A8A;">Permis-Exchange</p>
+          <p style="margin:0;font-size:22px;font-weight:700;color:#1E3A8A;">Conversione patente straniera</p>
         </td></tr>
         <tr><td style="padding-top:32px;">
           <p style="margin:0 0 8px;font-size:18px;font-weight:600;color:#1E3A8A;">Nouvelle demande reçue</p>

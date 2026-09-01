@@ -43,6 +43,10 @@ export function Step5Review({
   const documentLabels: Record<UploadedDocument["type"], string> = {
     LICENSE_FRONT: tDocs("licenseFront"),
     LICENSE_BACK: tDocs("licenseBack"),
+    ID_DOCUMENT_FRONT: tDocs("idDocumentFront"),
+    ID_DOCUMENT_BACK: tDocs("idDocumentBack"),
+    ID_PHOTO: tDocs("idPhoto"),
+    SIGNATURE_SPECIMEN: tDocs("signatureSpecimen"),
   };
 
   const formRef = useShakeOnError<HTMLFormElement>(state.errors);
@@ -64,13 +68,6 @@ export function Step5Review({
         type="hidden"
         name="licenceIssuingCountry"
         value={data.licenceIssuingCountry}
-      />
-      <input type="hidden" name="licenceNumber" value={data.licenceNumber} />
-      <input type="hidden" name="licenceIssueDate" value={data.licenceIssueDate} />
-      <input
-        type="hidden"
-        name="licenceExpiryDate"
-        value={data.licenceExpiryDate ?? ""}
       />
       {data.licenceCategories.map((category) => (
         <input key={category} type="hidden" name="licenceCategories" value={category} />
@@ -102,7 +99,6 @@ export function Step5Review({
             label={t("issuingCountry")}
             value={getCountryName(data.licenceIssuingCountry)}
           />
-          <ReviewRow label={t("licenceNumber")} value={data.licenceNumber} />
           <ReviewRow label={t("categories")} value={data.licenceCategories.join(", ")} />
         </dl>
       </section>

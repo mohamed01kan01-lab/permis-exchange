@@ -115,18 +115,18 @@ export function FinalCta() {
 
         <h2
           data-cta-fade
-          className="text-3xl font-bold text-primary-foreground sm:text-4xl"
+          className="text-2xl font-bold text-primary-foreground sm:text-4xl"
         >
           {t("title")}
         </h2>
-        <p data-cta-fade className="mt-4 text-primary-foreground/80">
+        <p data-cta-fade className="mt-4 text-sm text-primary-foreground/80 md:text-base lg:text-lg">
           {t("subtitle")}
         </p>
         <TransitionLink
           ref={ctaRef}
           href="/questionnaire"
           data-cta-fade
-          className="mt-8 inline-flex items-center justify-center rounded-full bg-background px-8 py-3.5 text-base font-semibold text-foreground shadow-lg shadow-black/10 transition-shadow hover:shadow-xl hover:shadow-black/20"
+          className="mt-8 inline-flex items-center justify-center rounded-full bg-background px-4 py-2 text-xs font-semibold text-foreground shadow-lg shadow-black/10 transition-shadow hover:shadow-xl hover:shadow-black/20"
         >
           {t("button")}
         </TransitionLink>

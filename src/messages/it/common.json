@@ -32,6 +32,11 @@
     "whatsapp": "Via WhatsApp",
     "whatsappPrefill": "Ciao, ho una domanda sulla conversione della mia patente di guida."
   },
+  "date": {
+    "day": "GG",
+    "month": "MM",
+    "year": "AAAA"
+  },
   "validation": {
     "required": "Questo campo è obbligatorio",
     "invalidDate": "Data non valida",

@@ -88,9 +88,6 @@ export async function submitRequest(
     city: formData.get("city") ?? "",
     countryOfResidence: formData.get("countryOfResidence") ?? "",
     licenceIssuingCountry: formData.get("licenceIssuingCountry") ?? "",
-    licenceNumber: formData.get("licenceNumber") ?? "",
-    licenceIssueDate: formData.get("licenceIssueDate") ?? "",
-    licenceExpiryDate: formData.get("licenceExpiryDate") ?? "",
     licenceCategories: formData.getAll("licenceCategories"),
     procedureType: formData.get("procedureType") ?? "",
     documents: JSON.parse((formData.get("documents") as string) ?? "[]"),
@@ -122,11 +119,6 @@ export async function submitRequest(
       city: data.city,
       countryOfResidence: data.countryOfResidence,
       licenceIssuingCountry: data.licenceIssuingCountry,
-      licenceNumber: data.licenceNumber,
-      licenceIssueDate: new Date(data.licenceIssueDate),
-      licenceExpiryDate: data.licenceExpiryDate
-        ? new Date(data.licenceExpiryDate)
-        : null,
       licenceCategories: data.licenceCategories,
       destinationCountry: "IT",
       procedureType: data.procedureType,

@@ -8,6 +8,7 @@ import { validateIdentityStep, type StepState } from "@/app/[locale]/demande/act
 import type { IdentityData } from "@/lib/validation/identity.schema";
 import { COUNTRIES } from "@/lib/constants/countries";
 import { FieldError } from "./FieldError";
+import { DateField } from "./DateField";
 import { SubmitButton } from "./SubmitButton";
 import { useShakeOnError } from "@/hooks/useShakeOnError";
 
@@ -87,13 +88,11 @@ export function Step1Identity({
           <label htmlFor="dateOfBirth" className="text-sm font-medium text-foreground">
             {t("dateOfBirth")}
           </label>
-          <input
+          <DateField
             id="dateOfBirth"
             name="dateOfBirth"
-            type="date"
             defaultValue={defaultValues?.dateOfBirth}
-            aria-invalid={!!errors.dateOfBirth}
-            className="mt-1.5 h-10 w-full rounded-lg border border-input bg-transparent px-3 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
+            ariaInvalid={!!errors.dateOfBirth}
           />
           <FieldError messages={errors.dateOfBirth} />
         </div>

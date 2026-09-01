@@ -29,7 +29,7 @@ export function MobileMenu() {
   return (
     <Sheet>
       <SheetTrigger
-        render={<Button variant="ghost" size="icon" className="md:hidden" />}
+        render={<Button variant="ghost" size="icon" className="lg:hidden" />}
       >
         <IconMenu className="size-5" stroke={1.75} aria-hidden />
         <span className="sr-only">{t("menu")}</span>

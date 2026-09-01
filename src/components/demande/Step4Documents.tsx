@@ -65,6 +65,38 @@ export function Step4Documents({
         value={find("LICENSE_BACK")}
         onChange={(doc) => upsert(doc, "LICENSE_BACK")}
       />
+      <DocumentUploadField
+        type="ID_DOCUMENT_FRONT"
+        label={t("idDocumentFront")}
+        hint={t("hint")}
+        required
+        value={find("ID_DOCUMENT_FRONT")}
+        onChange={(doc) => upsert(doc, "ID_DOCUMENT_FRONT")}
+      />
+      <DocumentUploadField
+        type="ID_DOCUMENT_BACK"
+        label={t("idDocumentBack")}
+        hint={t("hint")}
+        required
+        value={find("ID_DOCUMENT_BACK")}
+        onChange={(doc) => upsert(doc, "ID_DOCUMENT_BACK")}
+      />
+      <DocumentUploadField
+        type="ID_PHOTO"
+        label={t("idPhoto")}
+        hint={t("hint")}
+        required
+        value={find("ID_PHOTO")}
+        onChange={(doc) => upsert(doc, "ID_PHOTO")}
+      />
+      <DocumentUploadField
+        type="SIGNATURE_SPECIMEN"
+        label={t("signatureSpecimen")}
+        hint={t("hint")}
+        required
+        value={find("SIGNATURE_SPECIMEN")}
+        onChange={(doc) => upsert(doc, "SIGNATURE_SPECIMEN")}
+      />
 
       <FieldError messages={errors.documents} />
 

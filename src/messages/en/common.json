@@ -32,6 +32,11 @@
     "whatsapp": "By WhatsApp",
     "whatsappPrefill": "Hello, I have a question about converting my driving licence."
   },
+  "date": {
+    "day": "DD",
+    "month": "MM",
+    "year": "YYYY"
+  },
   "validation": {
     "required": "This field is required",
     "invalidDate": "Invalid date",

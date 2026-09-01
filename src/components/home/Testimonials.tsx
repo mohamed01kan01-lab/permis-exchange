@@ -1,19 +1,22 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { IconShieldCheck, IconCloudLock, IconHeadset, IconQuote, IconCircleCheckFilled, IconId } from "@tabler/icons-react";
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
-} from "@/components/ui/carousel";
+  IconShieldCheck,
+  IconCloudLock,
+  IconHeadset,
+  IconQuote,
+  IconCircleCheckFilled,
+  IconId,
+  IconChevronLeft,
+  IconChevronRight,
+} from "@tabler/icons-react";
+import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,6 +47,20 @@ const TESTIMONIALS = [
 export function Testimonials() {
   const t = useTranslations("home.testimonials");
   const sectionRef = useRef<HTMLElement>(null);
+  const [api, setApi] = useState<CarouselApi>();
+  const [selected, setSelected] = useState(0);
+  const [snapCount, setSnapCount] = useState(0);
+
+  useEffect(() => {
+    if (!api) return;
+    setSnapCount(api.scrollSnapList().length);
+    setSelected(api.selectedScrollSnap());
+    api.on("select", () => setSelected(api.selectedScrollSnap()));
+    api.on("reInit", () => {
+      setSnapCount(api.scrollSnapList().length);
+      setSelected(api.selectedScrollSnap());
+    });
+  }, [api]);
 
   useGSAP(
     () => {
@@ -99,11 +116,11 @@ export function Testimonials() {
   return (
     <section ref={sectionRef} className="bg-muted/40 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-wide text-secondary">
+        <div className="mx-auto max-w-2xl text-left sm:text-center">
+          <span className="inline-flex items-center rounded-full border border-secondary/30 bg-secondary/20 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-wide text-secondary">
             {t("eyebrow")}
-          </p>
-          <h2 className="mt-4 text-3xl font-bold text-foreground sm:text-4xl">
+          </span>
+          <h2 className="mt-4 text-2xl font-bold text-foreground sm:text-4xl">
             {t("title")}
           </h2>
         </div>
@@ -124,8 +141,8 @@ export function Testimonials() {
           })}
         </div>
 
-        <div data-testimonial-carousel className="mt-14">
-          <Carousel opts={{ align: "start", loop: true }} className="px-1 sm:px-12">
+        <div data-testimonial-carousel className="relative mt-14">
+          <Carousel setApi={setApi} opts={{ align: "start", loop: true }}>
             <CarouselContent>
               {TESTIMONIALS.map(({ id, name, image, category }) => (
                 <CarouselItem key={id} className="sm:basis-1/2 lg:basis-1/3">
@@ -161,9 +178,40 @@ export function Testimonials() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden sm:flex" />
-            <CarouselNext className="hidden sm:flex" />
           </Carousel>
+
+          <button
+            type="button"
+            onClick={() => api?.scrollPrev()}
+            aria-label={t("carouselPrev")}
+            className="absolute -left-3 top-1/2 z-10 hidden size-9 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-border bg-card text-foreground shadow-md transition-colors hover:bg-muted sm:-left-4 sm:flex"
+          >
+            <IconChevronLeft className="size-4.5" stroke={2} aria-hidden />
+          </button>
+          <button
+            type="button"
+            onClick={() => api?.scrollNext()}
+            aria-label={t("carouselNext")}
+            className="absolute -right-3 top-1/2 z-10 hidden size-9 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-border bg-card text-foreground shadow-md transition-colors hover:bg-muted sm:-right-4 sm:flex"
+          >
+            <IconChevronRight className="size-4.5" stroke={2} aria-hidden />
+          </button>
+
+          <div className="mt-6 flex items-center justify-center gap-2">
+            {Array.from({ length: snapCount }).map((_, index) => (
+              <button
+                key={index}
+                type="button"
+                onClick={() => api?.scrollTo(index)}
+                aria-label={`${t("carouselGoTo")} ${index + 1}`}
+                className={`h-2 rounded-full transition-all duration-200 ${
+                  index === selected
+                    ? "w-6 bg-primary"
+                    : "w-2 bg-border hover:bg-muted-foreground/40"
+                }`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

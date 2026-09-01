@@ -139,14 +139,14 @@ export function TrustSignals() {
     return (
         <section ref={sectionRef} className="py-20 sm:py-28">
             <div className="mx-auto max-w-6xl px-4 sm:px-6">
-                <div className="mx-auto max-w-2xl text-center">
-                    <p className="text-sm font-semibold uppercase tracking-wide text-secondary">
+                <div className="mx-auto max-w-2xl text-left sm:text-center">
+                    <span className="inline-flex items-center rounded-full border border-secondary/30 bg-secondary/20 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-wide text-secondary">
                         {t("eyebrow")}
-                    </p>
-                    <h2 className="mt-4 text-3xl font-bold text-foreground sm:text-4xl">
+                    </span>
+                    <h2 className="mt-4 text-2xl font-bold text-foreground sm:text-4xl">
                         {t("title")}
                     </h2>
-                    <p className="mt-4 text-muted-foreground">
+                    <p className="mt-4 text-sm text-muted-foreground md:text-base lg:text-lg">
                         {t("subtitle")}
                     </p>
                 </div>

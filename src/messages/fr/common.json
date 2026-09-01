@@ -32,6 +32,11 @@
     "whatsapp": "Par WhatsApp",
     "whatsappPrefill": "Bonjour, j'ai une question sur la conversion de mon permis de conduire."
   },
+  "date": {
+    "day": "JJ",
+    "month": "MM",
+    "year": "AAAA"
+  },
   "validation": {
     "required": "Ce champ est requis",
     "invalidDate": "Date invalide",
